@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Insertar un vídeo externo | Elementos multimedia </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Insertar un vídeo externo</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Elementos multimedia</a><ul>
+<li><a href="recurso_tic_multimedia.html" class="daddy">Recurso TIC: Multimedia</a><ul>
+<li><a href="licencias_de_uso.html" class="no-ch">Licencias de uso</a></li>
+<li><a href="imgenes_conceptos_bsicos.html" class="no-ch">Imágenes. Conceptos básicos</a></li>
+<li><a href="insertar_una_imagen.html" class="no-ch">Insertar una imagen</a></li>
+<li><a href="editar_una_imagen.html" class="no-ch">Editar una imagen</a></li>
+<li><a href="insertar_una_imagen_con_un_editor_web.html" class="no-ch">Insertar una imagen con un editor web</a></li>
+<li><a href="vdeo_conceptos_bsicos.html" class="no-ch">Vídeo. Conceptos básicos</a></li>
+<li><a href="insertar_un_vdeo.html" class="no-ch">Insertar un vídeo</a></li>
+<li id="active"><a href="insertar_un_vdeo_externo.html" class="active no-ch">Insertar un vídeo externo</a></li>
+<li><a href="audio.html" class="no-ch">Audio</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id106">
+<div class="iDevice emphasis0">
+<div id="ta106_1" class="block" style="display:block;position:relative">Una vez que hemos visto el método más complejo, pero que nos da
+más autonomía, analizaremos la alternativa de insertar un vídeo
+que previamente hayamos ubicado en una página web de vídeos como<i>
+Youtube</i>, <i>Vimeo </i>o cualquiera de sus alternativas.
+<p>
+Insertar un recurso externo en nuestra página web tiene muchas
+ventajas:
+</p>
+<ul>
+	<li>No ocuparemos el espacio de nuestro servidor, ni consumiremos
+	nuestro ancho de banda; el recurso estará alojado en todo momento
+	en el otro servidor.</li>
+	<li>Estos servidores especializados suelen proporcionar más
+	velocidad de descarga que el nuestro propio, por lo que en el caso
+	de vídeos se reproducirán de forma más fluida.</li>
+	<li>Cualquier cambio o actualización en el recurso se mostrará
+	inmediatamente en nuestra página, sin necesidad de cambios.
+	</li>
+</ul>
+<p>
+Esto último es el único inconveniente de este método: que en
+cualquier momento, de forma unilateral, el propietario del material
+puede optar por cambiarlo o retirarlo, con lo que perderíamos el
+acceso. No obstante, si somos los propietarios, esto deja de ser un
+inconveniente.
+</p>
+<p>
+Técnicamente lo que hacemos es similar a crear una pequeña
+ventana dentro de nuestra página web, para que en su interior se
+muestre un material que está alojado en otro servidor. Para ello se
+suelen emplear dos etiquetas: <b>&lt;iframe&gt;</b> es la más habitual en
+la actualidad y lo que hace es crear un pequeño marco en el que se
+muestra cualquier recurso o página web; la otra opción es el
+elemento <b>&lt;object&gt;</b>, que actúa de forma similar, aunque menos
+versátil. Es el otro servidor el que decide qué método empleará,
+por lo que no nos debemos preocupar, ya que sólo tendremos que
+copiar y pegar el código HTML que genere el servidor.
+</p>
+<p>
+Siga estos pasos para incrustar un vídeo de <i>Youtube</i> en una página
+web.
+</p>
+<p>
+1. Acceda a <i>Youtube </i>y seleccione un vídeo. Puede usar éste como
+ejemplo: <a href="http://www.youtube.com/watch?v=aDyAdqaLSJ4" target="_blank">http://www.youtube.com/watch?v=aDyAdqaLSJ4</a>
+</p>
+<p>
+2. Haga clic en el botón <b>Compartir</b>. La dirección que aparece se
+puede emplear en diferentes sitios, como blogs, herramientas
+sociales,etc.
+</p>
+<p>
+3. En nuestro ejemplo haga clic en el botón <b>Insertar </b>que aparece
+más abajo. Copie el pequeño código HTML que se despliega; será
+similar a esto que se recoge en la figura:
+</p>
+<blockquote>
+	<p>
+	&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/aDyAdqaLSJ4&quot;
+	frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig0524.jpg" height="678" width="600" />
+</p>
+<p>
+4. Un poco más abajo podemos personalizar las dimensiones de la
+ventana y otros parámetros. Tras realizar los cambios, copie el
+código HTML.
+</p>
+<p>
+5. Edite la página web con un editor de texto o con un editor web,
+como <i>BlueGriffon, </i>y pegue el código. 
+</p>
+<p>
+Al probar la página web en un navegador, obtendremos un resultado
+parecido al de la figura. Toda la potencia de un servidor como
+<i>YouTube </i>recogida en nuestra página web.
+</p>
+<p>
+<img src="fig0525.jpg" height="592" width="600" />
+</p>
+<p>
+Si observa el código HTML, verá muchos parámetros
+ya conocidos, como la anchura, la altura, <b>src </b>para indicar la URL del
+vídeo y otros nuevos, pero cuya función es fácilmente deducible
+(en nuestro ejemplo, <b>frameborder </b>para mostrar un borde y
+<b>allowfullscreen</b> para permitir reproducción a pantalla
+completa).
+</p>
+<p>
+Este procedimiento es idéntico para el resto de los sitios que
+alojan vídeos u otros tipos de recursos en Internet.
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id107">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 4</h2>
+<div class="iDevice_inner">
+<div id="ta107_49_2" class="block" style="display:block;position:relative">Incrusta o inserta en una página web un vídeo
+tomado de <a href="http://vimeo.com/" target="_blank">http://vimeo.com/</a> y una publicación interactiva de
+<a href="http://www.issuu.com/" target="_blank">www.issuu.com</a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="TrueFalseIdevice" id="id122">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta122_16" class="block" style="display:block;position:relative">Respecto a la inserción de un recurso externo en nuestra página web, ¿cuales de estas afirmaciones son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b122" class="block" style="display:block;position:relative">No ocuparemos el espacio de nuestro servidor, ni consumiremos nuestro ancho de banda; el recurso estará alojado en todo momento en el otro servidor.
+</div><br/>Verdadero <input type="radio" name="option0b122" id="true0b122" onclick="getFeedback(0,2,'0b122','truefalse')"/> 
+Falso <input type="radio" name="option0b122" id="false0b122" onclick="getFeedback(1,2,'0b122','truefalse')"/>
+<div id="s0b0b122" style="color: rgb(0, 51, 204);display: none;" even_steven="128">¡Correcto! </div>
+<div id="s1b0b122" style="color: rgb(0, 51, 204);display: none;" even_steven="129">¡Incorrecto! </div>
+<div id="sfbk0b122" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b122" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b122" class="block" style="display:block;position:relative">El único inconveniente de este método es que en cualquier momento, de forma unilateral, el propietario del material puede optar por cambiarlo o retirarlo, con lo que perderíamos el acceso.
+</div><br/>Verdadero <input type="radio" name="option1b122" id="true1b122" onclick="getFeedback(0,2,'1b122','truefalse')"/> 
+Falso <input type="radio" name="option1b122" id="false1b122" onclick="getFeedback(1,2,'1b122','truefalse')"/>
+<div id="s0b1b122" style="color: rgb(0, 51, 204);display: none;" even_steven="128">¡Correcto! </div>
+<div id="s1b1b122" style="color: rgb(0, 51, 204);display: none;" even_steven="129">¡Incorrecto! </div>
+<div id="sfbk1b122" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b122" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion2b122" class="block" style="display:block;position:relative">Cualquier cambio o actualización en el recurso se mostrará inmediatamente en nuestra página, sin necesidad de cambios, aunque sea un cambio de carpeta.
+</div><br/>Verdadero <input type="radio" name="option2b122" id="true2b122" onclick="getFeedback(0,2,'2b122','truefalse')"/> 
+Falso <input type="radio" name="option2b122" id="false2b122" onclick="getFeedback(1,2,'2b122','truefalse')"/>
+<div id="s0b2b122" style="color: rgb(0, 51, 204);display: none;" even_steven="129">¡Incorrecto! </div>
+<div id="s1b2b122" style="color: rgb(0, 51, 204);display: none;" even_steven="128">¡Correcto! </div>
+<div id="sfbk2b122" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback2b122" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion3b122" class="block" style="display:block;position:relative">Estos servidores especializados suelen proporcionar menos velocidad de descarga que el nuestro propio.
+</div><br/>Verdadero <input type="radio" name="option3b122" id="true3b122" onclick="getFeedback(0,2,'3b122','truefalse')"/> 
+Falso <input type="radio" name="option3b122" id="false3b122" onclick="getFeedback(1,2,'3b122','truefalse')"/>
+<div id="s0b3b122" style="color: rgb(0, 51, 204);display: none;" even_steven="129">¡Incorrecto! </div>
+<div id="s1b3b122" style="color: rgb(0, 51, 204);display: none;" even_steven="128">¡Correcto! </div>
+<div id="sfbk3b122" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback3b122" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="insertar_un_vdeo.html">&laquo; Anterior</a> | <a href="audio.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

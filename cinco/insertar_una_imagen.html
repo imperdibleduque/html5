@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Insertar una imagen | Elementos multimedia </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Insertar una imagen</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Elementos multimedia</a><ul>
+<li><a href="recurso_tic_multimedia.html" class="daddy">Recurso TIC: Multimedia</a><ul>
+<li><a href="licencias_de_uso.html" class="no-ch">Licencias de uso</a></li>
+<li><a href="imgenes_conceptos_bsicos.html" class="no-ch">Imágenes. Conceptos básicos</a></li>
+<li id="active"><a href="insertar_una_imagen.html" class="active no-ch">Insertar una imagen</a></li>
+<li><a href="editar_una_imagen.html" class="no-ch">Editar una imagen</a></li>
+<li><a href="insertar_una_imagen_con_un_editor_web.html" class="no-ch">Insertar una imagen con un editor web</a></li>
+<li><a href="vdeo_conceptos_bsicos.html" class="no-ch">Vídeo. Conceptos básicos</a></li>
+<li><a href="insertar_un_vdeo.html" class="no-ch">Insertar un vídeo</a></li>
+<li><a href="insertar_un_vdeo_externo.html" class="no-ch">Insertar un vídeo externo</a></li>
+<li><a href="audio.html" class="no-ch">Audio</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">Para insertar una imagen, contamos con un elemento html denominado
+<b>&lt;img&gt;</b>, que se acompaña del parámetro <b>src</b> para indicar la ubicación
+de la imagen (<i>source </i>en inglés). El formato general es el siguiente:
+<p>
+&lt;img src=&quot;nombredelaimagen.png&quot; /&gt;
+</p>
+<p>
+Es un elemento que no tiene etiqueta de cierre, por lo que el
+cierre va incluido en la propia etiqueta. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id63">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta63_30_2" class="block" style="display:block;position:relative">
+<p>
+La dirección de la imagen que indicaremos en <b>src</b> será
+normalmente una dirección relativa a la página principal, por lo
+que, antes de insertar una imagen, es muy importante guardar primero la
+página web, si estamos utilizando un editor, para evitar las temibles
+direcciones que comienzan por <b>file://</b> y que
+fallarán al publicar la página en Internet.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id64">
+<div class="iDevice emphasis0">
+<div id="ta64_1" class="block" style="display:block;position:relative">
+<p>
+Observemos estos otros ejemplos:
+</p>
+<ul>
+	<li><b>&lt;img src=&quot;recursos/calle.jpg&quot; /&gt;</b>: muestra una
+	imagen que está contenida en una carpeta llamada <i>imagenes</i>. Es una
+	dirección relativa.</li>
+	<li><b>&lt;img src=&quot;http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg&quot;
+	/&gt;</b>: Se muestra una imagen ubicada en una dirección de Internet,
+	en este caso del portal <i>Flickr</i>. Es una dirección absoluta, que
+	muestra una imagen que no está en nuestro ordenador ni en nuestro
+	espacio web, sino directamente en Internet.</li>
+</ul>
+<p>
+Esta última técnica (denominada <i>hotlinking</i>) entraña el riesgo
+de que, si el portal de donde tomamos el recurso opta por realizar
+algún cambio, puede que la imagen deje de mostrarse, pero puede ser
+un recurso interesante, si disponemos de poco espacio o limitaciones
+de ancho de banda.
+</p>
+<p>
+Las dos imágenes anteriores se mostrarían tal y como se presenta
+en la figura. 
+</p>
+<p>
+<img src="fig0501.jpg" height="458" width="600" />
+</p>
+<h2>Descripción de la imagen</h2>
+<p>
+Por cuestiones de accesibilidad, cada imagen debe
+acompañarse siempre de un texto que será mostrado en el caso de que,
+por cualquier motivo, la imagen no esté disponible y que sirve
+también como descripción en aplicaciones lectoras para personas
+con discapacidad.
+</p>
+<p>
+El texto alternativo se inserta con el atributo <b>alt</b>. Así, un par
+de imágenes correctas quedarían de la siguiente manera:
+</p>
+<blockquote>
+	<p>
+	&lt;img src=&quot;recursos/calle.jpg&quot; alt=&quot;Una calle con
+	coches y tiendas&quot; /&gt;
+	</p>
+	<p>
+	&lt;img src=&quot;http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg&quot;
+	alt=&quot;Árbol con ramas&quot; /&gt;
+	</p>
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id79">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta79_21_2" class="block" style="display:block;position:relative">
+<p>
+Añadir texto alternativo a cada imagen puede parecer tedioso,
+pero es también muy necesario para que nuestras páginas sean
+accesibles a todo el mundo.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id80">
+<div class="iDevice emphasis0">
+<div id="ta80_1" class="block" style="display:block;position:relative">
+<h2>Modificar las dimensiones de la imagen</h2>
+<p>
+HTML incorpora dos atributos más a la etiqueta <b>img</b>: <b>width
+</b>(ancho) y <b>height </b>(alto); con ellos podemos indicar explícitamente la
+anchura y altura que tendrá una imagen. 
+</p>
+<p>
+Normalmente estos valores se emplean para establecer los valores
+reales de la imagen, lo que facilita el proceso de carga de la
+página, pero también se pueden emplear para que una imagen se
+muestre más pequeña, más grande o símplemente distorsionada en
+alguno de sus ejes.
+</p>
+<p>
+Ambos atributos se acompañan de un valor entre comillas. Puede
+venir expresado en dos medidas diferentes:
+</p>
+<ul>
+	<li>
+	<b>Píxeles</b>: si el valor indicado no lleva ningún tipo o las letras
+	<b>px</b>, estamos indicando que la medida es en píxeles. Por ejemplo &lt;img src=&quot;foto.jpg&quot; width=&quot;40px&quot; /&gt; o &lt;img src=&quot;foto.jpg&quot; width=&quot;40&quot; /&gt;
+	</li>
+	<li>
+	<b>Porcentaje</b>: el tamaño puede estar expresado en relación con su
+	valor original, como un porcentaje. Lo indicamos con el signo <b>%</b>. Por
+	ejemplo en &lt;img src=&quot;foto.jpg&quot; width=&quot;50%&quot; /&gt; la imagen tendría la mitad de su tamaño original.
+	</li>
+</ul>
+<p>
+Siguiendo con el ejemplo anterior, nuestra primera imagen completa
+con su dimensión real quedaría así:
+</p>
+<blockquote>
+	<p>
+	&lt;img alt=&quot;Calle con coches y tiendas&quot; src=&quot;recursos/calle.jpg&quot; width=&quot;483px&quot;
+	height=&quot;387px&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+La figura nos muestra el resultado que obtenemos, si modificamos
+sólo uno de los valores:
+</p>
+<blockquote>
+	<p>
+	&lt;img alt=&quot;Calle con coches y tiendas&quot; src=&quot;recursos/calle.jpg&quot; width=&quot;483px&quot;
+	height=&quot;150px&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig0502.jpg" height="426" width="600" />
+</p>
+<p>
+La modificación de un valor, mientras mantenemos el otro igual,
+produce ese tipo de deformaciones. Para evitarlo, intentaremos
+mantener la proporción o, lo que es más sencillo, indicar sólo la
+anchura o la altura y así el navegador se encargará de calcular el
+valor que no especificamos. Observa la diferencia con este otro
+ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;img alt=&quot;Calle con coches y tiendas&quot; src=&quot;recursos/calle.jpg&quot; height=&quot;150px&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig0503.jpg" height="426" width="600" />
+</p>
+<p>
+El navegador ha calculado la anchura necesaria para mostrar la
+imagen con esa altura. Como decíamos, también podemos hacer la
+operación con porcentajes. Veamos cómo se muestra la imagen si la
+ampliamos un 300 %:
+</p>
+<blockquote>
+	<p>
+	&lt;img alt=&quot;Calle con coches y tiendas&quot; src=&quot;recursos/calle.jpg&quot; width=&quot;300%&quot;
+	height=&quot;300%&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig0504.jpg" height="426" width="600" />
+</p>
+<p>
+Se ve lo suficientemente grande como para que no quepa entera en
+la pantalla y, además, nos deja con el otro gran problema de manipular
+las dimensiones con este método: la presentación de la imagen se
+deja en manos del navegador, que no siempre hace un trabajo tan bueno
+como el que podríamos obtener con un programa de retoque
+fotográfico. Por ello, siempre que sea posible, evitaremos ajustar
+las dimensiones de una imagen utilizando <b>width </b>y <b>height</b>,
+especialmente si hay grandes diferencias entre el tamaño de la
+imagen y el espacio que va a ocupar.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id81">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta81_23_2" class="block" style="display:block;position:relative">
+<p>
+El problema del tamaño también es importante. Con <b>width </b>y <b>height
+</b>podemos tomar una fotografía de 3000 píxeles de ancho y ajustarla
+en un espacio de 80 píxeles, por ejemplo. El inconveniente es que
+esa imagen ocupa el mismo tamaño si la mostramos con 3000 que con
+80, por lo que, al enviarse al navegador de nuestros visitantes,
+tardará bastante más tiempo en transferirse del que debería.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="MultichoiceIdevice" id="id116">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion116_2" class="block" style="display:block;position:relative">Teniendo en cuenta que la etiqueta para insertar imágenes en HTML no tiene cierre, ¿qué debemos escribir en código HTML para insertar una imagen?
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option116_2" id="i116_5" onclick="getFeedback(0,3,'116_2','multi')"/></td><td>
+<div id="taans116_5" class="block" style="display:block;position:relative">&lt;img src=&quot;nombredelaimagen.png&quot; /&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option116_2" id="i116_414" onclick="getFeedback(1,3,'116_2','multi')"/></td><td>
+<div id="taans116_414" class="block" style="display:block;position:relative">&lt;img src=&quot;nombredelaimagen.png&quot;.
+</div></td></tr>
+<tr><td><input type="radio" name="option116_2" id="i116_417" onclick="getFeedback(2,3,'116_2','multi')"/></td><td>
+<div id="taans116_417" class="block" style="display:block;position:relative">&lt;img src/&gt;=&quot;nombredelaimagen.png&quot;. 
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b116_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa1b116_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b116_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="TrueFalseIdevice" id="id117">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta117_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b117" class="block" style="display:block;position:relative">Para cambiar el tamaño con el que se muestra una imagen  en un documento HTML es suficiente con cambiar los valores escritos entre los códigos width= y height=
+</div><br/>Verdadero <input type="radio" name="option0b117" id="true0b117" onclick="getFeedback(0,2,'0b117','truefalse')"/> 
+Falso <input type="radio" name="option0b117" id="false0b117" onclick="getFeedback(1,2,'0b117','truefalse')"/>
+<div id="s0b0b117" style="color: rgb(0, 51, 204);display: none;" even_steven="122">¡Correcto! </div>
+<div id="s1b0b117" style="color: rgb(0, 51, 204);display: none;" even_steven="123">¡Incorrecto! </div>
+<div id="sfbk0b117" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b117" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="imgenes_conceptos_bsicos.html">&laquo; Anterior</a> | <a href="editar_una_imagen.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

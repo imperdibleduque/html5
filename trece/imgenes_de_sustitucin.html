@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Imágenes de sustitución | Técnicas avanzadas </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Imágenes de sustitución</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas avanzadas</a><ul>
+<li><a href="recurso_tic_tcnicas_avanzadas.html" class="daddy">Recurso TIC: Técnicas avanzadas</a><ul>
+<li><a href="enlaces_internos.html" class="no-ch">Enlaces internos</a></li>
+<li id="active"><a href="imgenes_de_sustitucin.html" class="active no-ch">Imágenes de sustitución</a></li>
+<li><a href="mapas_sensibles.html" class="no-ch">Mapas sensibles</a></li>
+<li><a href="canvas.html" class="no-ch">Canvas</a></li>
+<li><a href="crear_imgenes_svg.html" class="no-ch">Crear imágenes SVG</a></li>
+<li><a href="aadir_un_icono_a_nuestra_web.html" class="no-ch">Añadir un icono a nuestra web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id129">
+<div class="iDevice emphasis0">
+<div id="ta129_1" class="block" style="display:block;position:relative">
+<p>
+Ésta es otra técnica muy empleada, que
+consiste en presentar una imagen determinada en una página web y en
+reemplazarla por otra diferente, al pasar el puntero del ratón sobre
+ella. Se puede utilizar para destacar elementos, para revelar
+recursos ocultos, etc.
+</p>
+<p>
+Su uso nos ayuda a profundizar en algunos
+conceptos que ya hemos comentado, como la gestión de eventos.
+</p>
+<p>
+Veamos su funcionamiento mediante un
+ejemplo. La figura nos muestra seis imágenes que vamos a emplear
+para este efecto. Tres de ellas están ligeramente difuminadas,
+mientras que las otras tienen todo su color.
+</p>
+<p>
+<img src="fig1502.jpg" border="1" height="48" width="185" />
+</p>
+<p>
+Vamos a dejar en una página las tres
+difuminadas y hacer que, cuando el usuario pase el ratón sobre ellas,
+parezca que se resalten, reemplazando las primeras por las segundas.
+</p>
+<p>
+Ésta es la página de partida:
+</p>
+<p>
+<img src="fig1503.jpg" height="443" width="529" />
+</p>
+<p>
+Y éste es el código incluido en el <b>body:</b>
+</p>
+<blockquote>
+	<p>
+	&lt;body&gt;
+	</p>
+	<blockquote>
+		&lt;h1&gt;Operaciones
+		b&amp;aacute;sicas&lt;/h1&gt;<br />
+		&lt;p&gt;<br />
+		&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;resources/Internet-mail-off.png&quot; /&gt;<br />
+		&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;resources/Internet-web-browser-off.png&quot; /&gt;<br />
+		&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;resources/Internet-news-reader-off.png&quot; /&gt;<br />
+		&lt;/p&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/body&gt;
+	</p>
+</blockquote>
+<p>
+Todo es conocido y sencillo para nosotros.
+Las imágenes están guardadas en una carpeta llamada <b>resources </b>y en
+su nombre hemos añadido un <b>-off </b>para diferenciarlas de las que se
+ven con todos los colores.
+</p>
+<p>
+Como sabemos, podemos añadir eventos a
+cualquier etiqueta HTML. En este caso, para poder saber si el ratón
+pasa por encima, tenemos el evento <b>onmouseover</b>, así como <b>onmouseout
+</b>para saber cuándo deja de estar encima. Por tanto, debemos añadir a
+cada imagen esos dos eventos:
+</p>
+<p>
+Las tres líneas de las imágenes quedarían
+así:
+</p>
+<blockquote>
+	<p>
+	&lt;img alt=&quot;&quot; src=&quot;resources/Internet-mail-off.png&quot; onmouseover=&quot;this.src
+	= 'resources/Internet-mail.png'&quot; onmouseout=&quot;this.src =
+	'resources/Internet-mail-off.png'&quot; /&gt;<br />
+	&lt;img alt=&quot;&quot; src=&quot;resources/Internet-web-browser-off.png&quot;
+	onmouseover=&quot;this.src = 'resources/Internet-web-browser.png'&quot;
+	onmouseout=&quot;this.src = 'resources/Internet-web-browser-off.png'&quot;
+	/&gt;<br />
+	&lt;img alt=&quot;&quot; src=&quot;resources/Internet-news-reader-off.png&quot;
+	onmouseover=&quot;this.src = 'resources/Internet-news-reader.png'&quot;
+	onmouseout=&quot;this.src = 'resources/Internet-news-reader-off.png'&quot;
+	/&gt;
+	</p>
+</blockquote>
+<p>
+Son largas, pero muy sencillas de entender:
+con ese <b>this.src</b> le estamos indicando al navegador que, al pasar el
+ratón por encima o abandonarlo (según el evento), debemos sustituir
+el valor <b>src </b>de ese elemento por la imagen que se indica.
+</p>
+<p>
+<b>this </b>(traducido al español sería &quot;éste&quot;)
+es un elemento del lenguaje <i>JavaScript </i>que nos sirve para indicar el
+elemento en el que nos encontramos. 
+</p>
+<p>
+Si probamos de nuevo el ejemplo, veremos que
+cada icono se destaca al pasar el ratón por encima. La siguiente
+figura muestra ese momento.
+</p>
+<p>
+<img src="fig1504.jpg" height="443" width="529" />
+</p>
+<p>
+Hay otras muchas técnicas para hacer esta
+sustitución, aunque ésta es una de las más rápidas y sencillas.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id192">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta192_16" class="block" style="display:block;position:relative">La siguiente afirmación es, ¿verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b192" class="block" style="display:block;position:relative">Con el código <b>this.src</b> estamos indicando al navegador que, al pasar el
+ratón por encima o abandonarlo, debemos sustituir
+el valor <b>src </b>de ese elemento por un archivo en pdf que se indica.
+</div><br/>Verdadero <input type="radio" name="option0b192" id="true0b192" onclick="getFeedback(0,2,'0b192','truefalse')"/> 
+Falso <input type="radio" name="option0b192" id="false0b192" onclick="getFeedback(1,2,'0b192','truefalse')"/>
+<div id="s0b0b192" style="color: rgb(0, 51, 204);display: none;" even_steven="199">¡Incorrecto! </div>
+<div id="s1b0b192" style="color: rgb(0, 51, 204);display: none;" even_steven="198">¡Correcto! </div>
+<div id="sfbk0b192" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b192" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id169">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta169_26_2" class="block" style="display:block;position:relative">
+<p>
+Tomaremos dos fotografías y colocaremos una
+en la parte central de la página. Debemos conseguir que, cuando el
+usuario haga clic sobre ella, se reemplace por la segunda. El evento
+que se emplea para esto se llama <b>onclick</b>.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="enlaces_internos.html">&laquo; Anterior</a> | <a href="mapas_sensibles.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

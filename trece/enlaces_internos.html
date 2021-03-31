@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Enlaces internos | Técnicas avanzadas </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Enlaces internos</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas avanzadas</a><ul>
+<li><a href="recurso_tic_tcnicas_avanzadas.html" class="daddy">Recurso TIC: Técnicas avanzadas</a><ul>
+<li id="active"><a href="enlaces_internos.html" class="active no-ch">Enlaces internos</a></li>
+<li><a href="imgenes_de_sustitucin.html" class="no-ch">Imágenes de sustitución</a></li>
+<li><a href="mapas_sensibles.html" class="no-ch">Mapas sensibles</a></li>
+<li><a href="canvas.html" class="no-ch">Canvas</a></li>
+<li><a href="crear_imgenes_svg.html" class="no-ch">Crear imágenes SVG</a></li>
+<li><a href="aadir_un_icono_a_nuestra_web.html" class="no-ch">Añadir un icono a nuestra web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block" style="display:block;position:relative">
+<p>
+La creación de enlaces internos dentro de
+una página web nos permite realizar saltos, dentro de una misma
+página, a diferentes lugares de la misma. Es una técnica
+imprescindible si creamos páginas muy largas y simplemente
+innecesaria para páginas cortas. En todo caso es necesario
+conocerla.
+</p>
+<p>
+Hay un ejemplo muy popular de enlaces
+internos, que es el uso que hace de ellos la archiconocida web <a href="http://www.wikipedia.es/" target="_blank">http://www.wikipedia.es</a>. Cada
+artículo de esta enciclopedia <i>online</i> suele comenzar con un pequeño
+índice de secciones, que nos sirve para saltar a diferentes partes
+del documento que estamos leyendo. Además, al final de cada sección
+encontramos un enlace para regresar de nuevo al principio.
+</p>
+<h2>Posiciones enlazables</h2>
+<p>
+En primer lugar, antes de poder saltar a un
+punto específico de una página, necesitamos definir qué puntos
+serán susceptibles de esos saltos. Para ello emplearemos la etiqueta
+<b>&lt;a&gt;</b>, pero seguida del parámetro <b>name</b>, así:
+</p>
+<blockquote>
+	<p>
+	&lt;a name=&quot;capitulo3&quot;&gt;&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+En la etiqueta podemos colocar algún otro
+elemento HTML, por ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;a name=&quot;capitulo3&quot;&gt;&lt;h2&gt;Capítulo
+	3&lt;/h2&gt;&lt;/a&gt; 
+	</p>
+</blockquote>
+<p>
+o de la siguiente manera:
+</p>
+<blockquote>
+	<p>
+	&lt;h2&gt;Capítulo 3&lt;a
+	name=&quot;capitulo3&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+	</p>
+</blockquote>
+<p>
+Las dos son válidas. 
+</p>
+<p>
+En un editor web como <i>BlueGriffon </i>este tipo
+de elementos se insertan mediante el icono en forma de ancla (la
+etiqueta <b>a</b> viene de <i>anchor</i>, &quot;ancla&quot; en inglés). La figura muestra una
+etiqueta <b>&lt;a name&gt;</b> insertada en el editor.
+</p>
+<p>
+<img src="fig1501.jpg" border="1" height="389" width="440" />
+</p>
+<h2>Salto a enlaces internos</h2>
+<p>
+Ahora necesitamos saber cómo podremos
+acceder a esos enlaces internos. Es similar a cualquier referencia de
+las que hemos hecho hasta ahora, pero añadiendo el nombre del enlace
+interno precedido del signo <b>#</b>. Por ejemplo, para acceder a uno de
+estos enlaces desde la misma página, añadiríamos algo así:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=&quot;#capitulo3&quot;&gt;Saltar
+	al capítulo 3&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+o desde una página diferente, añadiríamos
+primero el nombre de la página:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=&quot;organizacion.html#equipo&quot;&gt;Consultar el equipo&lt;/a&gt;
+	</p>
+</blockquote>
+<h2>Saltos a la parte superior</h2>
+<p>
+Es muy habitual añadir en páginas largas
+un enlace similar a éste: 
+</p>
+<blockquote>
+	<p>
+	&lt;a name=&quot;inicio&quot;&gt; 
+	</p>
+</blockquote>
+<p>
+y a lo
+largo del documento añadir alguna etiqueta de este tipo: 
+</p>
+<blockquote>
+	<p>
+	&lt;a href=&quot;#inicio&quot;&gt;Regresar a la parte superior&lt;/a&gt;.
+	</p>
+</blockquote>
+<p>
+Así el usuario tiene un método rápido para subir hasta la parte de
+arriba de la página.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id191">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta191_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b191" class="block" style="display:block;position:relative">Para poder saltar a un punto específico de una página, necesitamos definir qué puntos serán susceptibles de esos saltos, para ello emplearemos la etiqueta <b>&lt;a&gt;</b>, pero seguida del parámetro <i>name</i>.
+</div><br/>Verdadero <input type="radio" name="option0b191" id="true0b191" onclick="getFeedback(0,2,'0b191','truefalse')"/> 
+Falso <input type="radio" name="option0b191" id="false0b191" onclick="getFeedback(1,2,'0b191','truefalse')"/>
+<div id="s0b0b191" style="color: rgb(0, 51, 204);display: none;" even_steven="196">¡Correcto! </div>
+<div id="s1b0b191" style="color: rgb(0, 51, 204);display: none;" even_steven="197">¡Incorrecto! </div>
+<div id="sfbk0b191" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b191" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id133">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta133_21_2" class="block" style="display:block;position:relative">
+<p>
+En un documento largo crearemos un par de
+enlaces a lo largo del documento, para regresar a su parte superior. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_tcnicas_avanzadas.html">&laquo; Anterior</a> | <a href="imgenes_de_sustitucin.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Canvas | Técnicas avanzadas </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Canvas</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas avanzadas</a><ul>
+<li><a href="recurso_tic_tcnicas_avanzadas.html" class="daddy">Recurso TIC: Técnicas avanzadas</a><ul>
+<li><a href="enlaces_internos.html" class="no-ch">Enlaces internos</a></li>
+<li><a href="imgenes_de_sustitucin.html" class="no-ch">Imágenes de sustitución</a></li>
+<li><a href="mapas_sensibles.html" class="no-ch">Mapas sensibles</a></li>
+<li id="active"><a href="canvas.html" class="active no-ch">Canvas</a></li>
+<li><a href="crear_imgenes_svg.html" class="no-ch">Crear imágenes SVG</a></li>
+<li><a href="aadir_un_icono_a_nuestra_web.html" class="no-ch">Añadir un icono a nuestra web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id130">
+<div class="iDevice emphasis0">
+<div id="ta130_1" class="block" style="display:block;position:relative">
+<p>
+HTML5 incorpora un interesante recurso denominado<b> &lt;canvas&gt;</b>. Esta etiqueta genera un espacio en la página web en el que se puede
+dibujar, empleando instrucciones creadas con <i>JavaScript</i>.
+</p>
+<p>
+El <b>lienzo</b> (<i>canvas </i>en inglés) se define así:
+</p>
+<blockquote>
+	<p>
+	&lt;canvas id=&quot;canvas01&quot; width=&quot;400&quot;
+	height=&quot;300&quot;&gt;&lt;/canvas&gt;
+	</p>
+</blockquote>
+<p>
+Con el sistema habitual de dimensiones especificaremos su tamaño.
+Al probar esa página web,  veremos una gran mancha transparente, es
+decir, nada de nada.
+</p>
+<p>
+Aquí cobra importancia el identificador, porque es la parte que
+nos va a permitir hacer referencia a ese <b>&lt;canvas&gt;</b> concreto desde
+<i>JavaScript</i>, de la siguiente manera:
+</p>
+<blockquote>
+	<p>
+	var milienzo = documentgetElementByID(&quot;canvas01&quot;);
+	</p>
+</blockquote>
+<p>
+Esta instrucción en <i>JavaScript </i>averigua qué elemento de todos
+los presentes en el <i>DOM </i>(el modelo de objetos del documento) se
+corresponde con el identificador <i>canvas01 </i>y guarda la referencia en
+la variable <i>milienzo</i>. Éstos son detalles de programación en
+<i>JavaScript </i>que se repiten siempre de la misma manera y que nos
+permitirán operar con ese valor, con <i>milienzo</i>. Ahora vendría una
+línea como ésta:
+</p>
+<blockquote>
+	<p>
+	var micontexto = milienzo.getContext(&quot;2d&quot;);
+	</p>
+</blockquote>
+<p>
+que de nuevo es una línea que se repite siempre igual, cada vez
+que queramos manipular un lienzo. Define un espacio de dibujo en dos
+dimensiones, en previsión de que en un futuro (ahora no) podamos
+realizar dibujos en 3D dentro del navegador.
+</p>
+<h2>A dibujar</h2>
+<p>
+Tenemos por tanto una pequeña función que va a comenzar siempre
+con las dos líneas anteriores; así:
+</p>
+<blockquote>
+	<p>
+	function dibujar( ) {
+	</p>
+	<blockquote>
+		var milienzo = document.getElementById(&quot;canvas01&quot;);<br />
+		var micontexto = milienzo.getContext(&quot;2d&quot;);<br />
+	</blockquote>
+	<p>
+	}
+	</p>
+</blockquote>
+<p>
+A la que sólo falta que le incorporemos
+algo visual. Tenemos varias funciones a nuestra disposición. Por
+ejemplo, el método <b>fillRect </b>permite dibujar un rectángulo que va de
+una posición inicial (x1,y1) seguido de un ancho y un alto. Teniendo
+en cuenta que la esquina superior izquierda del lienzo es la posición
+0,0, es fácil deducir que nuestro lienzo concreto acaba en la
+posición 400,300. Probaremos a realizar un rectángulo que vaya casi
+rodeando el lienzo:
+</p>
+<blockquote>
+	<p>
+	micontexto.fillRect(5,5,390,290);
+	</p>
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id146">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta146_34_2" class="block" style="display:block;position:relative">
+<p>
+Ojo con las mayúsculas. En <i>JavaScript </i>no es
+lo mismo escribir <b>fillrect </b>que <b>fillRect</b>. La primera no funcionará.
+Sí. Así de difícil les gusta hacer las cosas a los creadores de
+los lenguajes de programación.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id147">
+<div class="iDevice emphasis0">
+<div id="ta147_1" class="block" style="display:block;position:relative">
+<p>
+El resultado del ejemplo anterior se muestra
+en la figura:
+</p>
+<p>
+<img src="fig1506.jpg" height="542" width="595" />
+</p>
+<p>
+Para llegar a ese punto, debemos poner cada
+cosa en su sitio. Veamos el código de la página completo:
+</p>
+<blockquote>
+	<p>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt;<br />
+	&lt;head&gt;<br />
+	&lt;meta content=&quot;text/html;
+	charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;&gt;<br />
+	&lt;title&gt;Dibujando !!&lt;/title&gt;<br />
+	&lt;script type=&quot;text/JavaScript&quot;&gt;
+	</p>
+	<blockquote>
+		function dibujar() {<br />
+		var milienzo =
+		document.getElementById(&quot;canvas01&quot;);<br />
+		var micontexto = milienzo.getContext(&quot;2d&quot;);<br />
+		micontexto.fillRect(5,5,390,290);<br />
+		}<br />
+	</blockquote>
+	<p>
+	&lt;/script&gt;<br />
+	&lt;/head&gt;<br />
+	<br />
+	&lt;body onload=&quot;JavaScript:dibujar();&quot;&gt;
+	</p>
+	<blockquote>
+		&lt;h1&gt;Pintando en el lienzo&lt;/h1&gt;<br />
+		&lt;canvas id=&quot;canvas01&quot;
+		width=&quot;400&quot; height=&quot;300&quot;&gt;&lt;/canvas&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/body&gt;<br />
+	&lt;/html&gt;
+	</p>
+</blockquote>
+<p>
+Sólo hemos retirado del ejemplo algunos
+estilos; lo demás está todo ahí. Nos interesa prestar atención a
+dos partes:
+</p>
+<ul>
+	<li>Por un lado está la función completa,
+	llamada <b>dibujar</b>, que hemos definido en la cabecera de la página con
+	el método estándar, usando la etiqueta <b>&lt;script&gt;
+	</b>
+	</li>
+	<li>Por otro lado, para que la función se
+	ejecute al cargar la página, hemos establecido una llamada en la
+	etiqueta <b>&lt;body&gt;</b>, para cuando se produzca el evento <b>onload</b>, al cargar.
+	</li>
+</ul>
+<p>
+En la función ya sólo necesitaremos ir
+añadiendo nuevas líneas debajo de <b>fillRect, </b>para modificar el dibujo
+y realizar más operaciones.
+</p>
+<h2>Más opciones de dibujo</h2>
+<ul>
+	<li><b>fillStyle</b>: establece el formato del
+	relleno de la figura, indicado como un color, un diseño o incluso
+	un degradado de color.
+	</li>
+	<li><b>strokeRect (x,y,ancho,alto)</b> dibuja un
+	rectángulo vacío; sólo su contorno.
+	</li>
+	<li><b>strokeStyle</b>: establece el formato de
+	línea del elemento anterior.
+	</li>
+	<li><b>clearRect (x,y,ancho, alto)</b>: borra los
+	píxeles de las dimensiones indicadas.
+	</li>
+</ul>
+<p>
+El dibujo, por tanto, es muy diferente si
+cambiamos el <b>fill </b>por un <b>stroke</b>;<b> </b>probamos esta secuencia:
+</p>
+<blockquote>
+	<p>
+	function dibujar() {
+	</p>
+	<blockquote>
+		var milienzo =
+		document.getElementById(&quot;canvas01&quot;);<br />
+		var micontexto = milienzo.getContext(&quot;2d&quot;);<br />
+		micontexto.strokeStyle=&quot;#3333ff&quot;;<br />
+		micontexto.strokeRect(5,5,390,290);<br />
+	</blockquote>
+	<p>
+	}
+	</p>
+</blockquote>
+<p>
+<img src="fig1507.jpg" height="542" width="595" />
+</p>
+<p>
+Tanto <b>fillStyle </b>como <b>strokeStyle </b>son lo que
+se conoce como <b>propiedades</b>, es decir, que internamente no son
+funciones y por tanto su valor no se le indica mediante paréntesis,
+sino que se le asigna un valor mediante el signo igual. Todo esto se
+debe a que <i>JavaScript </i>es un lenguaje orientado a objetos; <i>micontexto
+</i>es un objeto que tiene algunas funciones (llamadas <i>métodos</i>) que
+realizan operaciones y también <i>propiedades</i>, es decir,
+características que podemos modificar asignándole algún valor.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id174">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta174_31_2" class="block" style="display:block;position:relative">
+<p>
+La propiedad de <b>relleno</b> se debe establecer
+antes de realizar el dibujo, para que así el dibujo aparezca con el
+color indicado. Así podemos definir distintos objetos con colores
+variados.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id176">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 4</h2>
+<div class="iDevice_inner">
+<div id="ta176_33_2" class="block" style="display:block;position:relative">
+<p>
+Probaremos a realizar mezclas con varios
+rectángulos rellenos y sin rellenar con diferentes colores. Podemos
+añadir tantas líneas como sea necesario a la función.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id177">
+<div class="iDevice emphasis0">
+<div id="ta177_1" class="block" style="display:block;position:relative">
+<p>
+Como se puede observar, se abren un montón
+de posibilidades. El límite lo impondrá nuestro conocimiento de
+<i>JavaScript</i>. Cuanto más profundicemos en este lenguaje, más se
+abrirá nuestro horizonte. Observemos este otro pequeño código:
+</p>
+<blockquote>
+	<p>
+	function dibujar() {
+	</p>
+	<blockquote>
+		var milienzo =
+		document.getElementById(&quot;canvas01&quot;);<br />
+		var micontexto = milienzo.getContext(&quot;2d&quot;);<br />
+		var i=0;<br />
+		var x=5;<br />
+		var y=5;<br />
+		var ancho = 390;<br />
+		var alto = 290;<br />
+		<br />
+		for (i=0;i&lt;=25;i++) {<br />
+		<blockquote>
+			micontexto.strokeStyle=&quot;#&quot;+Math.floor(Math.random()*16777215).toString(16);<br />
+			micontexto.strokeRect(x,y,ancho,alto);<br />
+			x=x+5;<br />
+			y=y+5;<br />
+			ancho=ancho-10;<br />
+			alto=alto-10;<br />
+		</blockquote>
+		}<br />
+	</blockquote>
+	<p>
+	}<br />
+	&lt;/script&gt;
+	</p>
+</blockquote>
+<p>
+Es una variación de nuestra función;
+podemos copiarla y pegarla. En ella se emplean una serie de técnicas
+imprescindibles:
+</p>
+<ul>
+	<li>
+	Usamos variables para almacenar valores que
+	van a cambiar a lo largo de la función, como <b>x</b>, <b>y</b>, etc. Luego
+	variamos su valor con lineas como <b>x=x+5;
+	</b></li>
+	<li>
+	Usamos una estructura de repetición <b>for</b>,
+	que hará que el bloque de su interior se repita tantas veces como
+	indiquemos; en este caso 25 veces.
+	</li>
+	<li>
+	Empleamos el objeto <b>Math</b>, que nos aporta un
+	montón de funciones matemáticas, como <b>floor </b>para obtener un número
+	entero o <b>random</b>, para un número aleatorio. Con todo ello empleamos
+	una pequeña fórmula para generar colores aleatorios.
+	</li>
+</ul>
+<p>
+El resultado sería éste:
+</p>
+<p>
+<img src="fig1508.jpg" height="542" width="595" />
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id180">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 5</h2>
+<div class="iDevice_inner">
+<div id="ta180_37_2" class="block" style="display:block;position:relative">
+<p>
+Realizaremos algunas modificaciones a la
+función anterior, cambiando números y variando valores.
+Observaremos el resultado de cada cambio, intentando sacar
+conclusiones. Sobre todo no nos desesperaremos si algo sale mal.
+Podemos comenzar de nuevo copiando y pegando la función.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id182">
+<div class="iDevice emphasis0">
+<div id="ta182_1" class="block" style="display:block;position:relative">
+<h2>Todavía más opciones de dibujo</h2>
+<p>
+El trabajo con la etiqueta <b>&lt;canvas&gt;</b> es
+muy extenso, pero no podemos dejar de citar algunas de las
+propiedades y métodos que podemos emplear mediante JavaScript:
+</p>
+<ul>
+	<li>
+	<b>moveTo (x,y)</b>: imaginemos que el canvas tiene
+	una especie de puntero interior. Con moveto lo desplazaremos a una
+	posición determinada. Es como desplazar un lapiz hasta un punto.
+	</li>
+	<li>
+	<b>lineTo (x,y)</b>: teniendo ese lapiz en una
+	posición concreta, con <b>lineTo </b>lo desplazaremos a otro punto, pero
+	dejando dibujando una línea por el camino.
+	</li>
+</ul>
+<p>
+Estos dos métodos trazan una figura
+invisible. Hasta que no definamos un color de trazo con <b>strokeStyle </b>y
+lo apliquemos no se verá nada. Para aplicarlo recurriremos al
+siguiente método:
+</p>
+<ul>
+	<li>
+	<b>stroke()</b>: traza la figura diseñada con las
+	herramientas <b>moveTo </b>y <b>lineTo</b>.
+	</li>
+</ul>
+<h2>Texto en el canvas</h2>
+<p>
+También podemos añadir texto a un
+&lt;canvas&gt;. Emplearemos las siguientes funciones:
+</p>
+<ul>
+	<li><b>font</b>: usando las reglas CSS que ya
+	conocemos definiremos la apariencia del texto.
+	</li>
+	<li><b>textAlign </b>y <b>textBaseline </b>se emplean
+	para definir alineación (izquierda, derecha, etc) y punto de inicio
+	del texto. Probablemente no empleemos estas propiedades en los
+	primeros compases de trabajo con texto.
+	</li>
+	<li><b>fillText (texto, x, y)</b>: como parámetros
+	indicaremos el mensaje a mostrar y la posición inicial del texto.
+	</li>
+</ul>
+<p>
+La figura siguiente muestra un ejemplo
+sencillo.
+</p>
+<p>
+<img src="fig1509.jpg" height="542" width="595" />
+</p>
+<p>
+Se obtiene añadiendo estas tres líneas al
+ejemplo anterior:
+</p>
+<blockquote>
+	<p>
+	micontexto.textAlign=&quot;center&quot;;<br />
+	micontexto.font=&quot;20px arial&quot;;<br />
+	micontexto.fillText(&quot;Cuadrados&quot;,200,155);
+	</p>
+</blockquote>
+<p>
+Aún nos quedamos más cosas en el tintero,
+que no trataremos para no alargarnos demasiado. Con un <b>&lt;canvas&gt;</b>
+podemos realizar círculos (<b>arc</b>),  degradados de color
+(<b>createLinearGradient</b>) e insertar imágenes en su interior
+(<b>drawImage</b>).
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id194">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion194_2" class="block" style="display:block;position:relative">Para que aparezca la función dibujar es necesario intruducir:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option194_2" id="i194_5" onclick="getFeedback(0,3,'194_2','multi')"/></td><td>
+<div id="taans194_5" class="block" style="display:block;position:relative"><i>function dibujar( ) {<br />
+<br />
+var milienzo = document.getElementById(&quot;canvas01&quot;);<br />
+var micontexto = milienzo.getContext(&quot;2d&quot;);<br />
+<br />
+}
+</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option194_2" id="i194_419" onclick="getFeedback(1,3,'194_2','multi')"/></td><td>
+<div id="taans194_419" class="block" style="display:block;position:relative"><i>var milienzo = document.getElementById(&quot;canvas01&quot;);<br />
+var micontexto = milienzo.getContext(&quot;2d&quot;);
+</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option194_2" id="i194_422" onclick="getFeedback(2,3,'194_2','multi')"/></td><td>
+<div id="taans194_422" class="block" style="display:block;position:relative"><i>Function dibujar.</i>
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b194_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa1b194_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b194_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id183">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 6</h2>
+<div class="iDevice_inner">
+<div id="ta183_22_2" class="block" style="display:block;position:relative">
+<p>
+Intentaremos realizar una imagen con las
+diferentes herramientas aprendidas. Es muy importante prestar mucha
+atención a cómo escribimos las partes de <i>JavaScript</i>. El más mínimo
+error hará que deje de funcionar el script completamente.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="mapas_sensibles.html">&laquo; Anterior</a> | <a href="crear_imgenes_svg.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

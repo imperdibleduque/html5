@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Mapas sensibles | Técnicas avanzadas </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Mapas sensibles</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Técnicas avanzadas</a><ul>
+<li><a href="recurso_tic_tcnicas_avanzadas.html" class="daddy">Recurso TIC: Técnicas avanzadas</a><ul>
+<li><a href="enlaces_internos.html" class="no-ch">Enlaces internos</a></li>
+<li><a href="imgenes_de_sustitucin.html" class="no-ch">Imágenes de sustitución</a></li>
+<li id="active"><a href="mapas_sensibles.html" class="active no-ch">Mapas sensibles</a></li>
+<li><a href="canvas.html" class="no-ch">Canvas</a></li>
+<li><a href="crear_imgenes_svg.html" class="no-ch">Crear imágenes SVG</a></li>
+<li><a href="aadir_un_icono_a_nuestra_web.html" class="no-ch">Añadir un icono a nuestra web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id84">
+<div class="iDevice emphasis0">
+<div id="ta84_1" class="block" style="display:block;position:relative">
+<p>
+Con HTML podemos utilizar una única imagen
+y definir zonas en su interior de tal modo que, cuando el usuario pase
+el ratón sobre esas zonas, podamos enlazar con varios sitios. Se
+emplea mucho para crear mapas o grandes imágenes desde las que
+saltar a diferentes lugares.
+</p>
+<p>
+Su realización se basa en usar una imagen
+normal y corriente, pero añadiéndole el parámetro <b>usemap</b> seguido
+del nombre de un mapa. Por ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;img src=&quot;panoramicaparis&quot;
+	usemap=&quot;#paris&quot; /&gt; 
+	</p>
+</blockquote>
+<p>
+Esa imagen se acompañará de una serie de
+coordenadas, que se engloban con la etiqueta <b>&lt;map&gt;</b>. Observemos
+este mapa típico:
+</p>
+<blockquote>
+	<p>
+	&lt;map name=&quot;paris&quot;&gt;<br />
+	&lt;area
+	shape=&quot;rect&quot; coords=&quot;60,250,140,400&quot; alt=&quot;Torre
+	Eiffel&quot; href=&quot;http://es.wikipedia.org/wiki/Torre_Eiffel&quot;
+	/&gt;<br />
+	&lt;area shape=&quot;rect&quot;
+	coords=&quot;240,290,260,350&quot; alt=&quot;Arco de la Defénse&quot; href=&quot;http://es.wikipedia.org/wiki/Arco_de_la_Defensa&quot; /&gt;<br />
+	&lt;area shape=&quot;circle&quot;
+	coords=&quot;100,450,40&quot; alt=&quot;Campo de Marte&quot; href=&quot;http://es.wikipedia.org/wiki/Campo_de_Marte_%28Par%C3%ADs%29&quot;
+	/&gt;<br />
+	&lt;/map&gt; 
+	</p>
+</blockquote>
+<p>
+La etiqueta <b>&lt;area&gt;</b> se acompaña de
+varios parámetros:
+</p>
+<ul>
+	<li><b>shape </b>para indicar el tipo de área que
+	se va a definir. Usaremos <b>rect </b>para rectángulos (seguido de cuatro
+	coordenadas x1,y1,x2 e y2), <b>circle</b> para círculos (más x1,y1 y el
+	radio) o <b>poly </b>(seguido de una serie de coordenadas x1,y1,...xn,yn).
+	</li>
+	<li><b>coords </b>para indicar las coordenadas,
+	según el tipo de figura. </li>
+	<li><b>alt </b>para añadir un texto alternativo
+	que no se mostrará; sólo se introduce por motivos de
+	accesibilidad. </li>
+	<li><b>href </b>para establecer una dirección web
+	a la que accederemos al hacer clic sobre el área.</li>
+</ul>
+Si queremos que se muestre algún rótulo
+sobre el área, debemos añadir junto a <b>alt </b>un parámetro <b>title</b>, como
+hemos hecho en la figura.
+<p>
+<img src="fig1505.jpg" height="400" width="251" />
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id193">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion193_2" class="block" style="display:block;position:relative">La etiqueta <b>&lt;area&gt;</b> se acompaña de varios parámetros:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option193_2" id="i193_5" onclick="getFeedback(0,4,'193_2','multi')"/></td><td>
+<div id="taans193_5" class="block" style="display:block;position:relative"><i>shape</i>, <i>rect</i>, <i>circle</i> o <i>poly</i>.<br />
+</div></td></tr>
+<tr><td><input type="radio" name="option193_2" id="i193_410" onclick="getFeedback(1,4,'193_2','multi')"/></td><td>
+<div id="taans193_410" class="block" style="display:block;position:relative"><i>coords, alt</i> y<i> href</i>.<br />
+</div></td></tr>
+<tr><td><input type="radio" name="option193_2" id="i193_413" onclick="getFeedback(2,4,'193_2','multi')"/></td><td>
+<div id="taans193_413" class="block" style="display:block;position:relative">Ninguna de las anteriores es correcta.
+</div></td></tr>
+<tr><td><input type="radio" name="option193_2" id="i193_416" onclick="getFeedback(3,4,'193_2','multi')"/></td><td>
+<div id="taans193_416" class="block" style="display:block;position:relative">A y b son correctas.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b193_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b193_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b193_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b193_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id172">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta172_29_2" class="block" style="display:block;position:relative">
+<p>
+Para el cálculo de las coordenadas podemos
+emplear cualquier programa de dibujo, trazando las diferentes áreas
+y viendo qué valores<b> x</b> e<b> y</b> nos arrojan.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id173">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta173_30_2" class="block" style="display:block;position:relative">
+<p>
+Realizaremos un pequeño mapa basado en la
+imagen de un reloj y convertiremos algunas horas en enlaces a páginas
+de un calendario. Para redondear la actividad, podríamos hacer que
+todos los enlaces fuesen a diferentes secciones de un mismo
+documento, empleando los enlaces internos.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="imgenes_de_sustitucin.html">&laquo; Anterior</a> | <a href="canvas.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> La etiqueta div | Maquetación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">La etiqueta div</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Maquetación de una página web</a><ul>
+<li><a href="recurso_tic_maquetacin.html" class="daddy">Recurso TIC: Maquetación</a><ul>
+<li id="active"><a href="la_etiqueta_div.html" class="active no-ch">La etiqueta div</a></li>
+<li><a href="maquetacin_de_una_pgina_web.html" class="no-ch">Maquetación de una página web</a></li>
+<li><a href="divisin_en_columnas.html" class="no-ch">División en columnas</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id47">
+<div class="iDevice emphasis0">
+<div id="ta47_1" class="block" style="display:block;position:relative">La etiqueta <b>&lt;div&gt;</b> se emplea para definir un bloque de contenido o
+sección de la página, para poder aplicarle diferentes estilos e
+incluso para realizar operaciones sobre ese bloque específico.
+<p>
+El uso de la etiqueta <b>div</b> es sencillo. Observemos este ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;div&gt;<br />
+	&lt;h1&gt;Índice&lt;/h1&gt;<br />
+	Página principal&lt;br /&gt;<br />
+	Material multimedia&lt;br /&gt;<br />
+	Autores&lt;br /&gt;<br />
+	&lt;/div&gt;
+	</p>
+</blockquote>
+<p>
+Hemos empleado la etiqueta para crear un bloque, que hará las
+veces de índice de contenidos. Visualmente la etiqueta no provoca
+ningún cambio, pero en la estructura interna del documento hemos
+aplicado una división muy importante. La figura muestra el texto del
+ejemplo; no hay ninguna diferencia visible.
+</p>
+<p>
+<img src="fig0601.jpg" height="458" width="600" />
+</p>
+<p>
+Probemos ahora a aplicar una modificación a la apariencia de ese
+bloque, añadiendo un estilo de borde a la etiqueta <b>&lt;div&gt;</b>; quedaría
+así:
+</p>
+<blockquote>
+	<p>
+	&lt;div style=&quot;border: 2px solid rgb(204, 102, 204);&quot;&gt;<br />
+	&lt;h1&gt;Índice&lt;/h1&gt;<br />
+	Página principal&lt;br /&gt;<br />
+	Material multimedia&lt;br /&gt;<br />
+	Autores&lt;br /&gt;<br />
+	&lt;/div&gt;
+	</p>
+</blockquote>
+<p>
+Observemos de nuevo la figura; ahora sí que aparece un borde sólido
+de 2 píxeles alrededor de todo el espacio definido por la etiqueta
+<b>div</b>.
+</p>
+<p>
+<img src="fig0602.jpg" height="458" width="600" />
+</p>
+<p>
+Eso es todo lo que necesitamos saber: la etiqueta <b>&lt;div&gt;</b> configura
+espacios dentro de la página.
+</p>
+<h2>La etiqueta span</h2>
+<p>
+Después de un <b>&lt;/div&gt;</b> se comienza con una nueva línea. Esa
+es una de las diferencias principales con la otra etiqueta que
+empleamos para diferenciar contenidos, la etiqueta <b>&lt;span&gt;</b>. Con ella
+conseguimos un efecto similar, pero en el interior de un párrafo.
+Recordemos que span se emplea con frecuencia para aplicar estilos en
+el interior de un bloque de texto.
+</p>
+<h2>Diferenciando las etiquetas div y span</h2>
+<p>
+Adicionalmente, las etiquetas <b>div</b> y <b>span</b> se suelen acompañar de
+uno o dos parámetros destinados a identificar ese bloque:
+</p>
+<ul>
+	<li><b>id</b>: permite establecer un identificador único para el
+	bloque. Así podremos referirnos al bloque de forma inequívoca.</li>
+	<li><b>class</b>: es similar a <b>id</b>, pero con la ventaja de que se puede
+	repetir; así que podemos tener varios <b>&lt;div&gt;</b> diferentes con la misma
+	clase.</li>
+</ul>
+<p>
+Usando <b>id </b>y <b>class </b>podemos diferenciar unos <b>div</b> de otros y así
+aplicarles estilos CSS diferentes o hacer que actúen de forma
+distinta.
+</p>
+<p>
+Las etiquetas <b>id </b>y <b>class </b>se utilizan como se muestra en el
+ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;div id=&quot;indice&quot;&gt;<br />
+	&lt;br&gt;índice<br />
+	&lt;/div&gt;<br />
+	&lt;div class=&quot;destacado&quot;&gt;<br />
+	Este texto se destaca mediante un estilo.<br />
+	&lt;/div&gt;<br />
+	&lt;div id=&quot;articulo15&quot; class=&quot;articulos_estandar&quot;&gt;<br />
+	Texto de un artículo<br />
+	&lt;/div&gt;
+	</p>
+</blockquote>
+<p>
+Como se puede apreciar, las etiquetas <b>id </b>y <b>class </b>se pueden
+mezclar. Se mantiene siempre esa norma: los <b>id </b>son únicos dentro de
+una página, mientras que los <b>class </b>se suelen repetir para que varios
+elementos tomen un mismo estilo.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id116">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta116_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b116" class="block" style="display:block;position:relative">La etiqueta &lt;div&gt; configura espacios dentro de una página.
+</div><br/>Verdadero <input type="radio" name="option0b116" id="true0b116" onclick="getFeedback(0,2,'0b116','truefalse')"/> 
+Falso <input type="radio" name="option0b116" id="false0b116" onclick="getFeedback(1,2,'0b116','truefalse')"/>
+<div id="s0b0b116" style="color: rgb(0, 51, 204);display: none;" even_steven="122">¡Correcto! </div>
+<div id="s1b0b116" style="color: rgb(0, 51, 204);display: none;" even_steven="123">¡Incorrecto! </div>
+<div id="sfbk0b116" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b116" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b116" class="block" style="display:block;position:relative">La etiqueta &lt;div&gt; es un parámetro destinado a identificar un bloque dentro de una página.
+</div><br/>Verdadero <input type="radio" name="option1b116" id="true1b116" onclick="getFeedback(0,2,'1b116','truefalse')"/> 
+Falso <input type="radio" name="option1b116" id="false1b116" onclick="getFeedback(1,2,'1b116','truefalse')"/>
+<div id="s0b1b116" style="color: rgb(0, 51, 204);display: none;" even_steven="123">¡Incorrecto! </div>
+<div id="s1b1b116" style="color: rgb(0, 51, 204);display: none;" even_steven="122">¡Correcto! </div>
+<div id="sfbk1b116" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b116" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_maquetacin.html">&laquo; Anterior</a> | <a href="maquetacin_de_una_pgina_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

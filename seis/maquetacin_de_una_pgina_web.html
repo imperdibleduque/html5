@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Maquetación de una página web | Maquetación </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Maquetación de una página web</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Maquetación de una página web</a><ul>
+<li><a href="recurso_tic_maquetacin.html" class="daddy">Recurso TIC: Maquetación</a><ul>
+<li><a href="la_etiqueta_div.html" class="no-ch">La etiqueta div</a></li>
+<li id="active"><a href="maquetacin_de_una_pgina_web.html" class="active no-ch">Maquetación de una página web</a></li>
+<li><a href="divisin_en_columnas.html" class="no-ch">División en columnas</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">Con los elementos que ya conocemos podemos realizar operaciones de
+maquetación dentro de una página web.
+<p>
+La ventaja del uso de bloques definidos con <b>&lt;div&gt;</b>, además de
+aplicar formato es que podemos posicionarlos en el lugar que más nos
+convenga, gracias a algunas de las propiedades de las hojas de estilo.
+</p>
+<p>
+Este proceso se vuelve muy sencillo si nos apoyamos en las
+opciones del panel <b>Propiedades de estilo</b> del editor <i>BlueGriffon</i>. En
+concreto nos interesan las opciones de <b>Posición y distribución</b>,
+recogidas en la figura. El panel en cuestión se despliega mediante la opción <b>Paneles&gt;Propiedades de estilo</b> o mediante el icono correspondiente en la barra de iconos. 
+</p>
+<p>
+<img src="fig0603.jpg" height="357" width="600" />
+</p>
+<h2>Ubicación de un bloque</h2>
+<p>
+Utilizando los valores de <b>Flotación </b>podemos ubicar el
+bloque a la izquierda, a la derecha e incluso centrarlo en
+determinados momentos.
+</p>
+<p>
+<img src="fig0604.jpg" height="458" width="600" />
+</p>
+<p>
+Traducido a estilos, este cambio es tan
+sencillo como indicar lo siguiente:
+</p>
+<blockquote>
+	<p>
+	&lt;div syle=&quot;float: right;&quot;&gt;
+	</p>
+</blockquote>
+<h2>Posicionamiento absoluto</h2>
+<p>
+Probemos ahora a modificar la posición de
+varios bloques. En la figura se muestra una página con tres
+contenidos diferentes: un título, un índice y un bloque de texto
+largo. Mientras no se apliquen estilos, los contenidos se mostrarán
+uno sobre otro. 
+</p>
+<p>
+<img src="fig0605.jpg" height="549" width="600" />
+</p>
+<p>
+La parte que nos interesa del código fuente ha quedado así:
+</p>
+<blockquote>
+	<p>
+	&lt;body&gt;<br />
+	&lt;div checked=&quot;true&quot; style=&quot;position: absolute; top: 21px; left: 8px; width: 719px; height: 54px;&quot;&gt;<br />
+	&lt;h1&gt;Centro integrado&lt;/h1&gt;<br />
+	&lt;/div&gt;<br />
+	&lt;div style=&quot;position: absolute; top: 110px; left: 20px; height: 349px; width: 145px;&quot;&gt;<br />
+	&lt;h1&gt;Índice&lt;/h1&gt;<br />
+	Página principal&lt;br /&gt;<br />
+	Material multimedia&lt;br /&gt;<br />
+	Autores&lt;br /&gt;<br />
+	&lt;/div&gt;<br />
+	&lt;div checked=&quot;true&quot; style=&quot;position: absolute; top: 106px; left: 213px; width: 445px; height: 645px;&quot;&gt;<br />
+	&lt;h1&gt;Introducción&lt;br /&gt;  .....
+	</p>
+</blockquote>
+<p>
+A continuación, mediante <i>BlueGriffon, </i>iremos
+seleccionando cada uno de los bloques y seleccionando la opción
+<b>Absoluta</b>, en la opción de <b>Posición</b>.
+</p>
+<p>
+Antes de poder aplicar los cambios, debemos asegurarnos de que estamos afectando al elemento adecuado; por ello en el cuadro <b>Aplicar estilos a</b> del panel, seleccionaremos <b>este elemento, mediante los estilos internos</b>. 
+</p>
+<p>
+<img src="fig0606.jpg" height="279" width="400" />
+</p>
+<p>
+Hay que recordar que para seleccionar
+un <b>&lt;div&gt;</b> concreto podemos utilizar el selector de etiquetas situado en
+la zona inferior del editor.
+</p>
+<p>
+Al hacer esto, aparecerán unos controles
+alrededor del <b>&lt;div&gt;</b> que podremos modificar para ajustar su ancho y
+alto, además de su posición, como se muestra en la figura.
+</p>
+<p>
+<img src="fig0607.jpg" height="139" width="312" />
+</p>
+<p>
+Podemos repetir el mismo proceso hasta
+ubicarlos a nuestro gusto.
+</p>
+<p>
+<img src="fig0608.jpg" height="549" width="600" />
+</p>
+<p>
+Observando de nuevo el código fuente,
+veremos que se han incorporado algunos estilos con sus respectivos
+valores:
+</p>
+<ul>
+	<li><b>position: absolute</b>: indica que vamos a
+	establecer una posición fija para ese <b>&lt;div&gt;</b> en la página. El resto
+	de los valores situarán el elemento de diferente forma.
+	</li>
+	<li><b>left </b>(izquierdo), <b>right </b>(derecho),
+	<b>	bottom </b>(inferior) y <b>top </b>(superior): estos valores, seguidos de un
+	número de píxeles, porcentaje u otros valores, establecen la
+	distancia que habrá entre el <b>div</b> y el borde respectivo.
+	</li>
+	<li><b>width </b>(ancho) y <b>height </b>(alto): indican
+	la altura o anchura que tendrá el cuadro.
+	</li>
+</ul>
+<p>
+<img src="fig0609.jpg" height="549" width="600" />
+</p>
+<p>
+No entraremos en mayores complicaciones por
+el momento; sólo un par de muestras de la potencia de este modelo.
+Imaginemos que queremos que sólo se desplace el bloque central de
+texto y que el título y el índice permanezcan fijos. Bastaría con
+cambiar esos dos<b> &lt;div&gt; </b>de posición absoluta a fija y el resultado
+sería el de la figura.
+</p>
+<p>
+<img src="fig0610.jpg" height="449" width="600" />
+</p>
+<p>
+Por último, no es necesario establecer
+siempre valores fijos. En lugar de píxeles podemos emplear
+porcentajes. Así podríamos crear un cuadro de texto que se sitúa
+siempre en el centro de la pantalla, independientemente de las
+dimensiones de la ventana del navegador.
+</p>
+<p>
+<img src="fig0611.jpg" height="495" width="600" />
+</p>
+<p>
+Con esta configuración de <b>div</b> se consigue
+el efecto deseado.
+</p>
+<blockquote>
+	<p>
+	&lt;div style=&quot;text-align: center;
+	position: absolute; top: 30%; left: 30%; right: 30%; bottom: 30%;&quot;&gt;
+	</p>
+</blockquote>
+<p>
+Para realizarlo mediante <i>BlueGriffon </i>hemos
+seleccionado primero el valor <b>Absoluta </b>en la opción <b>Posición </b>y a
+continuación hemos indicado <b>30%</b> en cada cuadro de <b>Desplazamientos</b>.
+</p>
+<p>
+En realidad
+conseguir un centrado perfecto es algo más complejo, pero con estos
+valores se consigue un efecto aproximado para una imagen de las
+dimensiones de la figura.
+</p>
+<p>
+Si probamos a modificar el tamaño de la
+ventana, veremos cómo el contenido se desplaza para mantener su
+posición; esto se debe al uso de porcentajes en lugar de píxeles.
+</p>
+<p>
+Podemos observar también que un <b>&lt;div&gt;</b> no sólo
+contiene texto, sino que puede contener a cualquier otro elemento
+HTML: imágenes, párrafos, <i>iframes</i>, vídeos, cualquier cosa. Incluso
+pueden contener otros <b>&lt;div&gt;</b>. De hecho anidar unos <b>&lt;div&gt;</b> dentro de otros
+es una práctica más que habitual para estructurar correctamente una
+página web.
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id117">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion117_2" class="block" style="display:block;position:relative">Respecto a la etiqueta &lt;div&gt; podemos decir:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option117_2" id="i117_5" onclick="getFeedback(0,4,'117_2','multi')"/></td><td>
+<div id="taans117_5" class="block" style="display:block;position:relative">No sólo contiene texto, sino que puede contener cualquier otro elemento HTML: imágenes, párrafos, iframes, vídeos, etc.
+</div></td></tr>
+<tr><td><input type="radio" name="option117_2" id="i117_402" onclick="getFeedback(1,4,'117_2','multi')"/></td><td>
+<div id="taans117_402" class="block" style="display:block;position:relative">Podemos anidar unos &lt;div&gt; dentro de otros; es una práctica más que habitual para estructurar correctamente una página web.
+</div></td></tr>
+<tr><td><input type="radio" name="option117_2" id="i117_405" onclick="getFeedback(2,4,'117_2','multi')"/></td><td>
+<div id="taans117_405" class="block" style="display:block;position:relative">Podemos posicionarlos en el lugar que más nos convenga, gracias a algunas de las propiedades de las hojas de estilo.
+</div></td></tr>
+<tr><td><input type="radio" name="option117_2" id="i117_408" onclick="getFeedback(3,4,'117_2','multi')"/></td><td>
+<div id="taans117_408" class="block" style="display:block;position:relative">Todas las anteriores son correctas.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b117_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b117_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b117_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b117_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id113">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta113_22_2" class="block" style="display:block;position:relative">Agregaremos a una página un índice de contenidos, lo convertiremos en un bloque independiente mediante una etiqueta <b>&lt;div&gt;</b> e intentaremos colocarlo en un lateral de la página empleando los estilos. Para terminar, probaremos a modificar la apariencia de ese bloque mediante estilos.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="la_etiqueta_div.html">&laquo; Anterior</a> | <a href="divisin_en_columnas.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

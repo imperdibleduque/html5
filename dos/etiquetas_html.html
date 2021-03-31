@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Etiquetas HTML | Aspectos básicos del lenguaje HTML </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Etiquetas HTML</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Aspectos básicos del lenguaje HTML</a><ul>
+<li><a href="recurso_tic_aspectos_bsicos.html" class="daddy">Recurso TIC: Aspectos básicos</a><ul>
+<li id="active"><a href="etiquetas_html.html" class="active no-ch">Etiquetas HTML</a></li>
+<li><a href="estructura_bsica_de_una_pgina.html" class="no-ch">Estructura básica de una página</a></li>
+<li><a href="crear_una_pgina_con_un_editor_de_pginas_web.html" class="no-ch">Crear una página con un editor de páginas web</a></li>
+<li><a href="texto.html" class="no-ch">Texto</a></li>
+<li><a href="etiquetas_de_estructura.html" class="no-ch">Etiquetas de estructura</a></li>
+<li><a href="la_cabecera_de_la_pgina_web.html" class="no-ch">La cabecera de la página web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_1" class="block" style="display:block;position:relative">
+<p>
+Una <b>etiqueta HTML</b> es un término rodeado por un signo de menor y
+otro de mayor; por ejemplo:
+</p>
+<p>
+<b>
+&lt;strong&gt;
+</b>
+</p>
+<p>
+Esta etiqueta indica que el texto que aparece a continuación se
+debe destacar sobre el resto; normalmente se muestra en<b> negrita.</b>
+</p>
+<p>
+En muchos casos necesitaremos también una segunda etiqueta que
+delimite el final. Así, para que el texto deje de estar destacado y
+continúe normalmente, empleamos la misma etiqueta con una barra:
+</p>
+<p>
+<b>
+&lt;/strong&gt;
+</b>
+</p>
+<p>
+El conjunto de las dos etiquetas y el texto contenido en su
+interior conformarían un<b> elemento HTML</b>.
+</p>
+<p>
+Algunos elementos requieren esa apertura y cierre, mientras que en
+otros casos sólo necesitaremos una etiqueta, ya que reflejamos un
+elemento puntual o con un contenido vacío. Por ejemplo:
+</p>
+<p>
+<b>
+&lt;hr /&gt;
+</b>
+</p>
+<p>
+hace que en el documento aparezca una línea separando el texto
+anterior del siguiente. Como se puede observar, cuando un elemento no
+va a tener una etiqueta de cierre (no existe un <b>&lt;/hr&gt;</b>), el
+indicador de fin se añade en la propia etiqueta inicial.
+</p>
+<p>
+<b>Nota</b>: Todas las etiquetas HTML se escriben siempre en
+<b>minúsculas</b>. Si bien los navegadores son capaces de interpretar las
+etiquetas en mayúsculas, las normas de la W3C especifican que todas
+las etiquetas se debe escribir en minúsculas.
+</p>
+<p>
+Otra característica importante de las etiquetas es que son
+<b>anidables</b>, por lo que podemos definir un párrafo (mediante las
+etiquetas <b>&lt;p&gt;</b> y <b>&lt;/p&gt;</b>) y en su interior incuir una lista
+de elementos, imágenes, texto destacado, etc. empleando diferentes
+etiquetas. Veremos muchos ejemplos al respecto.
+</p>
+<h3>Parámetros de las etiquetas</h3>
+<p>
+Muchas etiquetas HTML necesitan contar con parámetros para
+funcionar correctamente. Éstos son modificadores que se introducen
+entre los signos de apertura y cierre para definir algún matiz
+concreto del elemento HTML. 
+</p>
+<p>
+Por ejemplo, la etiqueta <b>&lt;img /&gt;</b> se emplea para insertar una
+imagen en la página web, pero por si sola no funciona correctamente.
+Necesita que le incorporemos un parámetro en el que indiquemos qué
+imagen será la que se muestre. Quedaría así:
+</p>
+<p>
+<b>
+&lt;img src=”fotodelgrupo.jpg” /&gt;
+</b>
+</p>
+<p>
+En el ejemplo siguiente, además de indicar qué imagen se
+mostrará, establecemos el tamaño que ocupará en la pantalla:
+</p>
+<p>
+<b>
+&lt;img src=”fotodelaula5.jpg” width=”300px”
+height=”150px” /&gt;
+</b>
+</p>
+<p>
+Los <b>parámetros</b> se identifican por un término, seguido de un
+signo de igual y a continuación, entre comillas, el valor que le
+queramos asignar.
+</p>
+<p>
+<b>Nota</b>: Aunque podemos usar comillas simples, normalmente se
+usan siempre <b>comillas dobles</b> para englobar el valor de cada
+parámetro.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id52">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta52_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b52" class="block" style="display:block;position:relative">Todos los elementos de HTML necesitan de una etiqueta de apertura y otra de cierre. 
+</div><br/>Verdadero <input type="radio" name="option0b52" id="true0b52" onclick="getFeedback(0,2,'0b52','truefalse')"/> 
+Falso <input type="radio" name="option0b52" id="false0b52" onclick="getFeedback(1,2,'0b52','truefalse')"/>
+<div id="s0b0b52" style="color: rgb(0, 51, 204);display: none;" even_steven="59">¡Incorrecto! </div>
+<div id="s1b0b52" style="color: rgb(0, 51, 204);display: none;" even_steven="58">¡Correcto! </div>
+<div id="sfbk0b52" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b52" class="block" style="display:block;position:relative">Hay etiquetas que reflejan un contenido puntual o vacío.
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_aspectos_bsicos.html">&laquo; Anterior</a> | <a href="estructura_bsica_de_una_pgina.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

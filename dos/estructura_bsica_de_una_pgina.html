@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Estructura básica de una página | Aspectos básicos del lenguaje HTML </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Estructura básica de una página</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Aspectos básicos del lenguaje HTML</a><ul>
+<li><a href="recurso_tic_aspectos_bsicos.html" class="daddy">Recurso TIC: Aspectos básicos</a><ul>
+<li><a href="etiquetas_html.html" class="no-ch">Etiquetas HTML</a></li>
+<li id="active"><a href="estructura_bsica_de_una_pgina.html" class="active no-ch">Estructura básica de una página</a></li>
+<li><a href="crear_una_pgina_con_un_editor_de_pginas_web.html" class="no-ch">Crear una página con un editor de páginas web</a></li>
+<li><a href="texto.html" class="no-ch">Texto</a></li>
+<li><a href="etiquetas_de_estructura.html" class="no-ch">Etiquetas de estructura</a></li>
+<li><a href="la_cabecera_de_la_pgina_web.html" class="no-ch">La cabecera de la página web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">
+<p>
+Las páginas web mantienen una estructura muy sencilla que debemos
+respetar, para que los navegadores sean capaces de presentarla. No
+podemos comenzar nuestra página con una etiqueta de párrafo, por
+ejemplo, sino que debemos indicar qué tipo de página estamos
+generando, qué información adicional llevará y dónde comienza el
+contenido que debe ser mostrado.
+</p>
+<p>
+De este modo, cualquier página web incluirá al menos las
+siguientes etiquetas:
+</p>
+<ul>
+	<li><b>&lt;html&gt;</b> y <b>&lt;/html&gt;</b> colocadas al principio y fin del
+	documento indican dónde comienza y finaliza la página web.
+	</li>
+	<li><b>&lt;head&gt;</b> y <b>&lt;/head&gt;</b> definen un espacio en el que
+	incluiremos contenidos que no se van a mostrar directamente en el
+	navegador, sino que sirven para describir determinados aspectos del
+	documento, como su título, autor, los estilos que emplearemos,
+	pequeñas funciones que se deben realizar, etc.
+	</li>
+	<li><b>&lt;body&gt;</b> y <b>&lt;/body&gt;</b> en su interior se incluye la
+	información que se mostrará en el navegador. Es el contenido real
+	de la página, estructurado mediante las diferentes etiquetas.
+	</li>
+</ul>
+<p>
+Junto a las tres etiquetas anteriores podemos encontrar algunas más
+que son importantes para que la web se interprete correctamente:
+</p>
+<ul>
+	<li><b>&lt;!DOCTYPE&gt;</b> y <b>&lt;?xml&gt;</b> son dos etiquetas que indican
+	qué tipo de documento estamos generando y a qué normas se ajusta.
+	Normalmente serán siempre iguales y será nuestro editor el que se
+	encargue de colocarlas al principio de la página, cuando sea
+	necesario.
+	</li>
+</ul>
+<p>
+Con todo lo anterior, una página creada desde cero y con un breve
+contenido quedaría de la siguiente manera:
+</p>
+<blockquote>
+	<p>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt;
+	</p>
+	<p>
+	&lt;head&gt;<br />
+	&lt;title&gt;Mi primera página&lt;/title&gt;<br />
+	&lt;/head&gt;
+	</p>
+	<p>
+	&lt;body&gt;<br />
+	&lt;p&gt;Mi primera página web, creada con tan sólo copiar y
+	pegar.&lt;/p&gt;<br />
+	&lt;/body&gt;
+	</p>
+	<p>
+	&lt;/html&gt;
+	</p>
+</blockquote>
+<p>
+Eso es todo. Ya tenemos diseñada nuestra primera página web. 
+</p>
+<h2>Probando la página web</h2>
+<p>
+Vamos a intentar probar nuestra página anterior siguiendo estos
+pasos:
+</p>
+<p>
+1. Abriremos un editor de texto sencillo, como el &quot;Bloc de notas&quot; en
+Windows o el &quot;Editor de textos&quot; de Linux. En su interior copiaremos y
+pegaremos el texto anterior o bien lo escribiremos desde cero. En
+este segundo caso debemos prestar mucha atención, para no escribir
+mal ninguna etiqueta.
+</p>
+<p>
+<img src="fig0201.jpg" height="438" width="600" />
+</p>
+<p>
+2. A continuación guardaremos la página web en alguna carpeta de
+nuestro ordenador. El nombre del archivo debe terminar en <b>.html</b> o en
+<b>.htm</b>. Así, podemos emplear el nombre <b>index.html</b>, que es el que se suele
+asignar siempre a nuestra página web principal.
+</p>
+<p>
+<b>Nota</b>: Los nombres de los archivos
+de las páginas web deberían escribirse siempre en minúsculas, sin
+espacios y sin caracteres especiales, reduciéndolos a letras y
+números y, si acaso, algún guión alto o bajo. De ese modo no
+tendremos problemas al subir nuestras páginas a un servidor web.
+</p>
+<p>
+<img src="fig0202.jpg" height="388" width="600" />
+</p>
+<p>
+3. Usando nuestro explorador de archivos, accederemos a la carpeta
+en cuestión; debemos tener a la vista el archivo y podremos hacer
+doble clic sobre él para que se abra dentro de nuestro navegador.
+</p>
+<p>
+<img src="fig0203.jpg" height="363" width="600" />
+</p>
+<p>
+Si todo ha ido bien, veremos una página web
+en nuestro navegador. Aquí han sucedido muchas cosas que se pueden
+ir destacando:
+</p>
+<ul>
+	<li>El navegador no muestra el texto que
+	hemos escrito en el documento html; sólo el contenido que aparece
+	dentro del <b>&lt;body&gt;</b>, del cuerpo de la página.
+	</li>
+	<li>En la pestaña podemos ver el título
+	de la página, que coincide exactamente con lo que establecimos
+	mediante el elemento <b>&lt;title&gt;</b> incluido en la cabecera de la
+	página (<b>&lt;head&gt;</b>).
+	</li>
+	<li>Merece la pena fijarse en la URL de
+	nuestra página web, es decir, la dirección única. Como nuestro
+	archivo no está colocado en Internet o en un servidor, la dirección
+	no comienza con <b>http://</b>, sino que veremos que empieza con <b>file://</b>
+	seguido de la ruta necesaria para llegar al archivo.
+	</li>
+</ul>
+<p>
+Aquí podríamos dar por concluido nuestro
+trabajo. Si hemos comprendido cómo funciona el modelo de etiquetas y
+de prueba en el navegador, sólo nos queda comenzar a conocer
+diferentes etiquetas para que los documentos se muestren tal y como
+nosotros queremos.
+</p>
+<p>
+Con esta prueba ha quedado demostrado
+también que el uso de un editor más sofisticado es totalmente
+opcional, aunque la realidad es que se simplifica notablemente la
+incorporación de etiquetas, sobre todo aquellas que no se usan con
+frecuencia.
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id53">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion53_2" class="block" style="display:block;position:relative"><br />
+Cuando elaboramos un archivo HTML, ¿qué nombre y extensión hay que dar a dicho archivo?
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option53_2" id="i53_5" onclick="getFeedback(0,4,'53_2','multi')"/></td><td>
+<div id="taans53_5" class="block" style="display:block;position:relative">Index.htm
+</div></td></tr>
+<tr><td><input type="radio" name="option53_2" id="i53_375" onclick="getFeedback(1,4,'53_2','multi')"/></td><td>
+<div id="taans53_375" class="block" style="display:block;position:relative">Un nombre cualquiera más la extensión .htm
+</div></td></tr>
+<tr><td><input type="radio" name="option53_2" id="i53_378" onclick="getFeedback(2,4,'53_2','multi')"/></td><td>
+<div id="taans53_378" class="block" style="display:block;position:relative">Un nombre cualquiera más la extensión .html
+</div></td></tr>
+<tr><td><input type="radio" name="option53_2" id="i53_381" onclick="getFeedback(3,4,'53_2','multi')"/></td><td>
+<div id="taans53_381" class="block" style="display:block;position:relative">Las opciones b y c son correctas
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b53_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b53_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b53_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b53_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="etiquetas_html.html">&laquo; Anterior</a> | <a href="crear_una_pgina_con_un_editor_de_pginas_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

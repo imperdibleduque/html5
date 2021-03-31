@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> La cabecera de la página web | Aspectos básicos del lenguaje HTML </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">La cabecera de la página web</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Aspectos básicos del lenguaje HTML</a><ul>
+<li><a href="recurso_tic_aspectos_bsicos.html" class="daddy">Recurso TIC: Aspectos básicos</a><ul>
+<li><a href="etiquetas_html.html" class="no-ch">Etiquetas HTML</a></li>
+<li><a href="estructura_bsica_de_una_pgina.html" class="no-ch">Estructura básica de una página</a></li>
+<li><a href="crear_una_pgina_con_un_editor_de_pginas_web.html" class="no-ch">Crear una página con un editor de páginas web</a></li>
+<li><a href="texto.html" class="no-ch">Texto</a></li>
+<li><a href="etiquetas_de_estructura.html" class="no-ch">Etiquetas de estructura</a></li>
+<li id="active"><a href="la_cabecera_de_la_pgina_web.html" class="active no-ch">La cabecera de la página web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div id="ta40_1" class="block" style="display:block;position:relative">
+<p>
+Como recordaremos, cada página web cuenta con un elemento <b>&lt;head&gt;</b>
+colocado antes del <b>&lt;body&gt;</b>, que no debemos confundir con los
+elementos de cabecera (<b>&lt;h1&gt;</b>..<b>&lt;h6&gt;</b>) ni con el encabezado
+&lt;header&gt; que colocamos dentro del <b>&lt;body&gt;</b>.
+</p>
+<p>
+Esta cabecera general de la página se emplea para incorporar
+contenidos que no se mostrarán directamente, pero que tienen una
+elevada influencia en el aspecto que tendrá la página y en su
+comportamiento.
+</p>
+<p>
+En su interior podemos añadir algunos de los siguientes elementos
+HTML:
+</p>
+<ul>
+	<li><b>&lt;title&gt;</b> y <b>&lt;/title&gt;</b>: se emplea para definir el
+	título de la página. Es imprescindible en HTML5, por lo que
+	siempre debemos añadirlo. Este es el título que se mostrará en la
+	barra de título del navegador, al hacer un marcador a la página o
+	en los buscadores de Internet.
+	</li>
+	<li><b>&lt;link /&gt;</b>: se utiliza para enlazar con recursos
+	externos, generalmente hojas de estilo. Volveremos sobre ello más
+	adelante.
+	</li>
+	<li><b>&lt;style&gt; </b>y <b>&lt;/style&gt;</b>: nos permite definir estilos
+	específicos para la página actual. Se suele emplear en combinación
+	con el anterior, por lo que los trataremos al llegar a las hojas de
+	estilo.
+	</li>
+	<li><b>&lt;base /&gt;</b>: define la URL base para el resto de los
+	enlaces que incluyamos en la página web. Se emplea en casos muy
+	concretos.
+	</li>
+	<li><b>&lt;script&gt;</b> y <b>&lt;/script&gt;</b>: es otro importante elemento
+	que se utiliza para englobar acciones en otros lenguajes,
+	generalmente <i>Javascript, </i>para conseguir que la página web realice
+	determinadas tareas. Estas son operaciones que se ejecutan al
+	acceder a la página, aumentando su versatilidad.</li>
+</ul>
+</div></div>
+</div>
+<div class="activityIdevice" id="id41">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta41_27_2" class="block" style="display:block;position:relative">
+<p>
+Para entender el funcionamiento del elemento
+<b>script, </b>probaremos a añadir este pequeño código dentro de la página
+web, entre el <b>&lt;head&gt;</b> y el <b>&lt;/head&gt;</b>
+</p>
+<p>
+&lt;script type=&quot;text/javascript&quot;&gt;<br />
+var d = new Date();<br />
+alert (&quot;Hoy es &quot;+
+d.toLocaleString() );<br />
+&lt;/script&gt; 
+</p>
+<p>
+Al escribir esta función, hay que prestar mucha atención a cada
+paréntesis, punto y coma, etc. Si lo hemos escrito bien, aparecerá
+un pequeño cuadro indicándonos la fecha actual. Esto sólo
+funcionará al probar la página en un navegador web, no dentro de
+<i>BlueGriffon</i>.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id42">
+<div class="iDevice emphasis0">
+<div id="ta42_1" class="block" style="display:block;position:relative">
+<ul>
+	<li><b>&lt;meta&gt;</b> y <b>&lt;/meta&gt;</b>: las etiquetas <b>&lt;meta&gt;</b> no
+	son imprescindibles para el funcionamiento de la página web, pero
+	su inclusión es siempre una buena práctica porque permiten
+	identificar con facilidad algunos parámetros de la web, como
+	autores, codificación de caracteres, etc.</li>
+</ul>
+<p>
+De todas las etiquetas <b>&lt;meta&gt;</b>,
+debemos incluir al menos una que defina qué tipo de codificación de
+caracteres estamos empleando. Teniendo en cuenta que nuestra web
+puede ser vista en cualquier lugar del mundo, la codificación de
+caracteres se encargará de que un ciudadano japonés, por ejemplo,
+pueda ver correctamente nuestra página y no una serie de caracteres
+ininteligibles. Hoy en día emplearemos siempre la codificación
+<i>UTF-8</i>.
+</p>
+<p>
+Normalmente la expresaremos de esta
+forma:
+</p>
+<blockquote>
+	<p>
+	&lt;meta http-equiv=&quot;content-type&quot;
+	content=&quot;text/html; charset=UTF-8&quot;&gt;
+	</p>
+</blockquote>
+<p>
+Como se puede observar, las etiquetas
+meta suelen incorporar dos parámetros, el tipo de etiqueta (que
+suele ser <b>name</b>) y el contenido (con el parámetro <b>content</b>).
+</p>
+<p>
+Veamos algunos ejemplos más:
+</p>
+<blockquote>
+	<p>
+	&lt;meta content=&quot;Antonio
+	Paniagua&quot; name=&quot;author&quot;&gt;<br />
+	&lt;meta content=&quot;Prácticas para
+	el material de HTML&quot; name=&quot;description&quot;&gt;<br />
+	&lt;meta content=&quot;html,
+	cabeceras, etiquetas, estilos, párrafos&quot; name=&quot;keywords&quot;&gt;
+	</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<p>
+Los valores se describen por sí solos.
+<i>Keywords </i>significa palabras clave, es decir, términos que describen
+el contenido de nuestra página. Aún hay algunos valores más para
+<b>name</b>, pero con los indicados nuestra página estará
+suficientemente descrita para que sea localizada con facilidad en
+Internet.
+</p>
+<h2>Cabeceras sencillas</h2>
+<p>
+Todo lo anterior irá cobrando sentido poco a poco. No es
+necesario que nos preocupemos en exceso de tener una cabecera de
+página completamente rellena, aunque sí es apropiado en el caso de
+los elementos <b>&lt;meta&gt;</b>. Para ello, los editores de páginas web
+suelen contar con una opción que se encargará de hacer el trabajo
+más tedioso.
+</p>
+<p>
+En <i>BlueGriffon</i> seleccionaremos la opción  <b>Formato&gt;Propiedades de página</b> (debemos estar en el
+modo <i>wysiwyg </i>para que esté activa) y en el cuadro de diálogo que se
+despliega, podremos editar las principales etiquetas meta, así como
+el idioma en el que está creada la página web.
+</p>
+<p>
+<img src="fig0213.jpg" height="257" width="591" />
+</p>
+<p>
+Si revisamos el código de la página, veremos cómo se han
+incorporado todas las etiquetas necesarias.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id57">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta57_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b57" class="block" style="display:block;position:relative">Las etiquetas &lt;meta&gt; y &lt;/meta&gt; son imprescindibles para el funcionamiento de una página web. 
+</div><br/>Verdadero <input type="radio" name="option0b57" id="true0b57" onclick="getFeedback(0,2,'0b57','truefalse')"/> 
+Falso <input type="radio" name="option0b57" id="false0b57" onclick="getFeedback(1,2,'0b57','truefalse')"/>
+<div id="s0b0b57" style="color: rgb(0, 51, 204);display: none;" even_steven="63">¡Incorrecto! </div>
+<div id="s1b0b57" style="color: rgb(0, 51, 204);display: none;" even_steven="62">¡Correcto! </div>
+<div id="sfbk0b57" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b57" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="etiquetas_de_estructura.html">&laquo; Anterior</a> | <a href="resumen.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

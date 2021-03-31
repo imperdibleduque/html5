@@ -1,0 +1,108 @@
+/* ==========================================
+Copyright University of Auckland 2004
+Created by Brent Simpson, brent.simpson@auckland.ac.nz
+Centre for Flexible and Distance Learning
+============================================= */
+
+*
+{
+	/*border:0px solid #ff0033;
+	/* [disabled]width: 950px; */
+}
+   
+#volver
+{margin-top:30px;}
+
+
+
+
+#siteNav {
+   z-index:1000;
+   float: left;
+   
+   text-align:left;
+   font-size: 1em;
+   color:#0b6999;
+
+   margin-left:0px;
+   margin:0px;
+   margin-top: 15px;
+   width:215px;
+   padding-left:0px;
+   list-style-position:inside;
+   list-style-type:none;
+   margin:0px;
+   line-height:1.3em;
+   margin-left:10px;
+   margin-top:15px;
+
+}
+
+
+#siteNav a
+{display: block;width:100%;width:217px;background-color:none;padding:3px;padding-left:10px;color:#000;}
+
+#siteNav a:hover
+{background:#D8DFEA;}
+
+#siteNav #active a
+{background:#D8DFEA;}
+
+#siteNav ul li#active ul li a
+{background:none;}
+
+#siteNav ul li#active ul li a:hover
+{background:#D8DFEA;}
+
+#siteNav ul {
+   margin:0px;
+   padding:0px;
+   list-style-type:none;
+   padding:4px;
+   padding:0px;
+
+
+}
+
+
+#siteNav ul li ul li
+{background:url(../imgs_frames/rayax.gif) no-repeat  left 10px;border-top:1px solid #999;width:230px;}
+
+#siteNav ul li ul li ul li
+{background:url(../imgs_frames/rayax.gif) no-repeat  left 10px;border-top:1px solid #eee;width:230px;}
+
+#siteNav ul li ul li ul
+{padding-left:0px;border-left:0px dotted #0460b3;margin-left:0px;margin-top:0px;font-size:0.9em;}
+
+#siteNav ul li ul li ul a
+{color:#577bb2;color: #039;padding-left:20px;width:205px;}
+
+#siteNav #active a
+{color:#000;color: #039;}
+
+#siteNav #active a.daddy
+{background:url(../imgs_frames/expand.gif) no-repeat;
+background-position:-1px 5px;}
+
+/* #siteNav #active a.daddy:hover
+{background:#D8DFEA url(../imgs_frames/expand.gif) no-repeat;
+background-position:-1px 5px;}
+*/
+
+#siteNav #active a.main-node
+{background:none;color:#0062B5;font-size:1.7em;margin-bottom:1em;line-height:1.2em;}
+
+#siteNav a.daddy
+{background:url(../imgs_frames/expand.gif) no-repeat;
+background-position:-1px 5px;}
+
+#siteNav a.main-node
+{background:none;color:#0062B5;font-size:1.7em;margin-bottom:1em;line-height:1.2em;}
+
+#siteNav ul li ul li ul.other-section
+{height:0px;overflow:hidden;}
+
+#siteNav ul li ul li:hover ul.other-section,
+#siteNav ul li ul li:hover ul.other-section li,
+#siteNav ul li ul li:hover
+{height:auto;overflow: visible;background-color:#eee;}

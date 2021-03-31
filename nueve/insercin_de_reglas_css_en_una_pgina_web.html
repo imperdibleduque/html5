@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Inserción de reglas CSS en una página web | Hojas de estilo </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Inserción de reglas CSS en una página web</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Hojas de estilo</a><ul>
+<li><a href="recurso_tic_hojas_de_estilo.html" class="daddy">Recurso TIC: Hojas de estilo</a><ul>
+<li><a href="qu_son_las_hojas_de_estilo.html" class="no-ch">¿Qué son las hojas de estilo?</a></li>
+<li><a href="clases_e_identificadores.html" class="no-ch">Clases e identificadores</a></li>
+<li><a href="estructura_de_una_regla_css.html" class="no-ch">Estructura de una regla CSS</a></li>
+<li id="active"><a href="insercin_de_reglas_css_en_una_pgina_web.html" class="active no-ch">Inserción de reglas CSS en una página web</a></li>
+<li><a href="aadir_estilos_exteriores.html" class="no-ch">Añadir estilos exteriores</a></li>
+<li><a href="prioridad_de_los_estilos.html" class="no-ch">Prioridad de los estilos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_de_pginas_web.html" class="no-ch">Aplicar estilos con un editor de páginas web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id138">
+<div class="iDevice emphasis0">
+<div id="ta138_1" class="block" style="display:block;position:relative">
+<p>
+Ya sabemos que podemos insertar las reglas directamente dentro de
+un elemento de la página web mediante el parámetro <b>style</b>, pero como
+inconveniente obtenemos un método poco claro y que resulta difícil
+de mantener. Por tanto, siempre optaremos por separar los estilos del
+contenido de la página. 
+</p>
+<p>
+Así, los estilos los situaremos en la cabecera de la página,
+rodeados de una etiqueta HTML denominada <b>&lt;style&gt;</b> con su
+correspondiente <b>&lt;/style&gt;</b>. El ejemplo anterior quedaría
+integrado en nuestra página de la siguiente manera:
+</p>
+<blockquote>
+	<p>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt;<br />
+	&lt;head&gt;
+	</p>
+	<blockquote>
+		&lt;style type=&quot;text/css&quot;&gt;<br />
+		h1 {  color: blue;}<br />
+		.capitulos {  font-family: sans-serif;  text-decoration:
+		underline; }<br />
+		#anexos {  font-size: 18px;  text-align: center; }<br />
+		&lt;/style&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/head&gt;<br />
+	&lt;body&gt;
+	</p>
+	<blockquote>
+		Contenido de la página
+	</blockquote>
+	<p>
+	&lt;/body&gt;<br />
+	&lt;/html&gt;
+	</p>
+</blockquote>
+<p>
+Este método es fácil y su mantenimiento es simple. Si tenemos
+que realizar cualquier modificación, sólo tenemos que acudir a la
+cabecera de la página y modificar allí los estilos correspondientes,
+para que automáticamente toda la página cambie su apariencia.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id155">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta155_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b155" class="block" style="display:block;position:relative">El parámetro style no se puede emplear, para insertar las reglas CSS directamente dentro de un elemento de la página web. 
+</div><br/>Verdadero <input type="radio" name="option0b155" id="true0b155" onclick="getFeedback(0,2,'0b155','truefalse')"/> 
+Falso <input type="radio" name="option0b155" id="false0b155" onclick="getFeedback(1,2,'0b155','truefalse')"/>
+<div id="s0b0b155" style="color: rgb(0, 51, 204);display: none;" even_steven="161">¡Incorrecto! </div>
+<div id="s1b0b155" style="color: rgb(0, 51, 204);display: none;" even_steven="160">¡Correcto! </div>
+<div id="sfbk0b155" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b155" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="estructura_de_una_regla_css.html">&laquo; Anterior</a> | <a href="aadir_estilos_exteriores.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

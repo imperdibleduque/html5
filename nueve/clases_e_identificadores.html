@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Clases e identificadores | Hojas de estilo </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Clases e identificadores</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Hojas de estilo</a><ul>
+<li><a href="recurso_tic_hojas_de_estilo.html" class="daddy">Recurso TIC: Hojas de estilo</a><ul>
+<li><a href="qu_son_las_hojas_de_estilo.html" class="no-ch">¿Qué son las hojas de estilo?</a></li>
+<li id="active"><a href="clases_e_identificadores.html" class="active no-ch">Clases e identificadores</a></li>
+<li><a href="estructura_de_una_regla_css.html" class="no-ch">Estructura de una regla CSS</a></li>
+<li><a href="insercin_de_reglas_css_en_una_pgina_web.html" class="no-ch">Inserción de reglas CSS en una página web</a></li>
+<li><a href="aadir_estilos_exteriores.html" class="no-ch">Añadir estilos exteriores</a></li>
+<li><a href="prioridad_de_los_estilos.html" class="no-ch">Prioridad de los estilos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_de_pginas_web.html" class="no-ch">Aplicar estilos con un editor de páginas web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">
+<p>
+Pensemos ahora en una página en la que queremos cambiar la
+apariencia de algunos <b>&lt;h1&gt;,</b> pero no de todos. ¿Cómo lo conseguiríamos?
+Para ello tenemos un parámetro general de HTML denominado <b>class
+</b>(&quot;clase&quot; en español, en el sentido de &quot;tipo&quot;). Este parámetro
+nos sirve para crear un conjunto de etiquetas que forman parte del
+mismo grupo. El objetivo es que luego podremos referirnos a esa clase
+de forma conjunta.
+</p>
+<p>
+En este ejemplo tenemos tres títulos diferentes:
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Bienvenidos&lt;/h1&gt;<br />
+	&lt;h1 class=&quot;capitulos&quot;&gt;Capítulo 1&lt;/h1&gt;<br />
+	&lt;h1 class=&quot;capitulos&quot;&gt;Capítulo 2&lt;/h2&gt;
+	</p>
+</blockquote>
+<p>
+Dos de ellos los hemos agrupado dentro de una clase llamada
+&quot;capítulos&quot;. Gracias a ello podemos modificar sólo su apariencia,
+diferenciándolos del resto de los títulos del documento. Para
+referirnos a la clase, emplearíamos el signo de punto (<b>.</b>).
+</p>
+<blockquote>
+	<p>
+	.capitulos { font-family: sans-serif; text-decoration: underline;}
+	</p>
+</blockquote>
+<p>
+Al probarlo en un navegador, obtendríamos el resultado de la
+figura.
+</p>
+<p>
+<img src="fig1101.jpg" height="473" width="600" />
+</p>
+<p>
+Es decir, ahora tenemos dos tipos de títulos: mientras que todos
+ellos serán de color azul, sólo los que forman parte de la selecta
+clase &quot;capítulos&quot; tendrán un tipo de letra concreto y estarán
+subrayados. Por tanto, podemos aplicar normas para todos los títulos
+o sólo para los de los grupos que generemos.
+</p>
+<h2>Clases dependientes</h2>
+<p>
+Las reglas que definimos para una clase pueden ser aplicadas
+exclusivamente a una etiqueta. Así podríamos tener un
+par de reglas como éstas:
+</p>
+<blockquote>
+	<p>
+	h1.capitulos { font-family: sans-serif; text-decoration:
+	underline; font-size:14px}<br />
+	p.capitulos { font-family: sans-serif; text-decoration:
+	underline;}
+	</p>
+</blockquote>
+<p>
+De este modo podemos reutilizar el nombre de la clase y definir
+distintos valores, dependiendo de si se aplica a una cabecera o a un
+párrafo, en nuestro ejemplo.
+</p>
+<h2>Identificadores</h2>
+<p>
+Además de las clases, podemos diferenciar un único elemento entre
+todos los demás de una página mediante el parámetro <b>id
+</b>(abreviatura de &quot;identificador&quot;). Con <b>id </b>asignaremos un nombre
+único que luego podemos emplear en nuestra sección de estilos,
+precediéndolo en este caso del signo <b>#</b>.
+</p>
+<p>
+Continuando con el ejemplo anterior, supongamos que tenemos un
+identificador como éste:
+</p>
+<blockquote>
+	<p>
+	&lt;h1 id=&quot;anexos&quot;&gt;Anexos especiales&lt;/h1&gt;
+	</p>
+</blockquote>
+<p>
+Podríamos modificar exclusivamente ese anexo mediante la
+siguiente regla:
+</p>
+<blockquote>
+	<p>
+	#anexos {  font-size: 18px;  text-align: center; }
+	</p>
+</blockquote>
+<p>
+El resultado se muestra en la figura. 
+</p>
+<p>
+<img src="fig1102.jpg" height="473" width="600" />
+</p>
+<p>
+La clave del <b>id </b>es que estamos creando un grupo específico
+sólo con un elemento. Este modificador tiene otras muchas
+utilidades, ya que al designar un elemento de forma única dentro de
+la página web, podremos operar con él mediante <i>JavaScript</i>, aunque
+eso es otra cuestión.
+</p>
+<p>
+El sentido de utilizar identificadores, al trabajar con estilos, es mayor
+cuando pensamos en las hojas externas. Podemos tener un elemento con
+un identificador que se repite a lo largo de varias páginas. Si
+nuestros estilos están guardados en un archivo externo, podremos
+modificar todos esos identificadores con facilidad.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id153">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta153_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b153" class="block" style="display:block;position:relative">Mediante los identificadores podemos diferenciar un único elemento entre todos los demás de una página utilizando el parámetro id.
+</div><br/>Verdadero <input type="radio" name="option0b153" id="true0b153" onclick="getFeedback(0,2,'0b153','truefalse')"/> 
+Falso <input type="radio" name="option0b153" id="false0b153" onclick="getFeedback(1,2,'0b153','truefalse')"/>
+<div id="s0b0b153" style="color: rgb(0, 51, 204);display: none;" even_steven="158">¡Correcto! </div>
+<div id="s1b0b153" style="color: rgb(0, 51, 204);display: none;" even_steven="159">¡Incorrecto! </div>
+<div id="sfbk0b153" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b153" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b153" class="block" style="display:block;position:relative">Las reglas que definimos para una clase pueden ser aplicadas exclusivamente a una etiqueta, por ello no se puede reutilizar el nombre de la clase y definir distintos valores para una cabecera o a un párrafo. 
+</div><br/>Verdadero <input type="radio" name="option1b153" id="true1b153" onclick="getFeedback(0,2,'1b153','truefalse')"/> 
+Falso <input type="radio" name="option1b153" id="false1b153" onclick="getFeedback(1,2,'1b153','truefalse')"/>
+<div id="s0b1b153" style="color: rgb(0, 51, 204);display: none;" even_steven="159">¡Incorrecto! </div>
+<div id="s1b1b153" style="color: rgb(0, 51, 204);display: none;" even_steven="158">¡Correcto! </div>
+<div id="sfbk1b153" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b153" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id130">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta130_21_2" class="block" style="display:block;position:relative">
+<p>
+Utilizando un editor de páginas web y el
+documento base anterior, definiremos un par de clases diferentes para
+distinguir los títulos de capítulos de los títulos generales o
+distintos tipos de párrafos, lo que mejor se ajuste a nuestro texto. Para ello estableceremos el nombre de cada clase en el cuadro <b>Clase </b>de la barra del editor y en el panel <b>Propiedades de estilo </b>seleccionaremos la opción<b> todos los elementos de la clase</b> en el cuadro<b> Aplicar estilos a:</b>
+</p>
+<p>
+Crearemos también un identificador en algún elemento. En este caso, indicaremos un nombre en el cuadro <b>Identificador</b> de la barra del editor, situado justo antes del cuadro <b>Clase</b>. Para aplicar estilos a un identificador, seleccionaremos la opción <b>este elemento mediante su ID</b> en el cuadro <b>Aplicar estilos a:</b> del panel <b>Propiedades de estilo</b>. 
+</p>
+<p>
+Aplicaremos estilos distintos a las clases y el identificador, modificando algunos aspectos generales del texto, como su tamaño, color o alineación.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id131">
+<div class="iDevice emphasis0">
+<div id="ta131_1" class="block" style="display:block;position:relative">
+<h2>Identificadores dependientes</h2>
+<p>
+Como sucede con las clases, un identificador puede estar definido
+de forma general o específicamente para una etiqueta concreta. Es
+distinto esto:
+</p>
+<blockquote>
+	<p>
+	#anexos {  font-size: 18px;  text-align: center; }
+	</p>
+</blockquote>
+<p>
+que esto:
+</p>
+<blockquote>
+	<p>
+	div#anexos {  font-size: 18px;  text-align: center; }
+	</p>
+</blockquote>
+<p>
+El segundo sólo se aplicaría a un elemento que se llamase así:
+</p>
+<blockquote>
+	<p>
+	&lt;div id=&quot;anexos&quot;&gt;
+	</p>
+</blockquote>
+<p>
+pero no a uno denominado
+</p>
+<blockquote>
+	<p>
+	&lt;h1 id=&quot;anexos&quot;&gt;
+	</p>
+</blockquote>
+<h2>Combinación de class e id</h2>
+<p>
+Se pueden combinar los parámetros <b>class </b>e <b>id </b>en un mismo
+elemento, con lo que conseguiremos que se le apliquen tanto las
+reglas definidas para la <b>clase</b> como para el <b>identificador</b>.
+</p>
+<p>
+Este ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;h1 class=&quot;capitulos&quot; id=&quot;anexos&quot;&gt;Bienvenidos&lt;/h1&gt;
+	</p>
+</blockquote>
+<p>
+da como resultado una mezcla de todas las reglas que hemos
+aplicado hasta ahora, tanto las del elemento <b>&lt;h1&gt;</b>, como las de la <b>clase</b>
+y las del <b>identificador</b>. Observa la figura:
+</p>
+<p>
+<img src="fig1103.jpg" height="473" width="600" />
+</p>
+<h2>Más selectores</h2>
+<p>
+Hay otros métodos para definir reglas que se aplicarán a
+diferentes grupos de etiquetas.
+</p>
+<h3>Selector universal</h3>
+<p>
+El signo<b> * </b>se emplea para definir a todo el conjunto de etiquetas
+de una página web. Nos sirve para indicar &quot;esto se aplica a
+cualquier etiqueta&quot;. Por ejemplo:
+</p>
+<blockquote>
+	<p>
+	* {font-family:san-serif; }
+	</p>
+</blockquote>
+<p>
+Hace que cualquier etiqueta de la página tome ese tipo de letra.
+</p>
+<h3>Agrupación de selectores</h3>
+<p>
+También podemos emplear la coma para agrupar varias etiquetas,
+clases e identificadores. Un par de ejemplos:
+</p>
+<blockquote>
+	<p>
+	p, h1, h2 {font-family: times, word-spacing: 2px;}<br />
+	img, #portada, hr, .fotografia {margin: 6px;}
+	</p>
+</blockquote>
+<h3>Sucesores y antecesores</h3>
+<p>
+Todavía obtenemos mayor control, gracias a las opciones que nos
+ofrece CSS para aplicar estilos, si un elemento desciende de otro o es
+el padre de uno. No entraremos en demasiados detalles, pero
+observemos la siguiente regla:
+</p>
+<blockquote>
+	<p>
+	h2 strong {font-style: italic; }
+	</p>
+</blockquote>
+<p>
+Esa línea haría que se mostrase en cursiva el contenido
+etiquetado dentro de<b> &lt;strong&gt;</b>, pero si y sólo si esta etiqueta
+se encuentra dentro de una cabecera<b> &lt;h2&gt;</b>. No es necesario que
+lo sea directamente; puede haber otras etiquetas conteniendo la de
+<b>&lt;strong&gt;</b>.
+</p>
+<p>
+Por ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Esta línea no se vería &lt;strong&gt;afectada&lt;/strong&gt;&lt;/h1&gt;<br />
+	&lt;h2&gt;Esta línea &lt;strong&gt;sí&lt;/strong&gt; se vería
+	&lt;strong&gt;afectada&lt;/strong&gt;&lt;/h2&gt;
+	</p>
+</blockquote>
+<p>
+El ejemplo anterior se mostraría como en la figura:
+</p>
+<p>
+<img src="fig1104.jpg" height="387" width="600" />
+</p>
+<p>
+El espacio, por tanto, indica que la
+aplicación se hará dependiendo de si un elemento está dentro de
+otro.
+</p>
+<p>
+Además hay otros operadores que definen el
+tipo de relación, como el <b>*</b>, el signo de<b> &gt;</b> (que indica que un
+elemento desciende directamente de otro), el de<b> +</b> o el signo <b>~</b>.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id159">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta159_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b159" class="block" style="display:block;position:relative">El signo * se emplea para definir a todo el conjunto de etiquetas de una página web.
+</div><br/>Verdadero <input type="radio" name="option0b159" id="true0b159" onclick="getFeedback(0,2,'0b159','truefalse')"/> 
+Falso <input type="radio" name="option0b159" id="false0b159" onclick="getFeedback(1,2,'0b159','truefalse')"/>
+<div id="s0b0b159" style="color: rgb(0, 51, 204);display: none;" even_steven="164">¡Correcto! </div>
+<div id="s1b0b159" style="color: rgb(0, 51, 204);display: none;" even_steven="165">¡Incorrecto! </div>
+<div id="sfbk0b159" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b159" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b159" class="block" style="display:block;position:relative">Se puede emplear la coma para desagrupar varias etiquetas, clases e identificadores.
+</div><br/>Verdadero <input type="radio" name="option1b159" id="true1b159" onclick="getFeedback(0,2,'1b159','truefalse')"/> 
+Falso <input type="radio" name="option1b159" id="false1b159" onclick="getFeedback(1,2,'1b159','truefalse')"/>
+<div id="s0b1b159" style="color: rgb(0, 51, 204);display: none;" even_steven="165">¡Incorrecto! </div>
+<div id="s1b1b159" style="color: rgb(0, 51, 204);display: none;" even_steven="164">¡Correcto! </div>
+<div id="sfbk1b159" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b159" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id132">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta132_23_2" class="block" style="display:block;position:relative">
+<p>
+El uso de estas opciones en
+estos primeros compases será muy limitado, por lo que no
+profundizaremos más en ello, por ahora.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id133">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta133_24_2" class="block" style="display:block;position:relative">
+<p>
+En el documento anterior
+tomaremos una etiqueta que tenga nombre de <b>clase </b>y en su interior
+definiremos una parte como <b>&lt;strong&gt;</b>. Haremos lo mismo con otra
+etiqueta que no tenga nombre de clase. Por último, definiremos un
+<b>selector</b> para que se aplique formato sólo a la etiqueta que tiene
+nombre de clase y no a todos los<b> &lt;strong&gt; </b>del documento. Es
+decir, recurriremos al <b>selector de sucesores</b> para conseguir el
+efecto.
+</p>
+<p>
+Estos cambios no los realizaremos con <i>BlueGriffon</i>, sino que definiremos los selectores directamente en el código fuente de la página, en la cabecera del documento. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id134">
+<div class="iDevice emphasis0">
+<div id="ta134_1" class="block" style="display:block;position:relative">
+<h3>Pseudoclases</h3>
+<p>
+Contamos con un último tipo de selectores denominado<b> pseudoclases
+</b>que permiten definir propiedades para algunos elementos html que
+cuentan con diferentes estados. El más conocido es el caso de la
+etiqueta <b>&lt;a&gt;</b>, empleada para definir enlaces. Esta etiqueta
+puede tener varios estados. Estos son los principales:
+</p>
+<ul>
+	<li><b>
+	a:link</b>: el estado normal de un enlace no visitado.
+	</li>
+	<li>
+	<b>a:visited</b>: el estado de un enlace, una vez que ha sido visitado.
+	</li>
+	<li>
+	<b>a:active</b>: cuando se está pulsando sobre el elemento.
+	</li>
+	<li>
+	<b>a:hover</b>: cuando el ratón está sobre el elemento.
+	</li>
+	<li>
+	<b>a:focus</b>: cuando el elemento tiene el foco del navegador. Es el que
+	está preseleccionado.
+	</li>
+</ul>
+<p>
+Pues bien, si definimos algunos de esos estados, conseguiremos, por
+ejemplo, que un enlace cambie su apariencia al pasar el ratón sobre
+él (<b>a:hover</b>) o que cambie de color cuando ha sido visitado
+(<b>a:visited</b>). Podríamos hacerlo así:
+</p>
+<blockquote>
+	<p>
+	a:link {font-family: sans-serif; }<br />
+	a:hover {color:red; }<br />
+	a:visited {color:gray; }
+	</p>
+</blockquote>
+<p>
+La figura muestra el enlace tras ser visitado: 
+</p>
+<p>
+<img src="fig1105.jpg" height="387" width="600" />
+</p>
+<p>
+Aún hay muchas más pseudoclases, centradas
+en aspectos posicionales, dependientes de si un elemento es el
+primero de su tipo (<b>:first-of-type</b>, <b>:last-of-type</b>), si es el único
+descendiente (<b>:only-child</b>), si está vacío (<b>:empty</b>), etc. Incluso
+tenemos una pseudoclase para no aplicar estilo a un elemento concreto
+(<b>:not</b>), pero de nuevo su uso es poco frecuente en esta etapa de
+aprendizaje de CSS.
+</p>
+<p>
+Veamos un ejemplo de uso con la lista
+siguiente:
+</p>
+<blockquote>
+	<p>
+	&lt;ul&gt;
+	</p>
+	<blockquote>
+		&lt;li&gt;Nombre y cantidad&lt;/li&gt;<br />
+		&lt;li&gt;Pepe. 5 &lt;/li&gt;<br />
+		&lt;li&gt;María. 8 &lt;/li&gt;<br />
+		&lt;li&gt;Manuel. 3&lt;/li&gt;<br />
+		&lt;li&gt;Total. 16&lt;/li&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/ul&gt;
+	</p>
+</blockquote>
+<p>
+Le aplicaremos los estilos siguientes:
+</p>
+<blockquote>
+	<p>
+	li:first-child {font-size:22px;
+	color:#333399; list-style-type: none }<br />
+	li:last-of-type {font-size:16px;
+	color:#333399 ; font-weight:bolder; }
+	</p>
+</blockquote>
+<p>
+En este caso no  había diferencia entre
+emplear <b>child </b>o <b>of-type</b>. El resultado que obtenemos es el de la
+figura:
+</p>
+<p>
+<img src="fig1106.jpg" height="387" width="600" />
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id135">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 4</h2>
+<div class="iDevice_inner">
+<div id="ta135_26_2" class="block" style="display:block;position:relative">
+<p>
+Siguiendo con nuestro
+ejemplo, crearemos un enlace a la página desde la que tomamos el
+texto original y definiremos estilos para los diferentes estados
+posibles del enlace, mediante los <b>pseudoselectores</b>.
+</p>
+<p>
+Definiremos en la cabecera de la página al menos los estilos para <b>a:link</b>, <b>a:hover</b> y <b>a:visited</b>. 
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="qu_son_las_hojas_de_estilo.html">&laquo; Anterior</a> | <a href="estructura_de_una_regla_css.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

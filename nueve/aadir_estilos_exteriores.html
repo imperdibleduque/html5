@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Añadir estilos exteriores | Hojas de estilo </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Añadir estilos exteriores</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Hojas de estilo</a><ul>
+<li><a href="recurso_tic_hojas_de_estilo.html" class="daddy">Recurso TIC: Hojas de estilo</a><ul>
+<li><a href="qu_son_las_hojas_de_estilo.html" class="no-ch">¿Qué son las hojas de estilo?</a></li>
+<li><a href="clases_e_identificadores.html" class="no-ch">Clases e identificadores</a></li>
+<li><a href="estructura_de_una_regla_css.html" class="no-ch">Estructura de una regla CSS</a></li>
+<li><a href="insercin_de_reglas_css_en_una_pgina_web.html" class="no-ch">Inserción de reglas CSS en una página web</a></li>
+<li id="active"><a href="aadir_estilos_exteriores.html" class="active no-ch">Añadir estilos exteriores</a></li>
+<li><a href="prioridad_de_los_estilos.html" class="no-ch">Prioridad de los estilos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_de_pginas_web.html" class="no-ch">Aplicar estilos con un editor de páginas web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id139">
+<div class="iDevice emphasis0">
+<div id="ta139_1" class="block" style="display:block;position:relative">
+<p>
+Aún hay un método más para aplicar estilos, consistente en
+almacenar los estilos fuera de la página web. Pensemos en un sitio
+web con 20 páginas a las que le vamos a dar una apariencia común.
+Para usar los estilos en la cabecera de la página, tendríamos que
+copiar el conjunto de reglas y pegarlo en cada una de las páginas.
+Sería viable, pero cada vez que fuésemos a modificar algún detalle
+de los estilos, tendríamos que abrir las 20 páginas y aplicar los
+cambios. Esto es poco racional.
+</p>
+<p>
+Para trabajar cómodamente con estilos en sitios grandes, el
+método ideal se basa en crear un archivo con extensión .css, dentro
+del que meteremos todos los estilos de nuestro sitio web. 
+</p>
+<p>
+En concreto, un archivo de estilos tendría una apariencia similar
+al de la figura.
+</p>
+<p>
+<img src="fig1107.jpg" height="426" width="600" />
+</p>
+<h2>Enlazar un archivo .css</h2>
+<p>
+Para que el archivo con los estilos tenga efecto en la página,
+debemos indicar en la cabecera del archivo .html que se va a tomar
+ese estilo, mediante la etiqueta <b>&lt;link&gt;</b>, así:
+</p>
+<blockquote>
+	<p>
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;misestilos.css&quot;
+	type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+	</p>
+</blockquote>
+<p>
+Cada parámetro tiene su propio significado:
+</p>
+<ul>
+	<li><b>rel</b>: indica la relación entre el documento y el archivo que
+	se carga; en este caso será su hoja de estilos.</li>
+	<li><b>href</b>: como en los enlaces normales, indica la URL del
+	archivo. Al encontrarse en la misma carpeta, sólo indicaremos el
+	nombre; pero si estuviese en otro lugar o incluso en otro servidor,
+	crearíamos las rutas siguiendo las normas de los enlaces.</li>
+	<li><b>type</b>: indica el tipo de información. Tanto este valor como
+	el de <b>rel</b>, serán siempre iguales.</li>
+	<li><b>media</b>: especifica a qué medio se aplicará la hoja de
+	estilo. En este caso se aplica a todos los medios, pero podríamos
+	tener hojas de estilo diferentes para impresión (<b>print</b>), móviles
+	(<b>handheld</b>), televisiones (<b>tv</b>), etc.</li>
+</ul>
+<p>
+Por tanto, esa línea será la que repetiremos a través de
+nuestras diferentes páginas, para que tomen la apariencia deseada.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id156">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta156_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b156" class="block" style="display:block;position:relative">Para trabajar cómodamente con estilos en sitios grandes, el método ideal se basa en crear un archivo con extensión .css, dentro del que meteremos todos los estilos de nuestro sitio web. 
+</div><br/>Verdadero <input type="radio" name="option0b156" id="true0b156" onclick="getFeedback(0,2,'0b156','truefalse')"/> 
+Falso <input type="radio" name="option0b156" id="false0b156" onclick="getFeedback(1,2,'0b156','truefalse')"/>
+<div id="s0b0b156" style="color: rgb(0, 51, 204);display: none;" even_steven="162">¡Correcto! </div>
+<div id="s1b0b156" style="color: rgb(0, 51, 204);display: none;" even_steven="163">¡Incorrecto! </div>
+<div id="sfbk0b156" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b156" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b156" class="block" style="display:block;position:relative">Para que el archivo con los estilos tenga efecto en la página, debemos indicar en la cabecera del archivo .html que se va a tomar ese estilo, mediante la etiqueta &lt;type&gt;.
+</div><br/>Verdadero <input type="radio" name="option1b156" id="true1b156" onclick="getFeedback(0,2,'1b156','truefalse')"/> 
+Falso <input type="radio" name="option1b156" id="false1b156" onclick="getFeedback(1,2,'1b156','truefalse')"/>
+<div id="s0b1b156" style="color: rgb(0, 51, 204);display: none;" even_steven="163">¡Incorrecto! </div>
+<div id="s1b1b156" style="color: rgb(0, 51, 204);display: none;" even_steven="162">¡Correcto! </div>
+<div id="sfbk1b156" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b156" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id140">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta140_31_2" class="block" style="display:block;position:relative">
+<p>
+Otra forma de importar una hoja de estilos es
+mediante la secuencia <b>@import url(misestilos.css)</b>. Esta línea se
+insertaría entre las etiquetas <b>&lt;style&gt; </b>y <b>&lt;/style&gt;</b>. Este
+método se puede usar también para importar una hoja de estilos
+dentro de otra hoja de estilos.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id141">
+<div class="iDevice emphasis0">
+<div id="ta141_1" class="block" style="display:block;position:relative">
+<h2>Múltiples hojas de estilo</h2>
+<p>
+Un detalle a tener en cuenta es que una misma página web puede
+emplear varias hojas de estilo diferentes. De hecho es una práctica
+muy frecuente para separar, por ejemplo, los aspectos relativos a
+maquetación de los puramente gráficos. 
+</p>
+<p>
+Cuando llegue el momento de preparar la página web, el navegador
+juntará todos los estilos y los ordenará, para aplicarlos
+correctamente.
+</p>
+</div></div>
+</div>
+<div class="noprt" align="right"><a href="insercin_de_reglas_css_en_una_pgina_web.html">&laquo; Anterior</a> | <a href="prioridad_de_los_estilos.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

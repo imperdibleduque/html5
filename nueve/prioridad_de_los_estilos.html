@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Prioridad de los estilos | Hojas de estilo </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Prioridad de los estilos</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Hojas de estilo</a><ul>
+<li><a href="recurso_tic_hojas_de_estilo.html" class="daddy">Recurso TIC: Hojas de estilo</a><ul>
+<li><a href="qu_son_las_hojas_de_estilo.html" class="no-ch">¿Qué son las hojas de estilo?</a></li>
+<li><a href="clases_e_identificadores.html" class="no-ch">Clases e identificadores</a></li>
+<li><a href="estructura_de_una_regla_css.html" class="no-ch">Estructura de una regla CSS</a></li>
+<li><a href="insercin_de_reglas_css_en_una_pgina_web.html" class="no-ch">Inserción de reglas CSS en una página web</a></li>
+<li><a href="aadir_estilos_exteriores.html" class="no-ch">Añadir estilos exteriores</a></li>
+<li id="active"><a href="prioridad_de_los_estilos.html" class="active no-ch">Prioridad de los estilos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_de_pginas_web.html" class="no-ch">Aplicar estilos con un editor de páginas web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id142">
+<div class="iDevice emphasis0">
+<div id="ta142_1" class="block" style="display:block;position:relative">
+<p>
+Al crear estilos en diferentes lugares, nos surge una duda, ¿qué
+sucede si definimos un estilo para un párrafo en una página
+externa, en la propia cabecera de la página y como un estilo interno
+mediante<b> &lt;style&gt;</b>? ¿Cuál se aplicará? 
+</p>
+<p>
+Las hojas de estilo se denominan &quot;en cascada&quot; precisamente por la
+forma que tienen de definir su prioridad. Cuando un mismo estilo está
+definido en varios lugares, se sigue un orden de preferencia muy
+claro:
+</p>
+<ul>
+</ul>
+<ul>
+	<li>Primero se aplican los estilos de las hojas externas.
+	</li>
+	<li>Si en la cabecera de la página se repite alguna propiedad de
+	un estilo, se aplica el de la cabecera, obviando la misma propiedad
+	que estuviese definida en la hoja externa.
+	</li>
+	<li>Si en un elemento concreto se ha definido una propiedad
+	específica, se aplica esta última, saltándose las anteriores.
+	</li>
+</ul>
+<p>
+Es decir, se va de mayor a menor, aplicando cada propiedad.
+Insistimos en lo de la propiedad, ya que podemos encontrarnos con que
+en la hoja exterior se define el tipo de letra de los párrafos y en
+el documento interior se define el tamaño. En ese caso se aplicarían
+las dos propiedades, ya que no hay colisión entre ellas.
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id157">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion157_2" class="block" style="display:block;position:relative">Respecto al orden de preferencia en la aplicación de reglas de hojas de estilos CSS, podemos decir:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option157_2" id="i157_5" onclick="getFeedback(0,3,'157_2','multi')"/></td><td>
+<div id="taans157_5" class="block" style="display:block;position:relative">Primero se aplican los estilos de las hojas internas.
+</div></td></tr>
+<tr><td><input type="radio" name="option157_2" id="i157_454" onclick="getFeedback(1,3,'157_2','multi')"/></td><td>
+<div id="taans157_454" class="block" style="display:block;position:relative">Si en la cabecera de la página se repite alguna propiedad de un estilo, se aplica el de la cabecera, obviando la misma propiedad que estuviese definida en la hoja externa.
+</div></td></tr>
+<tr><td><input type="radio" name="option157_2" id="i157_457" onclick="getFeedback(2,3,'157_2','multi')"/></td><td>
+<div id="taans157_457" class="block" style="display:block;position:relative">Si en un elemento concreto se ha definido una propiedad específica, se salta esta última, se aplican las anteriores.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b157_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b157_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa2b157_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id143">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta143_34_2" class="block" style="display:block;position:relative">
+<p>
+Deberíamos intentar evitar siempre el uso del
+parámetro<b> style</b> en cualquier elemento de una página.
+Nuestras páginas se vuelven más complejas con su uso y más
+difíciles de modificar. Es más apropiado mantener los estilos en
+archivos externos.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id144">
+<div class="iDevice emphasis0">
+<div id="ta144_1" class="block" style="display:block;position:relative">
+<p>
+El uso del modificador<b> !important</b> en una determinada regla hace
+que ésta se salte la cadena de prioridades y que se aplique de forma
+prioritaria. Se emplea así:
+</p>
+<blockquote>
+	<p>
+	p {margin: 6px !important; }
+	</p>
+</blockquote>
+<p>
+Su uso se suele hacer más en la fase de diseño de la página web
+que una vez terminada, ya que pocas veces se justifica el saltarse el
+orden predefinido de los estilos.
+</p>
+</div></div>
+</div>
+<div class="noprt" align="right"><a href="aadir_estilos_exteriores.html">&laquo; Anterior</a> | <a href="aplicar_estilos_con_un_editor_de_pginas_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

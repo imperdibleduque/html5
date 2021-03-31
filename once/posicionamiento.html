@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Posicionamiento | Maquetación con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Posicionamiento</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Maquetación con estilos</a><ul>
+<li><a href="recurso_tic_maquetacin_con_estilos.html" class="daddy">Recurso TIC: Maquetación con estilos</a><ul>
+<li><a href="el_modelo_de_caja.html" class="no-ch">El modelo de caja</a></li>
+<li><a href="sombras.html" class="no-ch">Sombras</a></li>
+<li><a href="anchura_y_altura_de_una_caja.html" class="no-ch">Anchura y altura de una caja</a></li>
+<li><a href="visualizacin_de_elementos.html" class="no-ch">Visualización de elementos</a></li>
+<li><a href="elementos_flotantes.html" class="no-ch">Elementos flotantes</a></li>
+<li id="active"><a href="posicionamiento.html" class="active no-ch">Posicionamiento</a></li>
+<li><a href="transformaciones_y_prefijos.html" class="no-ch">Transformaciones y prefijos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_web.html" class="no-ch">Aplicar estilos con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id154">
+<div class="iDevice emphasis0">
+<div id="ta154_1" class="block" style="display:block;position:relative">Avanzaremos ahora un escalón más en el
+camino de libertad organizativa que nos proporcionan las hojas de
+estilo en cascada mediante las propiedades de posicionamiento.
+<p>
+La propiedad <b><i>position</i> </b>se emplea para
+definir el tipo de posicionamiento de un objeto en la pantalla según
+diferentes valores. Además se acompaña de las propiedades <b>left
+</b>(izquierda) y <b>top </b>(arriba) para especificar la distancia que tendrá
+el objeto respecto al borde izquierdo y al superior.
+</p>
+<p>
+Hagamos una prueba con este ejemplo:
+</p>
+<blockquote>
+	<p>
+	div#bloque1 {
+	position:fixed;top:60px;left:20px;}<br />
+	div#bloque2 {
+	position:fixed;top:30px;left:50px;}<br />
+	div#bloque3 {
+	position:fixed;top:20%;left:20%;}
+	</p>
+</blockquote>
+<p>
+Cada valor diferente de <i>position</i> mostrará
+un resultado diferente:
+</p>
+<ul>
+	<li><b>fixed</b>: indicamos que se van a
+	especificar unos valores determinados; los elementos dejan de estar
+	ocupando sus lugares en la pantalla. La figura muestra un ejemplo:
+	</li>
+</ul>
+<p>
+<img src="fig1324.jpg" height="504" width="600" />
+</p>
+<ul>
+	<li><b>relative</b>: se indicarán también los
+	lugares, pero en este caso sus huecos sí permanecerán. En la
+	figura se ven los valores relativos. Podemos ver que el bloque 4 no
+	se ha desplazado a la parte superior, como en el caso anterior, ya
+	que las posiciones de los otros tres bloques se reservan.
+	</li>
+</ul>
+<p>
+<img src="fig1325.jpg" height="504" width="600" />
+</p>
+<ul>
+	<li><b>absolute</b>: la posición de cada elemento
+	se define respecto al anterior que la tenga modificada o del inicio
+	de la página, si es el primer elemento absoluto.
+	</li>
+</ul>
+<p>
+<img src="fig1326.jpg" height="504" width="600" />
+</p>
+<p>
+Ya sea mediante porcentajes o con valores
+exactos, el uso de este tipo de posicionamiento nos permitirá
+distribuir los bloques de una página web en la posición deseada.
+</p>
+<p>
+En el modelo que hemos trabajado a lo largo
+de este módulo resultaría muy simple reubicarlos horizontalmente,
+con el siguiente código:
+</p>
+<blockquote>
+	<p>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt;<br />
+	&lt;head&gt;<br />
+	&lt;meta http-equiv=&quot;content-type&quot;
+	content=&quot;text/html; charset=UTF-8&quot;&gt;<br />
+	&lt;title&gt;Tabla con estilo&lt;/title&gt;<br />
+	&lt;link href=&quot;position.css&quot;
+	rel=&quot;stylesheet&quot;   type=&quot;text/css&quot;&gt;<br />
+	&lt;/head&gt;<br />
+	<br />
+	&lt;body&gt;
+	</p>
+	<blockquote>
+		&lt;div id=&quot;cabecera&quot;&gt;<br />
+		...<br />
+		&lt;/div&gt;<br />
+		<br />
+		&lt;div id=&quot;bloqueprincipal&quot;&gt;<br />
+		….<br />
+		&lt;/div&gt;<br />
+		<br />
+		&lt;div id=&quot;bloquelateral&quot;&gt;<br />
+		….<br />
+		&lt;/div&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/body&gt;<br />
+	<br />
+	&lt;/html&gt;
+	</p>
+</blockquote>
+<p>
+Cada uno de los tres bloques tiene algunos
+estilos aplicados:
+</p>
+<blockquote>
+	<p>
+	#cabecera {
+	</p>
+	<blockquote>
+		font-family: Arial,
+		Helvetica, sans-serif;<br />
+		color: rgb(255, 255, 255);<br />
+		}<br />
+	</blockquote>
+	<p>
+	#bloqueprincipal {
+	</p>
+	<blockquote>
+		width:
+		68%;<br />
+		background-color: rgb(0, 126, 0);<br />
+		position:absolute; top: 100px;<br />
+		}<br />
+	</blockquote>
+	<p>
+	#bloquelateral {
+	</p>
+	<blockquote>
+		background-color:
+		rgb(0, 0, 0);<br />
+		font-family: Arial, Helvetica, sans-serif;<br />
+		font-size: 0.7em;<br />
+		color: rgb(255, 255, 255);<br />
+		position: absolute;left:70%;100px;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+Y éste es el resultado:
+</p>
+<p>
+<img src="fig1327.jpg" height="393" width="600" />
+</p>
+<p>
+La combinación del 68% de anchura del
+bloque principal con el comienzo del bloque lateral, que lo hace en
+el 70%, nos permite tener un diseño que se ajusta a la resolución de
+la pantalla.
+</p>
+<p>
+También podríamos haber optado por un modelo fijo, basado en
+píxeles en todos los tamaños.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id155">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta155_43_2" class="block" style="display:block;position:relative">
+<p>
+Ésta es una de la partes del
+uso de las hojas de estilo que más cuesta controlar; la combinación
+entre tamaños, porcentajes y posiciones es a veces compleja y cuesta
+conseguir los resultados esperados, pero con práctica se consiguen.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id157">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 10</h2>
+<div class="iDevice_inner">
+<div id="ta157_45_2" class="block" style="display:block;position:relative">Diseñaremos una página
+web que tenga cuatro bloques diferenciados (los podemos hacer como
+<b>&lt;div&gt;</b>). El primero será la cabecera, el segundo y el tercero serán
+bloques centrales de contenidos y el cuarto lo emplearemos para hacer
+las veces de pie de página. Tanto el primero como el último deben
+ocupar todo el ancho de la página, mientras que los centrales deben
+repartirse el resto del espacio. Colorearemos cada <b>&lt;div&gt;</b> con un tono
+diferente, para destacar más las diferencias.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id156">
+<div class="iDevice emphasis0">
+<div id="ta156_1" class="block" style="display:block;position:relative">
+<h2>Los planos</h2>
+<p>
+Al utilizar la propiedad <i>position</i>
+podemos colocar las capas una encima de otras. El plano en que se
+sitúa cada capa se puede modificar mediante la propiedad<b> z-index</b>
+seguida de un número. 
+</p>
+<p>
+Los valores más altos indican que el bloque
+se situará encima de los demás, en un plano más alto, mientras que
+los valores menores se situarán detrás. Este sistema de poner unos
+bloques sobre otros se utiliza para mostrar ventanas emergentes sobre
+la página, galerías de imágenes, etc.
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id180">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion180_2" class="block" style="display:block;position:relative">¿Qué significa el parámetro <i>fixed</i>?
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option180_2" id="i180_5" onclick="getFeedback(0,3,'180_2','multi')"/></td><td>
+<div id="taans180_5" class="block" style="display:block;position:relative">Indica la posición de cada elemento definido respecto al anterior que la tenga modificada o del inicio de la página, si es el primer elemento absoluto.<br />
+</div></td></tr>
+<tr><td><input type="radio" name="option180_2" id="i180_429" onclick="getFeedback(1,3,'180_2','multi')"/></td><td>
+<div id="taans180_429" class="block" style="display:block;position:relative">Indica que se van a especificar unos valores determinados respecto a la posición que van a ocupar. 
+</div></td></tr>
+<tr><td><input type="radio" name="option180_2" id="i180_432" onclick="getFeedback(2,3,'180_2','multi')"/></td><td>
+<div id="taans180_432" class="block" style="display:block;position:relative">Indicarán el lugar del contenido pero en este caso sus huecos permanecerán. 
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b180_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b180_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa2b180_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="elementos_flotantes.html">&laquo; Anterior</a> | <a href="transformaciones_y_prefijos.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

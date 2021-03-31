@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Transferencia FTP | Publicación de un proyecto web </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Transferencia FTP</h1></div>
+      </div>
+
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Publicación de un proyecto web</a><ul>
+<li><a href="recurso_tic_publicacin_de_una_pgina_web.html" class="daddy">Recurso TIC: Publicación de una página web</a><ul>
+<li id="active"><a href="transferencia_ftp.html" class="active no-ch">Transferencia FTP</a></li>
+<li><a href="conectar_con_un_servidor_remoto.html" class="no-ch">Conectar con un servidor remoto</a></li>
+<li><a href="transferencia_de_archivos.html" class="no-ch">Transferencia de archivos</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id47">
+<div class="iDevice emphasis0">
+<div id="ta47_1" class="block" style="display:block;position:relative">Hasta aquí está claro, pero, ¿cómo envío mis archivos html,
+mis imágenes y mis cosas al servidor de páginas web? Aunque algunos
+servidores ofrecen métodos sencillos basados en el navegador, el
+método más extendido es transferir los archivos mediante un
+conjunto de normas identificadas como <b>protocolo de transferencia de
+archivos</b> (que son las siglas de <b>FTP</b>).
+<p>
+Este matiz nos indica que para enviar las páginas web al servidor,
+normalmente emplearemos una aplicación de transferencia FTP. En
+nuestro caso emplearemos para nuestras pruebas <i>Filezilla</i>, que es
+software libre y multiplataforma, por lo que la podremos utilizar sin
+coste alguno desde cualquier sistema operativo.  
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id120">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Descarga Filezilla</h2>
+<div class="iDevice_inner">
+<div id="ta120_23_2" class="block" style="display:block;position:relative">
+<p>
+<a href="http://filezilla-project.org/" target="_blank">http://filezilla-project.org/</a>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id121">
+<div class="iDevice emphasis0">
+<div id="ta121_1" class="block" style="display:block;position:relative">
+<p>
+En la página de <i>Filezilla</i> encontraremos también para Windows
+una versión zip, que ni siquiera requiere instalación; basta con
+descomprimirla y ejecutarla.
+</p>
+<p>
+Una vez descargada, procederemos a instalarla con los métodos
+habituales. <i>Filezilla</i> nos mostrará su pantalla inicial, recogida en la
+figura: 
+</p>
+<p>
+<img src="fig0801.jpg" height="491" width="600" />
+</p>
+<p>
+Tras elegir el idioma, podremos empezar a trabajar con normalidad.
+El espacio se distribuye de la siguiente manera:
+</p>
+<ul>
+	<li>En la parte izquierda encontramos un explorador de archivos
+	que nos muestra <b>el contenido de nuestro ordenador</b>. Con él podremos
+	desplazarnos hasta la carpeta que contiene nuestro sitio web.</li>
+	<li>La parte derecha nos mostrará <b>las carpetas de nuestro
+	servidor web</b>. Allí aparecerán los archivos que hayamos transferido
+	y podremos editarlos, modificarlos, borrarlos o realizar cualquier
+	operación que necesitemos.</li>
+	<li>El panel superior presenta <b>los mensajes que emite el
+	servidor</b>. Es información administrativa, que sólo nos interesará
+	si se produce alguna incidencia.</li>
+	<li>En el panel inferior veremos<b> información sobre las
+	transferencias de archivos</b> que queden pendientes, errores al
+	transmitir algún archivo, etc.</li>
+</ul>
+<p>
+Por tanto el procedimiento se resume en tres pasos:
+</p>
+<blockquote>
+	<p>
+	1. Conectar con el servidor web, llamado normalmente el <b>servidor
+	remoto</b>.
+	</p>
+	<p>
+	2. Seleccionar los archivos que nos interesan en el panel local,
+	el panel de la izquierda.
+	</p>
+	<p>
+	3. Transferirlos al servidor, arrastrándolos hasta el panel
+	derecho.
+	</p>
+</blockquote>
+<p>
+Tras realizar esos pasos, nuestra web estará ya visible desde la
+dirección <b>http://</b> correspondiente.
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id131">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion131_2" class="block" style="display:block;position:relative">¿A qué se refieren las siglas FTP?
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option131_2" id="i131_5" onclick="getFeedback(0,3,'131_2','multi')"/></td><td>
+<div id="taans131_5" class="block" style="display:block;position:relative">Es un método sencillo de transmisión de archivos basados en un navegador.
+</div></td></tr>
+<tr><td><input type="radio" name="option131_2" id="i131_411" onclick="getFeedback(1,3,'131_2','multi')"/></td><td>
+<div id="taans131_411" class="block" style="display:block;position:relative">Es la transferencia de archivos teniendo en cuenta un conjunto de normas.
+</div></td></tr>
+<tr><td><input type="radio" name="option131_2" id="i131_414" onclick="getFeedback(2,3,'131_2','multi')"/></td><td>
+<div id="taans131_414" class="block" style="display:block;position:relative">Consiste en transferir archivos con la extensión .ftp
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b131_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b131_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa2b131_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_publicacin_de_una_pgina_web.html">&laquo; Anterior</a> | <a href="conectar_con_un_servidor_remoto.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Conectar con un servidor remoto | Publicación de un proyecto web </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Conectar con un servidor remoto</h1></div>
+      </div>
+
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Publicación de un proyecto web</a><ul>
+<li><a href="recurso_tic_publicacin_de_una_pgina_web.html" class="daddy">Recurso TIC: Publicación de una página web</a><ul>
+<li><a href="transferencia_ftp.html" class="no-ch">Transferencia FTP</a></li>
+<li id="active"><a href="conectar_con_un_servidor_remoto.html" class="active no-ch">Conectar con un servidor remoto</a></li>
+<li><a href="transferencia_de_archivos.html" class="no-ch">Transferencia de archivos</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">Para conectar con un servidor remoto, previamente tenemos que tener
+una cuenta en ese servidor. Una cuenta es un nombre de usuario y
+contraseña, que nos darán acceso a una carpeta concreta del
+servidor. 
+<p>
+En muchos casos nuestro proveedor de Internet nos facilita espacio
+web en sus servidores; en otros, lo hacen nuestras propias empresas
+de trabajo. Si no sucede así, siempre podremos recurrir a los
+servidores web gratuitos. Hay multitud de servidores web que
+facilitan espacios gratuitos con ciertas limitaciones o publicidad
+para las personas o empresas que quieren crear sus primeras páginas
+web. No pondremos ningún ejemplo, porque resulta tan sencillo como
+buscar servidor web gratuito en Internet. 
+</p>
+<p>
+Si buscamos servidores gratuitos en Internet, también
+encontraremos muchos resultados empleando el término inglés,
+<i>hosting</i> o <i>host</i>, que son los términos que se emplean para describir
+el alojamiento o el servidor web.
+</p>
+<p>
+Independientemente del tipo de servidor por el que optemos, al
+final debemos contar con tres datos imprescindibles:
+</p>
+<ul>
+	<li><b>Dirección del servidor FTP</b>: la URL con la que accederemos al
+	servidor de FTP.</li>
+	<li><b>Nombre de usuario</b>: el nombre de nuestra cuenta.</li>
+	<li><b>Contraseña</b>: la clave para acceder a la cuenta.
+	</li>
+</ul>
+<p>
+Con esos tres datos seremos capaces de conectarnos a nuestro
+servidor de ftp en el 99% de los casos. En ocasiones puede que nos
+indiquen un par de datos más:
+</p>
+<ul>
+	<li><b>Carpeta del servidor</b>: ruta en la que debemos subir los
+	archivos. Casi nunca se indica porque el propio servidor ya nos
+	lleva a la carpeta apropiada.</li>
+	<li><b>Puerto FTP</b>: en algunos servidores hay que indicar este
+	número, que es punto en el que el servidor escucha las peticiones
+	que le llegan para realizar transferencias FTP. Normalmente no se
+	indica porque es casi siempre el número 21.
+	</li>
+</ul>
+<p>
+Volviendo a <i>Filezilla</i>, encontramos que la información anterior es
+la que podemos introducir directamente en la barra superior, recogida
+en la figura:
+</p>
+<p>
+<img src="fig0802.jpg" height="73" width="600" />
+</p>
+<p>
+Al hacer clic en el botón <b>Conexión rápida,</b> <i>Filezilla </i>comenzará
+la conexión. Si los datos introducidos son correctos, en el panel de
+la derecha veremos ya las carpetas del servidor, con los archivos que
+pueda haber. Si hay algún problema, veremos mensajes de color rojo en
+el panel superior indicando la respuesta errónea por parte del
+servidor.
+</p>
+<p>
+La figura muestra una conexión correcta:
+</p>
+<p>
+<img src="fig0803.jpg" height="511" width="600" />
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id123">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta123_26_2" class="block" style="display:block;position:relative">
+<p>
+En algunos servidores, como el del ejemplo, al acceder podemos
+encontrar una carpeta denominada <b>public_html</b> o <b>http</b>. En esos casos
+debemos tener en cuenta que las páginas web se deben guardar en su
+interior para que sean visibles, no directamente en la carpeta
+principal del FTP.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id124">
+<div class="iDevice emphasis0">
+<div id="ta124_1" class="block" style="display:block;position:relative">
+<h2>Guardar la configuración del servidor
+</h2>
+<p>
+Presumiblemente nos conectaremos con frecuencia al mismo servidor
+FTP. Por ello, una vez conectados, podemos almacenar la configuración
+seleccionando la opción <b>Copiar conexión actual</b> al gestor de
+sitios del menú<b> Archivo</b>. 
+</p>
+<p>
+En la ventana de la figura sólo tendremos que indicar un nombre
+para el servidor y quedará almacenado:
+</p>
+<p>
+<img src="fig0804.jpg" height="427" width="597" />
+</p>
+<p>
+Desde ese momento podremos conectar de nuevo con el servidor desde
+la lista desplegable de la esquina superior izquierda, recogida en la
+figura.
+</p>
+<p>
+<img src="fig0805.jpg" height="177" width="129" />
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id132">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion132_2" class="block" style="display:block;position:relative">Si nos queremos conectar con un servidor de FTP necesitamos:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option132_2" id="i132_5" onclick="getFeedback(0,3,'132_2','multi')"/></td><td>
+<div id="taans132_5" class="block" style="display:block;position:relative">URL del servidor FTP, el nombre de usuario, la clave de la cuenta, carpeta del servidor para subir los archivos y puerto FTP.
+</div></td></tr>
+<tr><td><input type="radio" name="option132_2" id="i132_417" onclick="getFeedback(1,3,'132_2','multi')"/></td><td>
+<div id="taans132_417" class="block" style="display:block;position:relative">URL del servidor FTP, el nombre de usuario, la clave de la cuenta y, sólo en algunos casos, una carpeta para subir los archivos al servidor y un puerto FTP.
+</div></td></tr>
+<tr><td><input type="radio" name="option132_2" id="i132_420" onclick="getFeedback(2,3,'132_2','multi')"/></td><td>
+<div id="taans132_420" class="block" style="display:block;position:relative">URL del servidor FTP, el nombre de usuario y la clave de la cuenta. 
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b132_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b132_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa2b132_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id128">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta128_31_2" class="block" style="display:block;position:relative">Aunque dispongamos de un espacio web, localizaremos en Internet alguna alternativa gratuita y analizaremos sus ventajas e inconvenientes. Si no disponemos de espacio web, crearemos un espacio en el servidor que presente más ventajas.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="transferencia_ftp.html">&laquo; Anterior</a> | <a href="transferencia_de_archivos.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

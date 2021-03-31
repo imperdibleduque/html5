@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> El modelo de caja | Maquetación con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">El modelo de caja</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Maquetación con estilos</a><ul>
+<li><a href="recurso_tic_maquetacin_con_estilos.html" class="daddy">Recurso TIC: Maquetación con estilos</a><ul>
+<li id="active"><a href="el_modelo_de_caja.html" class="active no-ch">El modelo de caja</a></li>
+<li><a href="sombras.html" class="no-ch">Sombras</a></li>
+<li><a href="anchura_y_altura_de_una_caja.html" class="no-ch">Anchura y altura de una caja</a></li>
+<li><a href="visualizacin_de_elementos.html" class="no-ch">Visualización de elementos</a></li>
+<li><a href="elementos_flotantes.html" class="no-ch">Elementos flotantes</a></li>
+<li><a href="posicionamiento.html" class="no-ch">Posicionamiento</a></li>
+<li><a href="transformaciones_y_prefijos.html" class="no-ch">Transformaciones y prefijos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_web.html" class="no-ch">Aplicar estilos con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block" style="display:block;position:relative">Cada elemento HTML que podemos encontrar en una página web se
+encuentra rodeado de una caja con varias propiedades que pueden ser
+modificadas. 
+<p>
+La figura muestra esas propiedades.
+</p>
+<p>
+<img src="fig1201.jpg" height="300" width="300" /> 
+</p>
+<p>
+Además del contenido, cada elemento puede tener o no un borde y,
+además, podemos modificar la distancia entre el borde y el límite de
+la caja (<b>margin</b>) y la distancia entre ese borde y el comienzo del
+contenido (<b>padding</b>).
+</p>
+<p>
+Estas opciones nos proporcionan un gran control sobre cómo debe
+situarse cada elemento.
+</p>
+<p>
+Observemos el ejemplo de la figura:
+</p>
+<p>
+<img src="fig1302.jpg" height="458" width="600" />
+</p>
+<p>
+Se trata de una tabla, con un título y una imagen. Cada elemento
+HTML tiene ya su propio estilo aplicado, todos conocidos. Éstos son
+los principales que, como se puede observar, hemos aplicado a los
+elementos genéricos directamente:
+</p>
+<blockquote>
+	body {<br />
+	<blockquote>
+		text-align: left;<br />
+		background-color: rgb(200, 214,
+		185);<br />
+		}<br />
+	</blockquote>
+	h1 {<br />
+	<blockquote>
+		font-family: Arial, Helvetica, sans-serif;<br />
+		color:
+		rgb(102, 0, 204);<br />
+		vertical-align: top;<br />
+		}<br />
+	</blockquote>
+	caption {<br />
+	<blockquote>
+		font-style: italic;<br />
+		color: rgb(153, 153, 153);<br />
+		}<br />
+	</blockquote>
+	img {<br />
+	<blockquote>
+		text-align: left;<br />
+		vertical-align: top;<br />
+		}<br />
+	</blockquote>
+	tbody {<br />
+	<blockquote>
+		text-align: center;<br />
+		background-color: rgb(204, 204, 255);<br />
+		}<br />
+	</blockquote>
+</blockquote>
+<p>
+En la imagen se aprecia que algunos elementos están situados muy
+pegados entre sí. Se aprecian poco esos espacios de los que estamos
+hablando. Probemos a modificar alguno de sus valores.
+</p>
+<h2>Margen</h2>
+<p>
+Comenzaremos con la imagen. Con tan sólo modificar su margen,
+observaremos cómo se distancia del resto de los elementos. Usaremos
+la propiedad <b>margin </b>seguida de un valor numérico o de un
+porcentaje:
+</p>
+<blockquote>
+	<p>
+	img { margin: 20px; }
+	</p>
+</blockquote>
+<p>
+En la figura se puede apreciar el desplazamiento de la imagen 20
+píxeles por cada lado.
+</p>
+<p>
+<img src="fig1303.jpg" height="458" width="600" />
+</p>
+<p>
+Si usamos porcentajes en lugar de una medida exacta, obtendremos un
+resultado relativo al tamaño de la ventana del navegador. Según la
+ocasión, nos convendrá emplear un tipo u otro.
+</p>
+<h2>Relleno</h2>
+<p>
+Probaremos ahora a modificar su relleno, es decir, la distancia
+imaginaria entre un hipotético borde y la imagen propiamente dicha.
+Para ello emplearemos la propiedad <b>padding</b>, exactamente igual que
+hicimos con la anterior. Probemos con un valor menos exagerado:
+</p>
+<blockquote>
+	<p>
+	img { padding: 5px; }
+	</p>
+</blockquote>
+</div></div>
+</div>
+<div class="activityIdevice" id="id133">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta133_21_2" class="block" style="display:block;position:relative">
+<p>
+Tomando una página de ejemplo, modificaremos
+los valores de márgenes y de rellenos de diferentes elementos.
+Pensando en las etiquetas que tenemos en la página, intentaremos
+cambiar aquellas que pueda parecer que no tienen esta cualidad.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id134">
+<div class="iDevice emphasis0">
+<div id="ta134_1" class="block" style="display:block;position:relative">
+<h2>Borde</h2>
+<p>
+Si recargamos la página con esta incorporación, observaremos que,
+en efecto, la imagen se separa un poco más, esos 5 píxeles por cada
+lado, pero no es posible distinguir dónde acaba el efecto del margen
+y comienza el del relleno. Para poder diferenciar los valores,
+deberíamos tener un borde en la imagen.
+</p>
+<blockquote>
+	<p>
+	img {
+	</p>
+	<blockquote>
+		border-width: 2px;<br />
+		border-style: solid;<br />
+		border-color: #007000;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+Con los conocimientos que tenemos ya de CSS podemos intuir con
+facilidad qué es lo que hace cada una de esas tres propiedades: en
+una definimos el <b>grosor del borde</b>, en otra el <b>tipo de línea</b> y en la
+última su<b> color</b>. El resultado se muestra en la figura:
+</p>
+<p>
+<img src="fig1304.jpg" height="458" width="600" />
+</p>
+<p>
+Ahora sí que se aprecia la distancia entre el borde y el
+contenido, qué es de 5 píxeles, y entre el borde y el título, por
+ejemplo, que es de 20 píxeles, más lo que esté configurado de forma
+predeterminada.
+</p>
+<p>
+Podemos probar a aplicar esas propiedades a cualquiera de las
+etiquetas de nuestra página web. Todas ellas se verán afectadas, ya
+que todas tienen esas propiedades asociadas. En la figura hemos
+incrementado el relleno de cada celda (la etiqueta <b>&lt;td&gt;</b>):
+</p>
+<blockquote>
+	<p>
+	td {padding: 5px;}
+	</p>
+</blockquote>
+<p>
+<img src="fig1305.jpg" height="472" width="600" />
+</p>
+<p>
+Así conseguimos que la tabla tenga volumen y que el texto no se
+acerque demasiado a los bordes.
+</p>
+<h2>Laterales</h2>
+<p>
+Tanto <b>margin</b>, como <b>padding </b>y <b>border </b>se pueden emplear para
+modificar laterales de una caja, con independencia de los demás.
+Añadiendo a cada uno de ellos la variación <b>-left</b> (izquierda),
+<b>-right</b> (derecha), <b>-top</b> (arriba) o <b>-bottom</b> (abajo) conseguimos que
+sólo afecte al valor o valores indicados. 
+</p>
+<p>
+En la figura hemos aplicado estas propiedades para el título de
+la página:
+</p>
+<blockquote>
+	<p>
+	h1 {
+	</p>
+	<blockquote>
+		margin-top:40px;<br />
+		padding-left: 5px;<br />
+		padding-right:5px;<br />
+		border-top-width: 2px;<br />
+		border-top-style: dotted;<br />
+		border-top-color: #007000;<br />
+		border-bottom-width: 2px;<br />
+		border-bottom-style: double;<br />
+		border-bottom-color: #007000;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+<img src="fig1306.jpg" height="442" width="600" />
+</p>
+<p>
+Todo el contenido de la etiqueta <b>&lt;h1&gt;</b> (la imagen es parte
+del encabezado) ha tomado los valores indicados.
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id135">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta135_23_2" class="block" style="display:block;position:relative">
+<p>
+Continuando con el ejemplo anterior, iremos
+modificando valores parciales, retirando la propiedad general para
+reemplazarla por otras dos o tres que modifiquen sólo algunos
+laterales.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id136">
+<div class="iDevice emphasis0">
+<div id="ta136_1" class="block" style="display:block;position:relative">
+<h2>Más opciones para los bordes</h2>
+<p>
+Para los bordes podemos definir tres propiedades: su anchura, su
+estilo y su color. La anchura y el color se definen con las medidas
+habituales y los sistemas que ya hemos analizado. El <b>estilo</b>, por su
+parte, se basa en una serie de valores concretos:
+</p>
+<ul>
+	<li><b>dotted</b>: punteado.
+	</li>
+	<li><b>dashed</b>: línea discontinua.
+	</li>
+	<li><b>solid</b>: línea continua.
+	</li>
+	<li><b>double</b>: línea doble.
+	</li>
+	<li><b>groove</b>: tipo de relieve.
+	</li>
+	<li><b>ridge</b>: tipo de relieve.
+	</li>
+	<li><b>inset</b>: tipo de relieve.
+	</li>
+	<li><b>outset</b>: tipo de relieve.
+	</li>
+	<li><b>none</b>: empleado para indicar que no habrá borde
+	</li>
+</ul>
+<p>
+Es cuestión de probar algunos modelos. El valor <b>solid</b> es la línea
+sencilla, la más empleada.
+</p>
+<p>
+Como ya sucedía con otras propiedades, podemos reagrupar los
+valores referidos a los bordes en una sola propiedad genérica
+denominada <b>border</b>. Para ello estableceremos los valores separados por
+espacios y en el orden de <b>tamaño, estilo y color</b>, como en este
+ejemplo que haría la misma función que el recuadro anterior:
+</p>
+<blockquote>
+	<p>
+	img { border: 2px solid #007000;}
+	</p>
+</blockquote>
+</div></div>
+</div>
+<div class="activityIdevice" id="id137">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta137_25_2" class="block" style="display:block;position:relative">Reemplazaremos todos los bordes que hayamos
+aplicado hasta ahora utilizando el modelo condensado.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id138">
+<div class="iDevice emphasis0">
+<div id="ta138_1" class="block" style="display:block;position:relative">
+<h2>Esquinas redondeadas</h2>
+<p>
+Con los estilos actuales podemos trazar un borde alrededor de una
+figura y que tenga sus esquinas redondeadas. 
+</p>
+<p>
+La propiedad que lo permite es <b>border-radius</b>, acompañada de un
+valor numérico. El ejemplo anterior, con la incorporación de esta
+propiedad, daría como resultado el rectángulo de la figura:
+</p>
+<blockquote>
+	<p>
+	img { 
+	</p>
+	<blockquote>
+		border: 2px solid #007000;<br />
+		border-radius:25px;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+<img src="fig1307.jpg" height="269" width="228" />
+</p>
+<p>
+Para obtener un efecto apropiado y que el borde no chocase con el
+contenido, hemos incrementado un poco el relleno. Esta es la regla
+completa para la imagen:
+</p>
+<blockquote>
+	<p>
+	img {
+	</p>
+	<blockquote>
+		text-align: left;<br />
+		vertical-align: top;<br />
+		margin: 20px;<br />
+		padding: 20px; <br />
+		border: 2px solid #007000;<br />
+		border-radius:25px;<br />
+		}
+	</blockquote>
+</blockquote>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id175">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta175_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b175" class="block" style="display:block;position:relative">La propiedad border-ridge, acompañada de un valor numérico nos  proporciona esquinas redondeadas en una imagen.
+</div><br/>Verdadero <input type="radio" name="option0b175" id="true0b175" onclick="getFeedback(0,2,'0b175','truefalse')"/> 
+Falso <input type="radio" name="option0b175" id="false0b175" onclick="getFeedback(1,2,'0b175','truefalse')"/>
+<div id="s0b0b175" style="color: rgb(0, 51, 204);display: none;" even_steven="181">¡Incorrecto! </div>
+<div id="s1b0b175" style="color: rgb(0, 51, 204);display: none;" even_steven="180">¡Correcto! </div>
+<div id="sfbk0b175" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b175" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b175" class="block" style="display:block;position:relative">La opción padding se emplea para modificar laterales de una caja teniendo en cuenta para ello que los parámetros margin y border estén previamente definidos.
+</div><br/>Verdadero <input type="radio" name="option1b175" id="true1b175" onclick="getFeedback(0,2,'1b175','truefalse')"/> 
+Falso <input type="radio" name="option1b175" id="false1b175" onclick="getFeedback(1,2,'1b175','truefalse')"/>
+<div id="s0b1b175" style="color: rgb(0, 51, 204);display: none;" even_steven="181">¡Incorrecto! </div>
+<div id="s1b1b175" style="color: rgb(0, 51, 204);display: none;" even_steven="180">¡Correcto! </div>
+<div id="sfbk1b175" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b175" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_maquetacin_con_estilos.html">&laquo; Anterior</a> | <a href="sombras.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

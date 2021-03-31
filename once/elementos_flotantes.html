@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Elementos flotantes | Maquetación con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Elementos flotantes</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Maquetación con estilos</a><ul>
+<li><a href="recurso_tic_maquetacin_con_estilos.html" class="daddy">Recurso TIC: Maquetación con estilos</a><ul>
+<li><a href="el_modelo_de_caja.html" class="no-ch">El modelo de caja</a></li>
+<li><a href="sombras.html" class="no-ch">Sombras</a></li>
+<li><a href="anchura_y_altura_de_una_caja.html" class="no-ch">Anchura y altura de una caja</a></li>
+<li><a href="visualizacin_de_elementos.html" class="no-ch">Visualización de elementos</a></li>
+<li id="active"><a href="elementos_flotantes.html" class="active no-ch">Elementos flotantes</a></li>
+<li><a href="posicionamiento.html" class="no-ch">Posicionamiento</a></li>
+<li><a href="transformaciones_y_prefijos.html" class="no-ch">Transformaciones y prefijos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_web.html" class="no-ch">Aplicar estilos con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id153">
+<div class="iDevice emphasis0">
+<div id="ta153_1" class="block" style="display:block;position:relative">
+<p>
+Los elementos de una página web pueden
+reubicarse a la izquierda o a la derecha con tan sólo emplear la
+propiedad <b>float</b>, haciendo
+que el resto del contenido se sitúe alrededor de ese elemento.
+</p>
+<p>
+En el siguiente ejemplo la regla:
+</p>
+<blockquote>
+	<p>
+	img { float:left;}
+	</p>
+</blockquote>
+<p>
+provoca que el texto se sitúe alrededor de
+la imagen.
+</p>
+<p>
+<img src="fig1322.jpg" height="369" width="600" />
+</p>
+<p>
+Sus valores pueden ser <b>right </b>(derecha), <b>left
+</b>(izquierda) o <b>none </b>(para eliminar cualquier flotación).
+</p>
+<h2>Eliminar flotaciones</h2>
+<p>
+La propiedad <b>clear</b>, seguida del valor <b>right
+</b>(derecha), <b>left </b>(izquierda), <b>both </b>(tanto izquierda como derecha o
+<b>none </b>(desactivar valores previos) nos permite deshacer flotaciones de
+objetos anteriores y restaurar el orden normal.
+</p>
+<p>
+Observa cómo varía el ejemplo anterior con
+esta línea:
+</p>
+<blockquote>
+	<p>
+	div#bloque2 { clear:both;}
+	</p>
+</blockquote>
+<p>
+<img src="fig1323.jpg" height="372" width="600" />
+</p>
+<p>
+El último párrafo, que se encuentra en el
+<i>bloque2</i>, ya no se ajusta a la imagen. Esta técnica se emplea con
+frecuencia al comenzar nuevas secciones en un documento, como las
+cabeceras, el pie de página, etc.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id179">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta179_16" class="block" style="display:block;position:relative">La siguiente afirmación, ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b179" class="block" style="display:block;position:relative">La técnica <i>div#bloque2 { clear:both;}</i> se emplea al comenzar nuevas secciones en un documento, como las cabeceras, el pie de página, etc.ya que deshace flotaciones de objetos anteriores y restaura el orden normal.
+</div><br/>Verdadero <input type="radio" name="option0b179" id="true0b179" onclick="getFeedback(0,2,'0b179','truefalse')"/> 
+Falso <input type="radio" name="option0b179" id="false0b179" onclick="getFeedback(1,2,'0b179','truefalse')"/>
+<div id="s0b0b179" style="color: rgb(0, 51, 204);display: none;" even_steven="184">¡Correcto! </div>
+<div id="s1b0b179" style="color: rgb(0, 51, 204);display: none;" even_steven="185">¡Incorrecto! </div>
+<div id="sfbk0b179" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b179" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="visualizacin_de_elementos.html">&laquo; Anterior</a> | <a href="posicionamiento.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

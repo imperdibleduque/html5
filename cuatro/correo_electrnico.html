@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Correo electrónico | Enlaces </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Correo electrónico</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Enlaces</a><ul>
+<li><a href="recurso_tic_enlaces.html" class="daddy">Recurso TIC: Enlaces</a><ul>
+<li><a href="enlaces_externos.html" class="no-ch">Enlaces externos</a></li>
+<li><a href="enlaces_con_un_editor_html.html" class="no-ch">Enlaces con un editor HTML</a></li>
+<li><a href="enlaces_entre_pginas_del_mismo_sitio.html" class="no-ch">Enlaces entre páginas del mismo sitio</a></li>
+<li><a href="destino_del_enlace.html" class="no-ch">Destino del enlace</a></li>
+<li id="active"><a href="correo_electrnico.html" class="active no-ch">Correo electrónico</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id67">
+<div class="iDevice emphasis0">
+<div id="ta67_1" class="block" style="display:block;position:relative">Además de<b> http://</b> para indicar una dirección de Internet o
+<b>file://</b> para indicar un archivo local, hay
+otros indicadores que se emplean para identificar un tipo concreto de
+URL. El que todos necesitamos conocer es <b>mailto://</b> con el que conseguiremos crear un enlace con un correo electrónico. De
+este modo, al hacer clic sobre él, se abrirá la aplicación de correo
+electrónico de nuestro visitante para que pueda escribir a esa
+dirección.
+<p>
+Probemos con este ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;p&gt;Puede &lt;a href=&quot;mailto:itehtml@gmail.com&quot;&gt;enviarnos
+	un correo&lt;/a&gt; con sus impresiones.&lt;/p&gt;
+	</p>
+</blockquote>
+<p>
+Al hacer clic sobre ese enlace, se despliega nuestra aplicación de
+correo o nuestro correo web, si lo tenemos configurado y podemos
+enviar un mensaje.
+</p>
+<p>
+Si lo hacemos desde el editor web, debemos activar la
+casilla <b>Esto es una dirección de correo</b>.
+</p>
+<p>
+<img src="fig0408.jpg" height="217" width="309" />
+</p>
+<h2>Añadir contenido al mensaje</h2>
+<p>
+Un enlace como el anterior se puede mejorar un poco para completar
+el mensaje. Estos cambios no son del todo estándar, si bien
+funcionan en los navegadores web actuales.
+</p>
+<p>
+Podemos añadir algunos valores a la URL, separando el primero con
+el signo<b> ?</b>. Cada valor posterior irá separado por el signo<b> &amp;</b>.
+Así contamos con todos los elementos habituales de un correo
+electrónico (<b>subject </b>para el asunto, <b>body </b>para el cuerpo, <b>cc </b>para
+copia, <b>bcc </b>para copia oculta, ...). Así, el ejemplo podría quedar
+de esta manera:
+</p>
+<blockquote>
+	<p>
+	&lt;p&gt;Puede &lt;a href=&quot;mailto:itehtml@gmail.com?subject=Tu%20opinión%20nos
+	interesa&amp;body=Escribe%20tus%20aportaciones&quot;&gt;enviarnos un
+	correo&lt;/a&gt; con sus impresiones.&lt;/p&gt;
+	</p>
+</blockquote>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id68">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta68_35_2" class="block" style="display:block;position:relative">
+<p>
+Si optamos por profundizar en esta vía, hay que
+reemplazar en el cuerpo y el asunto los espacios por el signo <b>%20</b> y
+los saltos de línea por<b> %0A</b>, para tener direcciones bien formadas.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id69">
+<div class="iDevice emphasis0">
+<div id="ta69_1" class="block" style="display:block;position:relative">
+<p>
+El ejemplo anterior nos arroja un mensaje ya completo, como se
+muestra en la figura:
+</p>
+<p>
+<img src="fig0409.jpg" height="384" width="600" />
+</p>
+<h2>Protección del correo electrónico</h2>
+<p>
+El incorporar una cuenta de correo a una página web es una opción
+muy útil, pero que por desgracia hace que se exponga a los robots que
+permanentemente peinan la web buscando nuevas direcciones de correo
+electrónico para enviar correos no deseados, más conocidos como
+<b>spam</b>.
+</p>
+<p>
+Por este motivo, el incorporar nuestra dirección de correo a la
+web debería ser algo muy excepcional. Aquí van algunos consejos:
+</p>
+<ul>
+	<li>Utilizar una dirección de correo específica para el
+	proyecto, no la personal habitual. Hoy en día hay servidores de
+	correo que hacen una gestión fantástica del <b>spam</b>. Deberíamos
+	optar por uno de ellos.</li>
+	<li>Podemos optar por no indicar la dirección como un enlace,
+	sino como texto o como una imagen. Una frase del tipo &quot;Escríbeme
+	a la dirección pedro en gmail&quot; protegerá nuestra dirección
+	al tiempo que permite localizarnos con facilidad.</li>
+	<li>También contamos con algunas soluciones tecnológicas que
+	emplean <i>Javascript </i>u otras codificaciones para proteger la dirección
+	de correo, aunque no son del todo efectivas.</li>
+</ul>
+<p>
+En conclusión, esta vía de comunicación es apropiada, aunque se
+debe usar con precaución. Veremos más adelante otras posibilidades
+para obtener comentarios de nuestros visitantes.
+</p>
+</div></div>
+</div>
+<div class="noprt" align="right"><a href="destino_del_enlace.html">&laquo; Anterior</a> | <a href="resumen.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

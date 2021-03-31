@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Enlaces entre páginas del mismo sitio | Enlaces </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Enlaces entre páginas del mismo sitio</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Enlaces</a><ul>
+<li><a href="recurso_tic_enlaces.html" class="daddy">Recurso TIC: Enlaces</a><ul>
+<li><a href="enlaces_externos.html" class="no-ch">Enlaces externos</a></li>
+<li><a href="enlaces_con_un_editor_html.html" class="no-ch">Enlaces con un editor HTML</a></li>
+<li id="active"><a href="enlaces_entre_pginas_del_mismo_sitio.html" class="active no-ch">Enlaces entre páginas del mismo sitio</a></li>
+<li><a href="destino_del_enlace.html" class="no-ch">Destino del enlace</a></li>
+<li><a href="correo_electrnico.html" class="no-ch">Correo electrónico</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">Un sitio web suele componerse de varias páginas web. Normalmente
+todas esas páginas mantienen una relación entre si, por lo que
+necesitaremos conectarlas utilizando enlaces. 
+<p>
+Lo veremos a través de un ejemplo. La figura muestra una
+estructura clásica de un sitio web. Para  que el mantenimiento de la
+web sea sencillo, hemos optado por mantener varias páginas en el
+punto inicial del sitio (lo denominaremos <b>carpeta raíz</b>) mientras que
+otros contenidos se han distribuido en carpetas. Así hemos creado
+dos carpetas que contendrán páginas web, y posiblemente algunos
+recursos más, y una tercera en la que almacenaremos las diferentes
+imágenes del portal.
+</p>
+<p>
+<img src="fig0404.jpg" height="318" width="553" />
+</p>
+<p>
+Llegados a este punto, necesitaremos realizar varios enlaces desde
+la página principal (la llamada <b>index.html</b>) hacia las otras páginas
+del sitio. Y aquí es donde viene la principal diferencia entre crear
+enlaces a otros sitios web o dentro de un mismo sitio web.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id63">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta63_30_2" class="block" style="display:block;position:relative">
+<p>
+Para poder enlazar dos páginas, es necesario que éstas existan, por lo que, si estamos empleando un editor web, debemos
+guardarlas previamente.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id64">
+<div class="iDevice emphasis0">
+<div id="ta64_1" class="block" style="display:block;position:relative">
+<h2>Referencias relativas y absolutas</h2>
+<p>
+Al enlazar a otros sitios web, hemos insistido mucho en que es
+necesario indicar la URL completa, es decir, la dirección entera
+comenzando por su <b>http://</b>, con el nombre del sitio web a
+continuación, y con todas las carpetas y subcarpetas que nos
+permitiesen identificar la página de forma inequívoca. Con ello
+conseguimos lo que se conoce como una referencia absoluta, porque al
+ser las URL únicas en todo Internet, no hay posibilidad de
+ambigüedades. Si la URL está completa, sabemos que apunta a una
+página específica entre los miles de millones de páginas de
+Internet.
+</p>
+<p>
+Por el contrario, este celo en las direcciones no debemos
+aplicarlo al hacer un enlace entre las páginas web de un sitio web; más bien al contrario. En este caso nos interesa generar referencias
+relativas, es decir, que los enlaces tomarán sentido dependiendo de
+su posición en las carpetas. Por ejemplo, si desde la página
+<b>index.html</b> del ejemplo anterior quiero enlazar con la página
+presentación.html que se encuentra en la misma carpeta, podría
+hacerlo con el método absoluto:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=”http://www.misitioweb.com/presentacion.html”&gt;Accede
+	a la presentación&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+o mediante un sencillo enlace relativo:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=”presentacion.html”&gt;Accede a la presentación&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+El segundo método es el correcto. Dado que las dos páginas están
+en la misma carpeta, sólo necesito indicar su nombre.
+</p>
+<p>
+Hay dos motivos clave por los que debemos actuar así en los
+enlaces entre páginas de un mismo portal:
+</p>
+<blockquote>
+	<p>
+	a) Si utilizamos la URL absoluta, nos obligamos a indicar de antemano la
+	dirección completa del sitio web; algo que quizás no tengamos
+	mientras estamos preparando las páginas y que además nos obligaría a
+	colocar las páginas en Internet para poder probarlas.
+	</p>
+	<p>
+	b) Si en un momento determinado el sitio web cambia de dominio o
+	lo trasladamos a otra parte, todos los enlaces dejarían de funcionar, al
+	hacer referencia al sitio antiguo. Por el contrario, si mantenemos los
+	enlaces como relativos, todo el sitio funcionará sin problema se coloque donde se coloque.
+	</p>
+</blockquote>
+<p>
+Veamos un par de ejemplos más para entender mejor la situación:
+</p>
+<p>
+Si, por ejemplo, quisiéramos acceder desde la página index.html a
+otra página denominada <b>index.html </b>también, pero que se encuentra
+dentro de la carpeta <b>oferta</b>, lo hariamos de esta manera:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=”oferta/index.html”&gt;Nuestra oferta formativa&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+La &quot;<b>/</b>&quot; nos sirve para referirnos a las subcarpetas que nacen
+desde la carpeta raíz del sitio web.
+</p>
+<p>
+¿Y para acceder desde la página <b>index.html </b>de la carpeta <b>oferta</b>
+a una página de la carpeta raiz del sitio? Para acceder a una
+carpeta anterior, se emplea una referencia heredada de los sistemas
+operativos que nos dice que la secuencia &quot;..&quot; nos llevará a la
+carpeta previa. Por ejemplo, en la página<b> index.html</b> de la carpeta
+<b>oferta</b> podría indicar lo siguiente:
+</p>
+<blockquote>
+	<p>
+	&lt;a href=”../presentacion.html”&gt;Consultar la presentación
+	del sitio web&lt;/a&gt;
+	</p>
+</blockquote>
+<p>
+En resumen, las tres técnicas para direccionar un enlace son:
+</p>
+<ul>
+	<li>Si las páginas están en la misma carpeta: indicamos el
+	nombre de los archivos nada más.</li>
+	<li>Si está en una o varias subcarpetas: indicamos las
+	subcarpetas con una<b> / </b>como separador (por ejemplo,
+	<b>documentos/2014/proyecto.html</b>).</li>
+	<li>Si está en una o varias carpetas anteriores a la actual:
+	utilizamos <b>..</b> para retroceder en la estructura (por ejemplo
+	<b>../../propuestas.html</b> nos llevaría a un archivo situado en dos
+	carpetas antes).</li>
+	<li>También podemos mezclar <b>..</b> y <b>/</b> para obtener toda la
+	versatilidad necesaria. Por ejemplo (<b>../2013/proyectos</b>).</li>
+</ul>
+<h2>Enlaces relativos en un editor web</h2>
+<p>
+El concepto de enlaces relativos y absolutos se observa claramente
+en un editor web como <i>BlueGriffon</i>. En la figura estamos creando un
+enlace desde la página principal a otra contenida en la carpeta
+<b>oferta</b>. La dirección que se aprecia en un primer momento es la
+absoluta:
+</p>
+<p>
+<img src="fig0405.jpg" height="217" width="309" />
+</p>
+<p>
+Como se puede observar, la URL que se genera no comienza por
+<b>http:// </b>para indicar que es una página web ubicada en Internet, sino
+por <b>file://</b> lo que nos indica que es un
+archivo situado en un equipo local, que es el ordenador en el que estamos
+haciendo las pruebas.
+</p>
+<p>
+Esa dirección funcionará correctamente en nuestro ordenador;
+pero si yo pruebo en otro sitio o lo muevo del disco en el que está
+a otro diferente, dejará de funcionar. Y por supuesto, cuando lleve
+todo el sitio a Internet, fallarán todos los enlaces.
+</p>
+<p>
+Por ese motivo, activaremos siempre en estos casos la casilla <b>La
+URL es relativa a la ubicación de la página</b>. Como se puede
+apreciar en la figura, la dirección cambia totalmente, dejando sólo
+la información necesaria para que el enlace funcione en cualquier
+lugar.
+</p>
+<p>
+<img src="fig0406.jpg" height="217" width="309" />
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id65">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta65_32_2" class="block" style="display:block;position:relative">Al principio es muy habitual olvidar este aspecto,
+pero es imprescindible intentar recordarlo. 
+</div><br/>
+</div>
+</div>
+</div>
+<div class="MultichoiceIdevice" id="id80">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion80_2" class="block" style="display:block;position:relative">¿Cuál de los siguientes códigos HTML indica que se abra el documento en una nueva ventana?
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option80_2" id="i80_5" onclick="getFeedback(0,3,'80_2','multi')"/></td><td>
+<div id="taans80_5" class="block" style="display:block;position:relative">_parent y _top.
+</div></td></tr>
+<tr><td><input type="radio" name="option80_2" id="i80_316" onclick="getFeedback(1,3,'80_2','multi')"/></td><td>
+<div id="taans80_316" class="block" style="display:block;position:relative">_self.
+</div></td></tr>
+<tr><td><input type="radio" name="option80_2" id="i80_319" onclick="getFeedback(2,3,'80_2','multi')"/></td><td>
+<div id="taans80_319" class="block" style="display:block;position:relative">_blank.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b80_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b80_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b80_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id74">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta74_41_2" class="block" style="display:block;position:relative">Retomando el ejemplo en el que enlazábamos con diferentes archivos multimedia (Actividad 2), moveremos esos archivos a una carpeta que crearemos, dentro de la que contiene a nuestra página web. Al probar los enlaces de nuevo, no funcionarán. Debemos corregir las direcciones para hacerlos funcionar de nuevo.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="enlaces_con_un_editor_html.html">&laquo; Anterior</a> | <a href="destino_del_enlace.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

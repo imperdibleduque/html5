@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Más propiedades de texto | Diseño web con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Más propiedades de texto</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Diseño web con estilos</a><ul>
+<li><a href="recurso_tic_diseo_web_con_estilos.html" class="daddy">Recurso TIC: Diseño web con estilos</a><ul>
+<li><a href="propiedades_de_texto.html" class="no-ch">Propiedades de texto</a></li>
+<li id="active"><a href="ms_propiedades_de_texto.html" class="active no-ch">Más propiedades de texto</a></li>
+<li><a href="colores.html" class="no-ch">Colores</a></li>
+<li><a href="imgenes_de_fondo.html" class="no-ch">Imágenes de fondo</a></li>
+<li><a href="opacidad.html" class="no-ch">Opacidad</a></li>
+<li><a href="apariencia_del_cursor.html" class="no-ch">Apariencia del cursor</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_1" class="block" style="display:block;position:relative">Veremos ahora algunas propiedades más, relacionadas en este caso
+más con el texto que con la apariencia de la tipografía.
+<h2>Espacios</h2>
+<p>
+La propiedad <b>letter-spacing</b> modifica el espacio entre los
+caracteres de una palabra y <b>word-spacing </b>hace lo mismo pero
+entre palabras.
+</p>
+<p>
+Las medidas que se emplean en ambos casos son las mismas que ya
+vimos para el tamaño de letra. Además podemos emplear el valor
+normal para reestablecer cualquiera de los dos valores, si los
+hemos modificado en otro elemento. Aquí tenemos algunos ejemplos,
+que darían el resultado de la figura:
+</p>
+<blockquote>
+	<p>
+	p {letter-spacing:normal}<br />
+	p {letter-spacing: 12 px}<br />
+	p {letter-spacing: -.1em}<br />
+	p {word-space: 1.5 em}<br />
+	p {word-space: 3 em}
+	</p>
+</blockquote>
+<p>
+<img src="fig1208.jpg" height="306" width="600" />
+</p>
+<p>
+En el eje vertical podemos emplear la
+propiedad<b> line-height</b> para
+incrementar o reducir el espacio entre líneas. Las dos líneas
+siguientes modifican  la separanción entre líneas de un párrafo:
+</p>
+<blockquote>
+	<p>
+	p {line-height:1em}<br />
+	p {line-height:2em}
+	</p>
+</blockquote>
+<p>
+Mientras que la primera elimina casi por
+completo el espacio entre líneas, la segunda pone el texto a doble
+espacio. En la figura se pueden comparar tres párrafos: el primero
+sería el modelo normal y los dos siguientes corresponden a las
+líneas anteriores.
+</p>
+<p>
+<img src="fig1209.jpg" border="1" height="243" width="600" />
+</p>
+<h2>Mayúsculas y minúsculas</h2>
+<p>
+Con la propiedad <b>text-transform </b>podemos
+convertir un bloque de texto completo en:
+</p>
+<ul>
+	<li>Mayúsculas: con el valor <b>uppercase</b>.
+	</li>
+	<li>Minúsculas: valor <b>lowercase</b>.
+	</li>
+	<li>Primera en mayúsculas, resto en
+	minúsculas: <b>capitalize </b>convierte la primera letra de cada palabra a
+	mayúscula.
+	</li>
+	<li>Dejar el texto como está: emplearemos
+	el valor <b>none</b>.
+	</li>
+</ul>
+<p>
+La figura nos presenta las diferentes
+modalidades:
+</p>
+<p>
+<img src="fig1210.jpg" height="219" width="600" />
+</p>
+<h2>Alineación entre elementos</h2>
+<p>
+La propiedad <b>vertical-align</b> nos será
+útil para definir la alineación entre dos o más elementos que no
+tengan la misma altura, por ejemplo, un texto y una imagen o textos de
+diferente tamaño, como los que se muestran en la figura:
+</p>
+<p>
+<img src="fig1211.jpg" height="318" width="600" />
+</p>
+<p>
+Su composición, si la segunda parte fuese,
+por ejemplo, una clase aplicada a un valor <b>span</b>, quedaría así:
+</p>
+<blockquote>
+	<p>
+	span.parte2 {vertical-align:baseline}<br />
+	span.parte2 {vertical-align:top}<br />
+	span.parte2 {vertical-align:-.6em}
+	</p>
+</blockquote>
+<p>
+Contamos con un amplio muestrario de
+parámetros, como se puede observar. Podemos definir valores
+relativos, absolutos o utilizar algunas palabras clave como <b>top
+</b>(alineación superior), <b>bottom </b>(inferior), <b>baseline </b>(se alinean sus
+lineas base), etc. Este tipo de propiedades se suele modificar con
+algún tipo de editor, por lo que no es necesario recordar todos sus
+valores.
+</p>
+<h2>Sangrado del texto</h2>
+<p>
+El sangrado (a veces denominado <i>indentación</i>,
+en referencia al término inglés) consiste en desplazar a la
+izquierda o a la derecha la primera línea de un párrafo. Con CSS se
+puede realizar mediante la propiedad<b> text-indent</b>, seguida de algún
+valor numérico absoluto o relativo.
+</p>
+<p>
+La figura nos muestra el resultado que se
+produce con la siguiente línea:
+</p>
+<blockquote>
+	<p>
+	p {text-indent: 2.5em}<br />
+	p {text-indent: 3%}
+	</p>
+</blockquote>
+<p>
+<img src="fig1212.jpg" height="491" width="600" />
+</p>
+<h3>Valores relativos o absolutos</h3>
+<p>
+Este ejemplo ilustra perfectamente la
+diferencia entre valores relativos y absolutos. El primer párrafo
+tiene aplicada la primera línea, es decir, el valor exacto y
+absoluto. Por el contrario, la segunda tiene el valor porcentual, el
+relativo. Se desplaza la línea un 3% del tamaño horizontal de la
+ventana del navegador. 
+</p>
+<p>
+Ambas líneas parecen iguales pero, si
+ampliamos el tamaño de la ventana del navegador, observaremos que la
+primera línea se mantiene en la misma distancia, mientras que la
+segunda ha variado, ya que el 3% de un valor mayor será una
+distancia notablemente mayor.
+</p>
+<p>
+<img src="fig1213.jpg" border="1" height="170" width="347" />
+</p>
+<p>
+Dependiendo del sitio web que estemos
+diseñando, nos resultará más conveniente usar valores relativos o
+absolutos. Por lo general los valores relativos
+aportarán flexibilidad a nuestra página web.
+</p>
+<h2>Alineación del texto</h2>
+<p>
+Otro factor clásico de cualquier editor de
+texto es su capacidad de alinear el texto horizontalmente a la
+izquierda, derecha, centrado o justificado. Con CSS se realiza
+mediante la propiedad <b>text-align</b>.
+</p>
+<p>
+Es tan simple como añadir alguna regla de
+este tipo:
+</p>
+<blockquote>
+	<p>
+	body {text-align: justify; }<br />
+	h1 {text-align: right;}
+	</p>
+</blockquote>
+<p>
+Los valores posibles son <b>left </b>(izquierda, el
+predefinido), <b>right </b>(derecha), <b>center </b>(centrado) o <b>justify
+</b>(justificado).
+</p>
+<h2>Espacios en blanco</h2>
+<p>
+La propiedad <b>white-space</b> controla el
+tratamiento que hace el navegador de los espacios en blanco. Los
+navegadores tienden a comprimir o ampliar esos espacios para ajustar
+las palabras en las líneas. Para evitarlo, podemos utilizar el valor
+<b>pre </b>con la propiedad<b> white-space </b>y así conseguir que éstos no
+se modifiquen. Esto es útil si tenemos un texto exacto, fórmulas, 
+un poema, etc. Las rupturas de línea que tuviese el texto original
+se respetarán escrupulosamente.
+</p>
+<p>
+Igualmente, si indicamos la opción <b>nowrap</b>,
+el navegador no cortará las líneas, sino que mantendrá cada
+párrafo o bloque de texto en la misma línea. La línea se
+prolongará hacia la derecha todo lo que sea necesario.
+</p>
+<h2>Ajuste de palabras</h2>
+<p>
+La propiedad <b>word-wrap</b> permite, con el valor
+<b>break-word</b>, la ruptura de palabras que no serían divisibles en
+circunstancias normales, como palabras muy largas en cuadros de texto
+pequeños. Su valor predeterminado es normal, permite la
+ruptura cuando sea posible y si no, se traslada la palabra a la línea
+siguiente.
+</p>
+<h2>Decoración del texto</h2>
+<p>
+La propiedad <b>text-decoration</b> cuenta con
+algunos valores para decorar una línea de texto. Por ejemplo, para
+un rótulo <b>&lt;h1&gt;</b>:
+</p>
+<ul>
+	<li>
+	<b>h1{text-decoration:none;}</b> elimina
+	cualquier decoración que pueda tener un elemento.
+	</li>
+	<li>
+	<b>h1{text-decoration:underline;}</b>
+	el texto aparece subrayado.
+	</li>
+	<li>
+	<b>h1{text-decoration:overline;}</b> el texto
+	se presenta con una línea por encima.
+	</li>
+	<li>
+	<b>h1{text-decoration:line-through;}</b> el
+	texto se muestra tachado.
+	</li>
+	<li>
+	<b>h1{text-decoration:blink;}</b> el texto
+	parpadea, distrayendo la atención sobre el resto de la página. Se
+	debe usar con mucho criterio.
+	</li>
+</ul>
+<p>
+Estas opciones se emplean con frecuencia
+para tachar un texto que ya no vale o para resaltar los
+estados de un enlace, mediante sus pseudoselectores. Por ejemplo, el
+enlace de la figura se resalta mediante un <b>underline </b>y un <b>overline </b>al
+pasar el ratón sobre el.
+</p>
+<p>
+<img src="fig1214.jpg" border="1" height="252" width="585" />
+</p>
+<p>
+Para conseguirlo, hemos añadido estas dos
+líneas a nuestro archivo de estilos:
+</p>
+<blockquote>
+	<p>
+	a:link {text-decoration: none; }<br />
+	a:hover {text-decoration: overline
+	underline;}
+	</p>
+</blockquote>
+<h2>Sombras</h2>
+<p>
+Con CSS3 es posible añadir sombras a un
+texto con la propiedad<b> text-shadow</b>; así de fácil:
+</p>
+<blockquote>
+	<p>
+	h1 { text-shadow: rgb(90,90,90) 2px 2px 4px
+	};
+	</p>
+</blockquote>
+<p>
+Lleva cuatro parámetros:
+</p>
+<ul>
+	<li>
+	<b>Color</b>: expresado de diferentes maneras,
+	es además opcional.
+	</li>
+	<li>
+	<b>X</b> e <b>Y</b>: los dos valores siguientes son
+	obligatorios e indican la distancia de la sombra.
+	</li>
+	<li>
+	<b>Suavizado</b>: el último valor es opcional
+	y especifica lo difuminada que se mostrará la sombra.
+	</li>
+</ul>
+<p>
+El resultado se muestra en la figura:
+</p>
+<p>
+<img src="fig1215.jpg" height="513" width="600" />
+</p>
+<p>
+Para obtener unas sombras apropiadas, es
+necesario realizar algunas pruebas e intentar conseguir el efecto que
+buscamos.
+</p>
+<p>
+La figura siguiente muestra esta otra
+combinación, mucho más difuminada y con un toque de color.
+</p>
+<p>
+h1 {text-shadow:rgb(160,160,90) 4px 4px 16px;}
+</p>
+<p>
+<img src="fig1216.jpg" height="513" width="600" />
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id123">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta123_21_2" class="block" style="display:block;position:relative">En un documento con
+varios títulos realizaremos diferentes incorporaciones a la hoja de
+estilos, para conseguir que proyecten algunas sombras. Debemos
+conseguir al menos una sombra muy marcada y precisa y otra tan sutil
+que sea casi inapreciable. ¿Cuál consideramos que proporciona más
+elegancia al texto?
+</div><br/>
+</div>
+</div>
+</div>
+<div class="TrueFalseIdevice" id="id135">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta135_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b135" class="block" style="display:block;position:relative">La propiedad <i>letter-spacing</i> modifica el espacio entre los caracteres de una palabra y <i>word-spacing</i> hace lo mismo pero entre palabras. 
+</div><br/>Verdadero <input type="radio" name="option0b135" id="true0b135" onclick="getFeedback(0,2,'0b135','truefalse')"/> 
+Falso <input type="radio" name="option0b135" id="false0b135" onclick="getFeedback(1,2,'0b135','truefalse')"/>
+<div id="s0b0b135" style="color: rgb(0, 51, 204);display: none;" even_steven="140">¡Correcto! </div>
+<div id="s1b0b135" style="color: rgb(0, 51, 204);display: none;" even_steven="141">¡Incorrecto! </div>
+<div id="sfbk0b135" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b135" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b135" class="block" style="display:block;position:relative">Con la propiedad <i>text-transform</i> podemos convertir un bloque de texto completo en mayúsculas utilizando el valor <i>lowercase</i>. 
+</div><br/>Verdadero <input type="radio" name="option1b135" id="true1b135" onclick="getFeedback(0,2,'1b135','truefalse')"/> 
+Falso <input type="radio" name="option1b135" id="false1b135" onclick="getFeedback(1,2,'1b135','truefalse')"/>
+<div id="s0b1b135" style="color: rgb(0, 51, 204);display: none;" even_steven="141">¡Incorrecto! </div>
+<div id="s1b1b135" style="color: rgb(0, 51, 204);display: none;" even_steven="140">¡Correcto! </div>
+<div id="sfbk1b135" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b135" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion2b135" class="block" style="display:block;position:relative">La propiedad <i>vertical-align</i> nos será útil para definir la alineación entre dos o más elementos que no tengan la misma altura, por ejemplo, un texto y una imagen o textos de diferente tamaño.
+</div><br/>Verdadero <input type="radio" name="option2b135" id="true2b135" onclick="getFeedback(0,2,'2b135','truefalse')"/> 
+Falso <input type="radio" name="option2b135" id="false2b135" onclick="getFeedback(1,2,'2b135','truefalse')"/>
+<div id="s0b2b135" style="color: rgb(0, 51, 204);display: none;" even_steven="140">¡Correcto! </div>
+<div id="s1b2b135" style="color: rgb(0, 51, 204);display: none;" even_steven="141">¡Incorrecto! </div>
+<div id="sfbk2b135" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback2b135" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion3b135" class="block" style="display:block;position:relative">Cualquier editor de texto tiene la capacidad de alinear el texto horizontalmente a la izquierda, derecha, centrado o justificado mediante la propiedad <i>style-align</i>. 
+</div><br/>Verdadero <input type="radio" name="option3b135" id="true3b135" onclick="getFeedback(0,2,'3b135','truefalse')"/> 
+Falso <input type="radio" name="option3b135" id="false3b135" onclick="getFeedback(1,2,'3b135','truefalse')"/>
+<div id="s0b3b135" style="color: rgb(0, 51, 204);display: none;" even_steven="141">¡Incorrecto! </div>
+<div id="s1b3b135" style="color: rgb(0, 51, 204);display: none;" even_steven="140">¡Correcto! </div>
+<div id="sfbk3b135" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback3b135" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="propiedades_de_texto.html">&laquo; Anterior</a> | <a href="colores.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

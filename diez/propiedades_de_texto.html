@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Propiedades de texto | Diseño web con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Propiedades de texto</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Diseño web con estilos</a><ul>
+<li><a href="recurso_tic_diseo_web_con_estilos.html" class="daddy">Recurso TIC: Diseño web con estilos</a><ul>
+<li id="active"><a href="propiedades_de_texto.html" class="active no-ch">Propiedades de texto</a></li>
+<li><a href="ms_propiedades_de_texto.html" class="no-ch">Más propiedades de texto</a></li>
+<li><a href="colores.html" class="no-ch">Colores</a></li>
+<li><a href="imgenes_de_fondo.html" class="no-ch">Imágenes de fondo</a></li>
+<li><a href="opacidad.html" class="no-ch">Opacidad</a></li>
+<li><a href="apariencia_del_cursor.html" class="no-ch">Apariencia del cursor</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id47">
+<div class="iDevice emphasis0">
+<div id="ta47_1" class="block" style="display:block;position:relative">Sin más preámbulos, analizaremos algunas
+de las reglas que podemos definir respecto al texto.
+<h2>Tipo de letra</h2>
+<p>
+La propiedad <b>font-family</b>, seguida de una
+tipografía concreta o de una serie de tipos de letra separadas por
+comas, define la apariencia del elemento HTML en cuestión.
+</p>
+<p>
+Hay muchos tipos de letra, pero un pequeño
+conjunto de ellos se usan con asiduidad, como el tipo<i> Times New
+Roman</i>, <i>Helvética</i>, <i>Georgia</i>, <i>Arial</i>, <i>Verdana</i>, etc. Cada uno tiene sus
+propias características. Normalmente los tipos sin serifa (como
+<i>arial </i>o <i>verdana</i>) suelen proporcionar una estética agradable y
+moderna, mientras que los que sí la tienen (como <i>times</i>) se suelen
+usar para textos largos, como libros o documentos más densos. La
+práctica nos irá marcando la pauta de qué tipo será el más
+adecuado en cada caso.
+</p>
+<blockquote>
+	h1 {font-family: Georgia, &quot;Times New
+	Roman&quot;, Times, Serif;}
+	<br />
+	body {font-family: Helvetica, Arial,
+	Sans-serif; }
+	<br />
+</blockquote>
+<p>
+Con este ejemplo estamos definiendo un
+formato concreto para toda la página y otro para los títulos. El
+resultado del ejemplo anterior sería el mostrado en la figura.
+</p>
+<p>
+<img src="fig1201.jpg" height="387" width="600" />
+</p>
+<p>
+Al definir un valor para el cuerpo de la
+página, estamos estableciendo ese tipo de letra para todos los
+elementos excepto para aquellos en los que se indique otra cosa. Es
+una práctica muy habitual.
+</p>
+<p>
+Normalmente siempre indicaremos un grupo de
+fuentes, ya que, si el navegador no tiene instalada la primera,
+recurrirá a las alternativas, hasta llegar a la última que hemos
+indicado, que define una fuente genérica. Las fuentes genéricas son
+<b>serif</b>,<b> sans-serif</b>, <b>cursive</b>, <b>fantasy </b>y <b>monospace</b>.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id113">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta113_22_2" class="block" style="display:block;position:relative">
+<p>
+El que el nombre se ponga en
+mayúsculas o minúsculas no tiene relevancia; pero, si tiene varias
+palabras en su nombre, deberíamos ponerlo entre comillas simples o
+dobles.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id114">
+<div class="iDevice emphasis0">
+<div id="ta114_1" class="block" style="display:block;position:relative">
+<h2>Tipos de letra no instalados</h2>
+<p>
+Hasta la versión 3 del estándar CSS el uso
+de tipografías estaba bastante acotado, ya que sólo podíamos
+emplear aquellos tipos de letra que intuíamos que el usuario podría
+tener instalados. Ahora eso no es así y podemos indicar al navegador
+que emplee un tipo de letra que nosotros distribuimos junto a la
+página web.
+</p>
+<p>
+Si observamos la figura, veremos que junto a
+la página web y la hoja de estilos hemos incorporado también un par
+de tipos de letra, archivos con extensión .ttf. Es decir,
+tipografías en formato <i>TrueType</i>.
+</p>
+<p>
+<img src="fig1202.jpg" height="388" width="600" />
+</p>
+<p>
+Para incorporar esas tipografías,
+modificaremos las líneas anteriores estableciéndolas de la
+siguiente manera:
+</p>
+<blockquote>
+	<p>
+	@font-face {
+	</p>
+	<blockquote>
+		font-family: TipoTitulos;<br />
+		src: url('ModernAntiqua.ttf');<br />
+		}<br />
+	</blockquote>
+	<p>
+	@font-face {
+	</p>
+	<blockquote>
+		font-family: TipoGeneral;<br />
+		src: url('ConsolaMono.ttf');<br />
+		}<br />
+	</blockquote>
+	<p>
+	h1 {
+	</p>
+	<blockquote>
+		font-family: TipoTitulos, Serif;<br />
+		}<br />
+	</blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		font-family: TipoGeneral, Sans-serif; <br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+Es decir, mediante la directiva <b>@font-face
+</b>le indicamos al navegador que tenemos un nuevo tipo de letra basado
+en un archivo que nosotros mismos le suministramos. A su vez, en<b>
+font-family </b>emplearemos el nuevo tipo de letra. Incluso podemos poner
+una fuente genérica, por si hubiese algún problema de carga de los
+archivos.
+</p>
+<p>
+El resultado se muestra en la figura:
+</p>
+<p>
+<img src="fig1203.jpg" height="387" width="600" />
+</p>
+<p>
+Estamos empleando fuentes sin preocuparnos
+de si el usuario las tiene instaladas o no.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id115">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta115_24_2" class="block" style="display:block;position:relative">Como siempre, debemos intentar
+coger tipografías libres. Las del ejemplo han sido tomadas de la web
+de <i>Open Library Font</i> (<a href="http://openfontlibrary.org/" target="_blank">http://openfontlibrary.org/</a>).</div>
+<br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id117">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta117_26_2" class="block" style="display:block;position:relative">
+<p>
+Localizaremos una
+tipografía libre en Internet y se la aplicaremos a varias etiquetas
+del texto, empleando el método visto anteriormente. Comprobaremos su
+funcionamiento en al menos dos navegadores.
+</p>
+<p>
+Se pueden encontrar tipografías libres mediante cualquier buscador. También podemos recurrir a algún sitio web concreto dedicado a ello, como <a href="http://openfontlibrary.org/" target="_blank">http://openfontlibrary.org/</a> o <a href="http://www.theleagueofmoveabletype.com" target="_blank">http://www.theleagueofmoveabletype.com</a>.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block" style="display:block;position:relative">
+<h2>Tamaño de letra</h2>
+<p>
+Para el tamaño de letra se emplea la
+propiedad <b>font-size</b>.
+</p>
+<blockquote>
+	<p>
+	body {font-size: 2em;}
+	</p>
+</blockquote>
+<p>
+En el valor, además de un número,
+indicaremos la medida que empleamos entre una de éstas:
+</p>
+<ul>
+	<li><b>%</b>: un porcentaje para el texto hará
+	que varíen sus tamaños basados en el valor original. Por ejemplo,
+	<b>	body {font-size: 80%; }</b> hace que el texto se vea un 20% más pequeño
+	de lo normal, mientras que un 150% lo incrementaría en un 50%.
+	</li>
+	<li><b>px</b>, <b>cm</b>, <b>pt </b>o <b>in</b>: para indicar medidas
+	en píxeles, centímetros, puntos o pulgadas. No suele ser muy
+	apropiado, porque cada navegador puede mostrar diferencias en este
+	sentido, aunque para definir estilos de impresión sí que nos dará
+	unos valores más precisos.
+	</li>
+	<li><b>em</b>: es el valor recomendado por el <i>W3C,
+	</i>si queremos emplear valores fijos. 1em es su valor base y equivale a
+	16 píxeles. 2em sería el doble de tamaño .5em la mitad (es lo
+	mismo que 0.5em), etc.
+	</li>
+	<li><b>Valores fijos</b>: hay ciertos
+	modificadores fijos que podemos emplear, que van de menor a mayor
+	(<b>xx-small</b>, <b>x-small</b>, <b>small</b>, <b>medium</b>, <b>large</b>, <b>x-large</b> y<b> xx-large</b>). Éstos
+	no necesitan un número y asignan siempre el mismo tamaño.
+	</li>
+	<li><b>Valores relativos</b>: usando <b>smaller </b>(más
+	pequeño) y <b>larger </b>(más grande) conseguimos que la tipografía
+	aumente o disminuya su tamaño respecto a su valor original.
+	</li>
+</ul>
+<p>
+Los diferentes valores se pueden mezclar,
+pero finalmente lo más recomendable sería emplear una escala basada
+en porcentajes o en <b>em</b>. A nuestra plantilla de ejemplo incorporaremos
+el siguiente bloque:
+</p>
+<blockquote>
+	<p>
+	body {font-size:100%;}<br />
+	h1
+	{font-size:3em;}<br />
+	h2 {font-size:2em;}<br />
+	p {font-size:0.8em;} 
+	</p>
+</blockquote>
+<p>
+Conseguiremos unos títulos grandes, con un
+texto general al 100% de su tamaño, es decir, a 1em y unos párrafos
+un poco más pequeños. La figura presenta el resultado:
+</p>
+<p>
+<img src="fig1204.jpg" height="469" width="600" />
+</p>
+<p>
+En la hoja de estilos completa hemos
+combinado las propiedades dentro de sus selectores:
+</p>
+<blockquote>
+	<p>
+	@font-face {
+	</p>
+	<blockquote>
+		font-family: TipoTitulos;<br />
+		src: url('ModernAntiqua.ttf');<br />
+		}
+	</blockquote>
+	<p>
+	@font-face {
+	</p>
+	<blockquote>
+		font-family: TipoGeneral;<br />
+		src: url('ConsolaMono.ttf');<br />
+		}
+	</blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		<p>
+		font-family: TipoGeneral, Sans-serif;<br />
+		font-size:100%;<br />
+		}
+		</p>
+	</blockquote>
+	<p>
+	h1 {
+	</p>
+	<blockquote>
+		font-family: TipoTitulos, Serif;<br />
+		font-size:3em;<br />
+		}
+	</blockquote>
+	<p>
+	h2 {
+	</p>
+	<blockquote>
+		font-size:2em;<br />
+		}<br />
+	</blockquote>
+	<p>
+	p {	
+	</p>
+	<blockquote>
+		font-family: Georgia,&quot;Times New
+		Roman&quot;,Serif;<br />
+		font-size:0.8em;<br />
+		}
+	</blockquote>
+</blockquote>
+</div></div>
+</div>
+<div class="activityIdevice" id="id119">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta119_28_2" class="block" style="display:block;position:relative">
+<p>
+Utilizando valores <b>em
+</b>definiremos diferentes parámetros para nuestra web de ejemplo.
+Comprueba lo que sucede, si a un elemento le asignamos 0em como tamaño
+o 1em.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id120">
+<div class="iDevice emphasis0">
+<div id="ta120_1" class="block" style="display:block;position:relative">
+<h2>Estilo de fuente</h2>
+<p>
+La propiedad<b> font-style </b>puede tomar
+el valor <b>normal</b>, que es el predefinido, <b>italic
+</b>(equivalente a cursiva) o <b>oblique </b>(equivalente a oblícua),
+que inclina el texto a la derecha. Normalmente coinciden estos dos últimos resultados pero, según la tipografía, podría haber cierta
+variación. La figura muestra su apariencia:
+</p>
+<p>
+<img src="fig1205.jpg" height="209" width="600" /> 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id121">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta121_30_2" class="block" style="display:block;position:relative">¿Para qué querríamos el
+valor <b>normal </b>si ese es ya el valor predeterminado? Su sentido está
+en que, si hemos definido una etiqueta superior con ese valor en
+cursiva, el valor normal nos permitiría establecer que una parte de
+un contenido no se mostrase en cursiva. Así, si toda la página va a
+estar en formato <b>italic</b>, podríamos hacer que un párrafo o una clase
+concreta se mostrarse normal, indicando <b>font-style:normal</b>. Por eso
+casi la mayoría de las propiedades de CSS tienen la posibilidad de
+forzar el establecimiento de su valor predeterminado.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id122">
+<div class="iDevice emphasis0">
+<div id="ta122_1" class="block" style="display:block;position:relative">
+<h2>Texto en negrita</h2>
+<p>
+La propiedad <b>font-weight</b> especifica si el
+texto irá en negrita o no, con diferentes grados:
+</p>
+<ul>
+	<li><b>bold</b>: negrita.
+	</li>
+	<li><b>bolder </b>y <b>lighter</b>: valor relativo que
+	aplica un efecto más pronunciado en el primer caso o menos en el
+	segundo.
+	</li>
+	<li><b>100..900</b>: también podemos indicar con 
+	un valor entre 100 y 900 el grado de &quot;negrita&quot; que
+	queremos.
+	</li>
+	<li><b>normal</b>: hace que el texto no se muestre
+	en negrita, saltándose cualquier otra directriz marcada por otras
+	normas.
+	</li>
+</ul>
+<h2>Mayúsculas y minúsculas</h2>
+<p>
+La propiedad <b>font-variant</b> se emplea
+para forzar que un texto concreto se muestre en mayúsculas con
+tamaño de minúsculas, lo que se conoce como <b>versalitas</b> (&quot;versal&quot; es
+un sinónimo de mayúsculas).
+</p>
+<p>
+Sus valores son <b>normal </b>o <b>small-caps</b>, con los
+resultados que se muestran en la figura:
+</p>
+<p>
+<img src="fig1206.jpg" height="154" width="600" />
+</p>
+<h2>Ahora todos juntos</h2>
+<p>
+Todas las propiedades anteriores tienen algo
+en común; pueden ser agrupadas mediante una propiedad única
+denominada <b>font</b>. Los valores que podemos asignarle son todos los
+anteriores, separados por espacios, siguiendo este orden:
+</p>
+<ol>
+	<li><b>font-style</b> (opcional)
+	</li>
+	<li><b>font-weight</b> (opcional)
+	</li>
+	<li><b>font-variant</b> (opcional)
+	</li>
+	<li><b>font-size
+	</b>
+	</li>
+	<li><b>font-family
+	</b>
+	</li>
+</ol>
+<p>
+Los valores opcionales no es necesario
+indicarlos. De hecho, aún se puede añadir un valor más justo antes
+de <b>font-family</b> denominado<b> line-height</b>, que veremos un poco más
+tarde.
+</p>
+<p>
+Así una línea mínima que definiese el
+estilo del cuerpo de la página podría quedar así:
+</p>
+<blockquote>
+	<p>
+	body {font: 1em, TipoGeneral, Sans-serif; }
+	</p>
+</blockquote>
+<p>
+Un ejemplo más completo sería éste:
+</p>
+<blockquote>
+	<p>
+	p {font:italic bolder small-caps 0.8em
+	Georgia,&quot;Times New Roman&quot;,Serif;	} 
+	</p>
+</blockquote>
+<p>
+Aplicado a nuestro ejemplo obtendríamos el
+resultado de la figura. Muy recargado, pero nos sirve para comprobar
+cómo se pueden condensar varias propiedades en una sola.
+</p>
+<p>
+<img src="fig1207.jpg" height="469" width="600" /> 
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id134">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion134_2" class="block" style="display:block;position:relative">Para definir el tipo de letra se utiliza el parámetro:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option134_2" id="i134_5" onclick="getFeedback(0,5,'134_2','multi')"/></td><td>
+<div id="taans134_5" class="block" style="display:block;position:relative"><i>font-variant. 
+</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option134_2" id="i134_337" onclick="getFeedback(1,5,'134_2','multi')"/></td><td>
+<div id="taans134_337" class="block" style="display:block;position:relative"><i>font-weight. 
+</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option134_2" id="i134_340" onclick="getFeedback(2,5,'134_2','multi')"/></td><td>
+<div id="taans134_340" class="block" style="display:block;position:relative"><i>font-style. </i>
+</div></td></tr>
+<tr><td><input type="radio" name="option134_2" id="i134_343" onclick="getFeedback(3,5,'134_2','multi')"/></td><td>
+<div id="taans134_343" class="block" style="display:block;position:relative"><i>font-size. 
+</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option134_2" id="i134_346" onclick="getFeedback(4,5,'134_2','multi')"/></td><td>
+<div id="taans134_346" class="block" style="display:block;position:relative"><i>font-family.
+</i>
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b134_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b134_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b134_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b134_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa4b134_2" style="color: rgb(0, 51, 204);display: none;" even_steven="10">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_diseo_web_con_estilos.html">&laquo; Anterior</a> | <a href="ms_propiedades_de_texto.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

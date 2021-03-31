@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Imágenes de fondo | Diseño web con estilos </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Imágenes de fondo</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Diseño web con estilos</a><ul>
+<li><a href="recurso_tic_diseo_web_con_estilos.html" class="daddy">Recurso TIC: Diseño web con estilos</a><ul>
+<li><a href="propiedades_de_texto.html" class="no-ch">Propiedades de texto</a></li>
+<li><a href="ms_propiedades_de_texto.html" class="no-ch">Más propiedades de texto</a></li>
+<li><a href="colores.html" class="no-ch">Colores</a></li>
+<li id="active"><a href="imgenes_de_fondo.html" class="active no-ch">Imágenes de fondo</a></li>
+<li><a href="opacidad.html" class="no-ch">Opacidad</a></li>
+<li><a href="apariencia_del_cursor.html" class="no-ch">Apariencia del cursor</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id84">
+<div class="iDevice emphasis0">
+<div id="ta84_1" class="block" style="display:block;position:relative">
+<p>
+La propiedad <b>background-image</b> se puede aplicar a una gran
+cantidad de etiquetas y consigue que se muestre una imagen de fondo.
+</p>
+<p>
+Su formato es el siguiente, aplicada por ejemplo al cuerpo de la
+página:
+</p>
+<blockquote>
+	<p>
+	body { background-image: url(&quot;images/fondo.png&quot;); }
+	</p>
+</blockquote>
+<p>
+El resultado sería el que se muestra en la figura.
+</p>
+<p>
+<img src="fig1221.jpg" height="513" width="600" />
+</p>
+<p>
+Una imagen, en este caso tan pequeña como
+se puede observar en la figura siguiente, se toma como fondo de todo
+el documento, repitiéndose una y otra vez hasta cubrir toda la
+página.
+</p>
+<p>
+<img src="fig1222.jpg" height="468" width="560" />
+</p>
+<h2>Repeticiones</h2>
+<p>
+No siempre nos va a interesar que la imagen
+se reproduzca indefinidamente. Por ello, a continuación de la url
+podemos indicar el modo de repetición a través de la propiedad
+<b>background-repeat</b>:
+</p>
+<ul>
+	<li>
+	<b>repeat</b>: para que se repita. Es el valor
+	predefinido, por lo que lo podemos omitir.
+	</li>
+	<li>
+	<b>repeat-x</b>: para que sólo se repita
+	horizonalmente, no verticalmente.
+	</li>
+	<li>
+	<b>repeat-y</b>: para que se repita en el eje
+	vertical.
+	</li>
+	<li>
+	<b>no-repeat</b>: para que no se repita nunca.
+	</li>
+</ul>
+<p>
+Por ejemplo, para que sólo se repita
+verticalmente añadiríamos esta línea:
+</p>
+<blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		background-color: #DEB0A0;<br />
+		background-image:
+		url(&quot;images/etching-small.jpg&quot;);<br />
+		background-repeat: repeat-y;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+El resultado es que la imagen sólo aparece
+en el eje vertical.
+</p>
+<p>
+<img src="fig1223.jpg" height="513" width="600" />
+</p>
+<h2>Fondo fijo</h2>
+<p>
+Todavía podemos mejorar el conjunto. En los
+casos en los que la imagen no debe ocupar todo el fondo podemos
+emplear la propiedad <b>background-attachment</b> para controlar la
+posición de la imagen, con los siguientes valores:
+</p>
+<ul>
+	<li>
+	<b>scroll</b>: la imagen se desplazará al
+	desplazarnos arriba y abajo cuando el documento sea largo. Es el
+	valor predeterminado.
+	</li>
+	<li>
+	<b>fixed</b>: la imagen se queda fija aunque
+	nos desplacemos hacia abajo.
+	</li>
+	<li>
+	<b>local</b>: similar al anterior, aunque la
+	imagen está fijada al contenido del elemento en lugar de al propio
+	elemento.
+	</li>
+</ul>
+<p>
+Para comprender el uso de esta propiedad, lo
+mejor es probar esta regla:
+</p>
+<blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		background-color: #DEB0A0;<br />
+		background-image:
+		url(&quot;images/etching-small.jpg&quot;);<br />
+		background-repeat: no-repeat;<br />
+		background-attachment: fixed;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+Al bajar en el documento veremos como la
+imagen se queda fija en el fondo, en lugar de desaparecer, que sería
+el comportamiento estándar.
+</p>
+<h2>Colocación del fondo</h2>
+<p>
+La propiedad <b>background-position </b>se emplea
+para ubicar el fondo a nuestro gusto, mediante los valores x e y, ya
+sea en formato de píxeles, mediante porcentajes o mediante
+indicaciones de posición (<b>center</b>, <b>top</b>, <b>bottom</b>, <b>right </b>o <b>left</b>).
+</p>
+<p>
+Por ejemplo, probaremos esta regla:
+</p>
+<blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		background-color: #DEB0A0;<br />
+		background-image:
+		url(&quot;images/etching-small.jpg&quot;);<br />
+		background-repeat: no-repeat;<br />
+		background-attachment: fixed;<br />
+		background-position: bottom right;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+La imagen se ha desplazado a la esquina
+inferior derecha (<b>bottom right</b>), como se muestra en la figura.
+</p>
+<p>
+<img src="fig1224.jpg" height="513" width="600" />
+</p>
+<p>
+Si estamos empleando una imagen como fondo
+de un bloque o un elemento similar y la imagen es más grande que el
+elemento que la va a contener podemos emplear los valores cover
+(ajusta la imagen al bloque sin deformarla) o contain (reduce la
+imagen para ajustarla al bloque, también sin deformarla).
+</p>
+<h2>La propiedad background</h2>
+<p>
+Como sucedía con la propiedad <b>font</b>, podemos
+fusionar todas las propiedades relacionadas con los fondos en una
+sola mediante <b>background</b>.
+</p>
+<p>
+El ejemplo que hemos venido
+realizando se podría expresar también de esta manera:
+</p>
+<blockquote>
+	<p>
+	body {
+	</p>
+	<blockquote>
+		background: #DEB0A0
+		url(&quot;images/etching-small.jpg&quot;)  no-repeat  fixed bottom
+		right;<br />
+		}
+	</blockquote>
+</blockquote>
+<p>
+En primer lugar indicamos el color de fondo,
+si no queremos que aparezca ningún color indicaremos el término
+<b>transparent</b>. Luego viene la dirección de la imagen, seguida
+de los diferentes parámetros que hemos visto.
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id131">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 6</h2>
+<div class="iDevice_inner">
+<div id="ta131_28_2" class="block" style="display:block;position:relative">
+<p>
+Incorporaremos nuestro propio fondo, probando a colocarlo en diferentes lugares y
+comprobando lo que sucede al cambiar de tamaño la ventana del
+navegador y al desplazarnos con el documento. Intentaremos decidir
+qué tipo de ajuste favorece más la legibilidad del texto y cuál
+menos.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id132">
+<div class="iDevice emphasis0">
+<div id="ta132_1" class="block" style="display:block;position:relative"><h3>No sólo para body</h3>
+<p>
+Las prácticas que hemos realizado se han
+centrado en aplicar fondos a la etiqueta &lt;body&gt;; tenemos que tener en
+mente que esto no tiene por qué ser así. Es muy habitual aplicar
+imágenes de fondo a pequeños bloques definidos por un &lt;div&gt;, e
+incluso a cualquier tipo de cabecera del documento.
+</p>
+
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id137">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion137_2" class="block" style="display:block;position:relative">Para utilizar una imagen como fondo y que ésta no se repita, debemos utilizar las etiquetas:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option137_2" id="i137_5" onclick="getFeedback(0,4,'137_2','multi')"/></td><td>
+<div id="taans137_5" class="block" style="display:block;position:relative"><i> background-image.</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option137_2" id="i137_361" onclick="getFeedback(1,4,'137_2','multi')"/></td><td>
+<div id="taans137_361" class="block" style="display:block;position:relative"><i>background-no-repeat.</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option137_2" id="i137_364" onclick="getFeedback(2,4,'137_2','multi')"/></td><td>
+<div id="taans137_364" class="block" style="display:block;position:relative"><i>background-attachment.</i>
+</div></td></tr>
+<tr><td><input type="radio" name="option137_2" id="i137_367" onclick="getFeedback(3,4,'137_2','multi')"/></td><td>
+<div id="taans137_367" class="block" style="display:block;position:relative">Ninguna de las anteriores es correcta.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b137_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b137_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa2b137_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b137_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="colores.html">&laquo; Anterior</a> | <a href="opacidad.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

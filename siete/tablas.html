@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Tablas | Organización de la información </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Tablas</h1></div>
+      </div>
+
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Organización de la información</a><ul>
+<li><a href="recurso_tic_organizacin_de_la_informacin.html" class="daddy">Recurso TIC: Organización de la información</a><ul>
+<li><a href="listas.html" class="no-ch">Listas</a></li>
+<li><a href="creacin_de_listas_con_un_editor_web.html" class="no-ch">Creación de listas con un editor web</a></li>
+<li id="active"><a href="tablas.html" class="active no-ch">Tablas</a></li>
+<li><a href="creacin_de_tablas_con_un_editor_web.html" class="no-ch">Creación de tablas con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id66">
+<div class="iDevice emphasis0">
+<div id="ta66_1" class="block" style="display:block;position:relative">Cualquiera que haya empleado en alguna
+ocasión un procesador de textos entiende su sentido y la
+versatilidad que nos aporta al distribuir una serie de datos. 
+<p>
+Una tabla es una serie de celdas
+distribuidas en filas y columnas. Cada una de esas celdas se comporta
+casi como una página web en pequeño. En su interior podemos
+insertar desde un simple número hasta las series más largas de
+información o elementos multimedia que se nos ocurran.
+</p>
+<p>
+Como sucedía con las listas, HTML sólo
+cuenta con etiquetas capaces de definir la estructura completa de la
+tabla, pero no su apariencia; los colores, anchuras de línea,
+fondos y otros aspectos se dejan para los estilos CSS.
+</p>
+<p>
+Veamos ahora cómo se crea una tabla.
+</p>
+<h2>Etiquetas básicas de una tabla</h2>
+<p>
+Una tabla mínima se diseña con tres
+etiquetas y sus respectivos cierres:
+</p>
+<ul>
+	<li><b>&lt;table&gt;</b> para definir el comienzo
+	de la tabla. A la tabla le podemos añadir el parámetro <b>border=&quot;1&quot;</b>
+	para indicar si la tabla tendrá un borde.</li>
+	<li><b>&lt;tr&gt;</b> para indicar el comienzo de
+	una fila.</li>
+	<li><b>&lt;td&gt;</b> para el comienzo de una
+	celda.
+	</li>
+</ul>
+<p>
+Veamos un ejemplo de tabla
+</p>
+<blockquote>
+	<p>
+	&lt;table&gt;
+	</p>
+	<p>
+	&lt;tr&gt;<br />
+	&lt;td&gt;Lunes&lt;/td&gt;<br />
+	&lt;td&gt;Martes&lt;/td&gt;<br />
+	&lt;td&gt;Miércoles&lt;/td&gt;<br />
+	&lt;td&gt;Jueves&lt;/td&gt;<br />
+	&lt;td&gt;Viernes&lt;/td&gt;<br />
+	&lt;/tr&gt;
+	</p>
+	<p>
+	&lt;tr&gt;<br />
+	&lt;td&gt;Lengua&lt;/td&gt;<br />
+	&lt;td&gt; &lt;/td&gt;<br />
+	&lt;td&gt;Matemáticas&lt;/td&gt;<br />
+	&lt;td&gt;Música&lt;/td&gt;<br />
+	&lt;td&gt;m&lt;/td&gt;<br />
+	&lt;/tr&gt;
+	</p>
+	<p>
+	&lt;/table&gt;
+	</p>
+</blockquote>
+<p>
+Crear tablas a mano es laborioso, aunque es
+un buen ejercicio para entender cómo funcionan. En este ejemplo el
+resultado se muestra en la figura.
+</p>
+<p>
+<img src="fig0710.jpg" border="1" height="167" width="345" />
+</p>
+<h2>Etiquetas complementarias</h2>
+<p>
+Una tabla semánticamente correcta suele
+emplear algunas etiquetas más que, si bien no son necesarias, son
+recomendables.
+</p>
+<ul>
+	<li><b>&lt;caption&gt;</b>: empleada al comienzo
+	de la tabla, le asigna un nombre general a la tabla. En la figura
+	siguiente hemos definido un <b>caption</b> con el título de la tabla.</li>
+</ul>
+<p>
+<img src="fig0711.jpg" height="110" width="304" />
+</p>
+<ul>
+	<li><b>&lt;colgroup&gt;</b>: a continuación de
+	<b>	caption</b> podemos destacar un número de columnas con una línea
+	similar a ésta: <b>&lt;colgroup style=&quot;background-color: rgb(220,
+	220, 200);&quot; span=&quot;3&quot;&gt; &lt;/colgroup&gt;</b>, cuyo
+	resultado se muestra en la figura. Se emplea el parámetro <b>span</b> para
+	indicar el número de columnas que se verán afectadas.</li>
+</ul>
+<p>
+<img src="fig0712.jpg" height="125" width="326" />
+</p>
+<ul>
+	<li><b>&lt;thead&gt;</b>: permite definir una o
+	varias filas como cabeceras de la tabla. Al utilizarla, en lugar de
+	definir las celdas con <b>&lt;td&gt;</b> emplearemos <b>&lt;th&gt;</b>, mientras que las filas
+	seguirán creándose con <b>&lt;tr&gt;</b>. 
+	</li>
+	<li><b>&lt;tbody&gt;</b>: si utilizamos<b> thead</b> para
+	definir la cabecera, emplearemos también <b>&lt;tbody&gt;</b> para indicar en qué
+	punto comienzan las filas normales de la tabla.
+	</li>
+	<li><b>&lt;tfoot&gt;</b>: por último, la pareja
+	anterior se complementa con <b>tfoot</b> para establecer las filas que
+	formarán parte del final de la tabla.
+	</li>
+</ul>
+<p>
+El siguiente ejemplo ilustra completamente
+el uso de todas las etiquetas complementarias.
+</p>
+<blockquote>
+	<p>
+	&lt;table border=&quot;1&quot;&gt;<br />
+	&lt;caption&gt;Tardes
+	ocupadas&lt;/caption&gt; <br />
+	&lt;colgroup style=&quot;background-color:
+	rgb(220, 220, 200);&quot; span=&quot;1&gt;&lt;/colgroup&gt;<br />
+	<br />
+	&lt;thead&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;th&gt; &lt;br&gt;<br />
+	&lt;/th&gt;<br />
+	&lt;th&gt;Lunes&lt;/th&gt;<br />
+	&lt;th&gt;Martes&lt;/th&gt;<br />
+	&lt;th&gt;Miércoles&lt;/th&gt;<br />
+	&lt;th&gt;Jueves&lt;/th&gt;<br />
+	&lt;th&gt;Viernes&lt;/th&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;/thead&gt;<br />
+	<br />
+	&lt;tbody&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;td&gt;Lengua&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;<br />
+	&lt;/td&gt;<br />
+	&lt;td&gt; x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;td&gt;Matemáticas&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt; &lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;td&gt;Música&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt; &lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;x&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;&lt;br&gt;&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;/tbody&gt;<br />
+	<br />
+	&lt;tfoot&gt;<br />
+	&lt;tr&gt;<br />
+	&lt;td&gt;Totales&lt;/td&gt;<br />
+	&lt;td&gt;2&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;1&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;1&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;1&lt;br&gt;&lt;/td&gt;<br />
+	&lt;td&gt;2&lt;br&gt;&lt;/td&gt;<br />
+	&lt;/tr&gt;<br />
+	&lt;/tfoot&gt;<br />
+	<br />
+	&lt;/table&gt;
+	</p>
+</blockquote>
+<p>
+El resultado se muestra en la figura. Es
+largo, pero a la vez muy sencillo de entender.  Podemos distinguir
+con facilidad la parte más administrativa de la tabla, compuesta por <b>&lt;caption&gt; </b>y <b>&lt;colgroup&gt; </b>y diferenciarla de las tres secciones de la misma,
+<b>&lt;thead&gt;</b>, <b>&lt;tbody&gt;</b> y <b>&lt;tfoot&gt;</b>.
+</p>
+<p>
+<img src="fig0713.jpg" height="198" width="536" />
+</p>
+<p>
+Al trabajar con estilos, podremos definir
+apariencias muy concretas para cada parte de una tabla; ahí es donde
+cobra sentido el uso de las secciones, además de facilitar el
+trabajo de los lectores para personas con discapacidad y para los
+buscadores de Internet.
+</p>
+<h2>Tablas irregulares</h2>
+<p>
+Cada celda de una tabla puede contar con dos
+parámetros, para que la celda se extienda más allá de lo normal.
+</p>
+<ul>
+	<li>
+	<b>colspan</b>: hace que la celda se extienda hacia
+	la derecha, tantas celdas como se indique en su valor.
+	</li>
+	<li>
+	<b>rowspan</b>: la celda se extenderá hacia abajo,
+	tantas filas como se indique.
+	</li>
+</ul>
+<p>
+Veámoslo con un ejemplo sencillo: La  tabla de la figura es completamente
+regular. 
+</p>
+<p>
+<img src="fig0714.jpg" height="113" width="600" />
+</p>
+<p>
+La tabla tiene seis columnas, así que, para
+que la primera fila se componga de una sola celda, debemos indicarle
+que ésta va a superponerse sobre las otras seis. Pasaríamos de una
+primera fila con esta apariencia:
+</p>
+<blockquote>
+	<p>
+	&lt;tr style=&quot;background-color:
+	rgb(102, 255, 153);&quot;&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;td&gt;  &lt;/td&gt;<br />
+	&lt;/tr&gt;
+	</p>
+</blockquote>
+<p>
+A esta otra:
+</p>
+<blockquote>
+	<p>
+	&lt;tr style=&quot;background-color:
+	rgb(102, 255, 153);&quot;&gt;<br />
+	&lt;td colspan=&quot;6&quot;&gt;  
+	&lt;/td&gt;<br />
+	&lt;/tr&gt;
+	</p>
+</blockquote>
+<p>
+El resultado se muestra en la figura:
+</p>
+<p>
+<img src="fig0715.jpg" height="113" width="600" />
+</p>
+<p>
+Hemos eliminado las otras cinco filas, para
+evitar que aparezcan en la parte derecha, descuadrando la tabla.
+</p>
+<p>
+En el siguiente ejemplo hemos aplicado el
+valor <b>rowspan</b> a las tres primeras celdas de la izquierda. El código
+HTML es el siguiente:
+</p>
+<blockquote>
+	<p>
+	&lt;tr&gt;<br />
+	&lt;td rowspan=&quot;3&quot;&gt; 
+	&lt;/td&gt;<br />
+	&lt;td&gt;       &lt;/td&gt;<br />
+	&lt;td&gt;       &lt;/td&gt;<br />
+	&lt;td&gt;      &lt;/td&gt;<br />
+	&lt;td&gt;      &lt;/td&gt;<br />
+	&lt;td&gt;      &lt;/td&gt;<br />
+	&lt;/tr&gt;
+	</p>
+</blockquote>
+<p>
+Y así se ve en el navegador.
+</p>
+<p>
+<img src="fig0716.jpg" height="108" width="600" />
+</p>
+<p>
+El siguiente vídeo muestra algunas
+modificaciones más, combinando ambos parámetros.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id115">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Vídeo</h2>
+<div class="iDevice_inner">
+<div id="ta115_22_2" class="block" style="display:block;position:relative"><a href="colspanrowspan.swf" target="_blank">Los modificadores colspawn y rowspawn</a>.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="TrueFalseIdevice" id="id127">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta127_16" class="block" style="display:block;position:relative">La siguiente afirmación ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b127" class="block" style="display:block;position:relative">Las etiquetas básicas de HTML para una tabla son: &lt;table&gt;,&lt;tr&gt; y &lt;td&gt;. 
+</div><br/>Verdadero <input type="radio" name="option0b127" id="true0b127" onclick="getFeedback(0,2,'0b127','truefalse')"/> 
+Falso <input type="radio" name="option0b127" id="false0b127" onclick="getFeedback(1,2,'0b127','truefalse')"/>
+<div id="s0b0b127" style="color: rgb(0, 51, 204);display: none;" even_steven="132">¡Correcto! </div>
+<div id="s1b0b127" style="color: rgb(0, 51, 204);display: none;" even_steven="133">¡Incorrecto! </div>
+<div id="sfbk0b127" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b127" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="MultichoiceIdevice" id="id128">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion128_2" class="block" style="display:block;position:relative">Si queremos realizar una tabla irregular, podemos incluir los siguientes parámetros dentro de nuestro código HTML:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option128_2" id="i128_5" onclick="getFeedback(0,3,'128_2','multi')"/></td><td>
+<div id="taans128_5" class="block" style="display:block;position:relative">&lt;rowspan&gt; y &lt;colspan&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option128_2" id="i128_388" onclick="getFeedback(1,3,'128_2','multi')"/></td><td>
+<div id="taans128_388" class="block" style="display:block;position:relative">&lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option128_2" id="i128_391" onclick="getFeedback(2,3,'128_2','multi')"/></td><td>
+<div id="taans128_391" class="block" style="display:block;position:relative">&lt;caption&gt; y &lt;colgroup&gt;.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b128_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa1b128_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b128_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id120">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 3</h2>
+<div class="iDevice_inner">
+<div id="ta120_32_2" class="block" style="display:block;position:relative">Intentaremos crear una tabla manualmente, cuanto más compleja mejor. Mientras la diseñamos, intentaremos mantener un esquema mental o en papel de cómo debería verse la tabla. Al probarla, comprobaremos si coincide con lo que pretendíamos hacer.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="creacin_de_listas_con_un_editor_web.html">&laquo; Anterior</a> | <a href="creacin_de_tablas_con_un_editor_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

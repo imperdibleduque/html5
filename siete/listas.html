@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Listas | Organización de la información </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Listas</h1></div></div>
+
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Organización de la información</a><ul>
+<li><a href="recurso_tic_organizacin_de_la_informacin.html" class="daddy">Recurso TIC: Organización de la información</a><ul>
+<li id="active"><a href="listas.html" class="active no-ch">Listas</a></li>
+<li><a href="creacin_de_listas_con_un_editor_web.html" class="no-ch">Creación de listas con un editor web</a></li>
+<li><a href="tablas.html" class="no-ch">Tablas</a></li>
+<li><a href="creacin_de_tablas_con_un_editor_web.html" class="no-ch">Creación de tablas con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id47">
+<div class="iDevice emphasis0">
+<div id="ta47_1" class="block" style="display:block;position:relative">HTML nos facilita tres etiquetas diferentes para diseñar listas:
+dos muy empleadas y una tercera menos habitual.
+<h2>Listas no ordenadas</h2>
+<p>
+Este tipo de listas se abren con la etiqueta <b>&lt;ul&gt;</b> y se
+cierran con su correspondiente <b>&lt;/ul&gt;</b>. El <i>ul </i>proviene de
+<i>unsortered list</i> (lista desordenada, en español).
+</p>
+<p>
+Para distinguir cada elemento de la lista, emplearemos la etiqueta
+<b>&lt;li&gt;</b>, con su correspondiente cierre. Así una lista típica
+quedaría así:
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Material requerido&lt;/h1&gt;<br />
+	&lt;ul&gt;<br />
+	&lt;li&gt;Lápiz&lt;/li&gt;<br />
+	&lt;li&gt;Papel&lt;/li&gt;<br />
+	&lt;li&gt;Pegamento&lt;/li&gt;<br />
+	&lt;li&gt;Tijeras&lt;/li&gt;<br />
+	&lt;/ul&gt;
+	</p>
+</blockquote>
+<p>
+Al insertarlo en una página web, obtendremos el resultado de la
+figura:
+</p>
+<p>
+<img src="fig0701.jpg" height="203" border="1" width="300" />
+</p>
+<p>
+Cada <b>&lt;li&gt;</b> puede contener todo lo que
+se nos antoje, desde párrafos completos hasta imágenes, vídeos o
+cualquier otro elemento.
+</p>
+<h2>Listas ordenadas</h2>
+<p>
+El segundo tipo es similar al anterior, pero
+cambiando el <b>&lt;ul&gt; </b>por un <b>&lt;ol&gt;</b>, es decir <i>ordered list</i>
+(lista ordenada). Así conseguiremos que los puntos se numeren.
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Forma de empleo&lt;/h1&gt;<br />
+	&lt;ol&gt;<br />
+	&lt;li&gt;Dibujamos las figuras con el lápiz.&lt;/li&gt;<br />
+	&lt;li&gt;Usando las tijeras iremos recortando las figuras
+	cuidadosamente.&lt;/li&gt;<br />
+	&lt;li&gt;Por último, pegaremos cada parte por las partes
+	indicadas.&lt;/li&gt;<br />
+	&lt;/ol&gt;
+	</p>
+</blockquote>
+<p>
+El resultado se muestra en la figura:
+</p>
+<p>
+<img src="fig0702.jpg" height="157" border="1" width="400" />
+</p>
+<h2>Listas de definiciones</h2>
+<p>
+El tercer tipo, menos habitual, se utiliza
+para diseñar listas de términos y descripciones asociadas a ellos.
+La etiqueta <b>&lt;dl&gt;</b> (<i>definition list</i>) abre y cierra la lista, la
+etiqueta <b>&lt;dt&gt;</b> (<i>definition term</i>) se usa para especificar el
+término y<b> &lt;dd&gt;</b> (<i>definition description</i>) para describirlo.
+Todas ellas acompañadas de sus cierres.
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Utilidad de cada elemento&lt;/h1&gt;<br />
+	&lt;dl&gt;
+	</p>
+	<p>
+	&lt;dt&gt;Lápiz&lt;/dt&gt;<br />
+	&lt;dd&gt;Se emplea para plasmar los diseños sobre el papel&lt;/dd&gt;
+	</p>
+	<p>
+	&lt;dt&gt;Papel&lt;/dt&gt;<br />
+	&lt;dd&gt;Una vez dibujado será recortado y posteriormente
+	pegado&lt;/dd&gt;
+	</p>
+	<p>
+	&lt;dt&gt;Pegamento&lt;/dt&gt;<br />
+	&lt;dd&gt;Utilizaremos sus peculiares características para dar
+	forma al objeto uniendo las partes de papel&lt;/dd&gt;
+	</p>
+	<p>
+	&lt;/dl&gt;
+	</p>
+</blockquote>
+<p>
+Al mostrarse en un navegador, las
+definiciones aparecen desplazadas respecto a los términos, como se
+recoge en la figura:
+</p>
+<p>
+<img src="fig0703.jpg" height="202" border="1" width="600" />
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id126">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion126_2" class="block" style="display:block;position:relative">Las posibles etiquetas para realizar una lista con lenguaje HTML son:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option126_2" id="i126_5" onclick="getFeedback(0,4,'126_2','multi')"/></td><td>
+<div id="taans126_5" class="block" style="display:block;position:relative">&lt;dl&gt; (definition list) abre y cierra la lista, la etiqueta &lt;dt&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option126_2" id="i126_379" onclick="getFeedback(1,4,'126_2','multi')"/></td><td>
+<div id="taans126_379" class="block" style="display:block;position:relative">&lt;ul&gt; abre la lista y &lt;ol&gt; cierra la lista.
+</div></td></tr>
+<tr><td><input type="radio" name="option126_2" id="i126_382" onclick="getFeedback(2,4,'126_2','multi')"/></td><td>
+<div id="taans126_382" class="block" style="display:block;position:relative">Hay tres tipos de etiquetas, según el tipo de lista desordenada, ordenada y de definición.
+</div></td></tr>
+<tr><td><input type="radio" name="option126_2" id="i126_385" onclick="getFeedback(3,4,'126_2','multi')"/></td><td>
+<div id="taans126_385" class="block" style="display:block;position:relative">Ninguna de las anteriores es correcta.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b126_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b126_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b126_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b126_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id123">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta123_21_2" class="block" style="display:block;position:relative"><b></b>Crea una lista de definiciones con conceptos y 
+descripciones asociados a tu actividad profesional o laboral. Asegúrate 
+de que abres y cierras todos los bloques correctamente. 
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_organizacin_de_la_informacin.html">&laquo; Anterior</a> | <a href="creacin_de_listas_con_un_editor_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

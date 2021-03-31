@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Formularios | Formularios y JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Formularios</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Formularios y JavaScript</a><ul>
+<li><a href="recurso_tic_formularios_y_javascript.html" class="daddy">Recurso TIC: Formularios y JavaScript</a><ul>
+<li id="active"><a href="formularios.html" class="active no-ch">Formularios</a></li>
+<li><a href="campos_de_un_formulario.html" class="no-ch">Campos de un formulario</a></li>
+<li><a href="insertar_un_formulario_con_un_editor_web.html" class="no-ch">Insertar un formulario con un editor web</a></li>
+<li><a href="eventos.html" class="no-ch">Eventos</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block" style="display:block;position:relative">
+<p>
+Las páginas más completas y más complejas suelen contar con
+algún grado de interactividad. Esa interactividad comienza por
+recoger alguna operación que realiza el usuario y responderle de
+algún modo. El ejemplo más claro de esto es el uso de formularios,
+para realizar una recogida de datos que el navegador mandará por
+correo electrónico o que se almacenarán en una base de datos en el
+servidor, para que a su vez puedan ser procesados. 
+</p>
+<p>
+Para poder gestionar la información, remitida mediante el servidor
+y una base de datos, necesitaremos conocimientos avanzados de otras
+tecnologías que se ejecutan en el lado del servidor, lo que excede
+a los propósitos de este material. No obstante, sí podremos avanzar en
+el diseño de formularios, para enviar información por correo o para
+realizar algunas interacciones mediante <i>JavaScript</i>.
+</p>
+<h2>Insertar un formulario</h2>
+<p>
+La creación de un formulario se realiza mediante la etiqueta
+<b>&lt;form&gt;</b> y su correspondiente <b>&lt;/form&gt;</b>. Así generamos un
+bloque dentro del cual podemos introducir todos los contenidos que
+queramos: tablas, imágenes, etc. También incluiremos en su interior
+diferentes elementos HTML orientados a esa recogida de datos.
+</p>
+<p>
+Probemos con un ejemplo elemental. Incorporaremos este texto en
+el <b>&lt;body&gt;</b> de una página vacía:
+</p>
+<blockquote>
+	<p>
+	&lt;form name=&quot;miformulario&quot;&gt;<br />
+	&lt;h1&gt;Bienvenido&lt;/h1&gt;<br />
+	Introduce tu nombre: &lt;input type=&quot;text&quot; name=&quot;nombre&quot;
+	/&gt;<br />
+	&lt;br /&gt;Mensaje: &lt;input name=&quot;mensaje&quot;
+	type=&quot;textarea&quot; size=&quot;60&quot; /&gt;<br />
+	&lt;br /&gt;&lt;input type=&quot;submit&quot; value=&quot;Probar&quot;
+	/&gt;<br />
+	&lt;/form&gt;
+	</p>
+</blockquote>
+<p>
+Al probar esta página, se obtiene el resultado de la figura:
+</p>
+<p>
+<img src="fig1401.jpg" height="462" width="600" />
+</p>
+<p>
+El formulario incluye un sencillo título y dos elementos de
+formulario: un cuadro de texto y un botón de envío. 
+</p>
+<h2>Opciones de formulario</h2>
+<p>
+Nuestro formulario no tiene programada ninguna acción. Cuando se
+pulsa el botón <b>Probar, </b>no sucede nada. Se puede modificar el
+comportamiento del formulario y algunas opciones más mediante
+parámetros.
+</p>
+<p>
+El parámetro <b>action </b>se acompaña de una URL que indica a dónde
+se saltará cuando el usuario pulse en el botón de envío (el botón
+de tipo <b>submit</b>, como veremos más tarde). Un formulario como el
+nuestro se podría remitir por correo mediante una URL del tipo
+<b>mailto </b>así:
+</p>
+<blockquote>
+	<p>
+	&lt;form name=&quot;miformulario&quot;
+	action=&quot;<a href="mailto:antoniop@iteite.es">mailto:antoniop@iteite.es</a>&quot;
+	method=&quot;post&quot; enctype=&quot;text/plain&quot;&gt;
+	</p>
+</blockquote>
+<p>
+y obtendríamos el resultado de la figura, donde se despliega la
+aplicación de correo que el usuario tiene configurada para
+remitirnos nuestro formulario por correo electrónico:
+</p>
+<p>
+<img src="fig1402.jpg" height="462" width="600" />
+</p>
+<p>
+Esta opción de remisión de formularios por correo se emplea poco
+en la actualidad; obliga al usuario a tener configurada una
+aplicación de correo. Lo normal aquí sería ejecutar algún <i>script</i>
+en el lado del servidor que procesase el formulario, lo que, como
+decíamos anteriormente, no será tratado en este módulo.
+</p>
+<p>
+Junto a <b>action </b>cada formulario suele tener otros tres
+parámetros:
+</p>
+<ul>
+	<li><b>name</b>: especifica un nombre único para el formulario. Es muy
+	importante al ser procesado en el servidor, ya que permite
+	discriminar entre varios formularios, si la página los tuviese.
+	</li>
+	<li><b>method</b>: indica el formato de envío que se va a emplear para
+	el formulario. Tenemos la opción <b>post </b>que remite la información de
+	forma oculta y sin limitaciones de tamaño y, por otro lado, la opción
+	<b>	get</b>, que transmite los datos como parte de la URL de la página. El
+	método <b>post </b>suele ser el más recomendable y es el que emplearemos
+	en casi todos los casos.
+	</li>
+	<li><b>enctype</b>: se usa para indicar el formato de codificación de
+	los datos que estamos remitiendo.  El valor predeterminado<b>
+	application/x-www-form-urlencoded</b>.<b> text/plain</b> hace que se reemplacen
+	los espacios por el signo <b>+</b>; se emplea para textos sencillos. Si
+	vamos a enviar archivos, fotos, etc. usaremos la codificación
+	<b>multipart/form-data </b>donde ningún carácter se codifica. 
+	</li>
+</ul>
+<p>
+Aún hay algunos valores más, como <b>autocomplete </b>(con
+valores <b>on </b>u <b>off</b>) que decide si al rellenar el formulario se nos
+harán sugerencias (que es el comportamiento predeterminado) o no.
+Ponerlo en <b>off </b>es útil para formularios en los que se introducen
+datos personales. También  podemos activar el valor <b>novalidate</b>,
+para que el formulario no se compruebe antes de enviarlo. 
+</p>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id183">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion183_2" class="block" style="display:block;position:relative">El parámetro <i>action</i> en los formularios suele ir acompañado otros tres: <i>name</i>, <i>method</i> y <i>enctype</i>. <br />
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option183_2" id="i183_5" onclick="getFeedback(0,4,'183_2','multi')"/></td><td>
+<div id="taans183_5" class="block" style="display:block;position:relative">Estos parámetros sirven para especificar un nombre único para cada formulario.
+</div></td></tr>
+<tr><td><input type="radio" name="option183_2" id="i183_412" onclick="getFeedback(1,4,'183_2','multi')"/></td><td>
+<div id="taans183_412" class="block" style="display:block;position:relative">Sirven para indicar el formato de envío que se va a emplear para el formulario.
+</div></td></tr>
+<tr><td><input type="radio" name="option183_2" id="i183_415" onclick="getFeedback(2,4,'183_2','multi')"/></td><td>
+<div id="taans183_415" class="block" style="display:block;position:relative">Sirven para indicar el formato de codificación de los datos que estamos remitiendo.
+</div></td></tr>
+<tr><td><input type="radio" name="option183_2" id="i183_418" onclick="getFeedback(3,4,'183_2','multi')"/></td><td>
+<div id="taans183_418" class="block" style="display:block;position:relative">Todas las anteriores son falsas.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b183_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa1b183_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b183_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+<div id="sa3b183_2" style="color: rgb(0, 51, 204);display: none;" even_steven="8">Correcto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id133">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta133_21_2" class="block" style="display:block;position:relative">
+<p>
+Generaremos un pequeño formulario para ir probando los diferentes
+tipos de campos que se pueden añadir. En el parámetro <b>action
+</b>optaremos por una acción de envío por correo electrónico, para así
+poder comprobar los valores que se mandan en cada correo.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="recurso_tic_formularios_y_javascript.html">&laquo; Anterior</a> | <a href="campos_de_un_formulario.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

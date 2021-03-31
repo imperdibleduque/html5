@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Campos de un formulario | Formularios y JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Campos de un formulario</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Formularios y JavaScript</a><ul>
+<li><a href="recurso_tic_formularios_y_javascript.html" class="daddy">Recurso TIC: Formularios y JavaScript</a><ul>
+<li><a href="formularios.html" class="no-ch">Formularios</a></li>
+<li id="active"><a href="campos_de_un_formulario.html" class="active no-ch">Campos de un formulario</a></li>
+<li><a href="insertar_un_formulario_con_un_editor_web.html" class="no-ch">Insertar un formulario con un editor web</a></li>
+<li><a href="eventos.html" class="no-ch">Eventos</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id129">
+<div class="iDevice emphasis0">
+<div id="ta129_1" class="block" style="display:block;position:relative">
+<p>
+Un formulario puede contener cualquier tipo de recurso, como ya
+hemos dicho antes, pero hay algunos campos que son específicos del
+formulario y cuyo valor se enviará cuando éste se remita.
+</p>
+<h2>Cuadro de texto</h2>
+<p>
+Un cuadro de texto es un espacio definido para que el usuario
+introduzca un texto libre. Se crea con:
+</p>
+<blockquote>
+	<p>
+	Introduce tus apellidos: &lt;input type=&quot;text&quot;
+	name=&quot;apellidos&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+Como todos los elementos de un formulario, además del tipo se
+establece un nombre único mediante el parámetro <b>name</b>. Ese valor nos
+permite manipular el valor mediante<i> scripts </i>del lado del servidor o
+utilizando <i>JavaScript</i>.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id139">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta139_27_2" class="block" style="display:block;position:relative">
+<p>
+La etiqueta <b>&lt;input&gt;</b> cuenta con un copioso número de
+parámetros. No todos son aplicables a todas las etiquetas<b> input</b>;
+depende del tipo que indiquemos en el valor <b>type</b>. Más tarde veremos
+algunos valores.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id141">
+<div class="iDevice emphasis0">
+<div id="ta141_1" class="block" style="display:block;position:relative">
+<h2>Cuadro de contraseña</h2>
+<p>
+Los campos de contraseña son iguales que los de texto, pero al
+escribir dentro de ellos sólo se ven asteriscos o algún carácter
+similar, para evitar que otras personas alrededor puedan ver la
+clave.
+</p>
+<blockquote>
+	<p>
+	Introduce tu clave: &lt;input type=&quot;password&quot;
+	name=&quot;clave&quot; /&gt;
+	</p>
+</blockquote>
+<h2>Botones radiales</h2>
+<p>
+El usuario puede seleccionar uno de los valores del bloque, pero
+sólo uno de ellos; son excluyentes.
+</p>
+<blockquote>
+	<p>
+	Selecciona el color de tu icono:&lt;br /&gt;<br />
+	&lt;input type=&quot;radio&quot; name=&quot;coloricono&quot;
+	value=&quot;rojo&quot; /&gt; Rojo&lt;br /&gt;<br />
+	&lt;input type=&quot;radio&quot; name=&quot;coloricono&quot;
+	value=&quot;verde&quot; /&gt; Verde &lt;br /&gt;<br />
+	&lt;input type=&quot;radio&quot; name=&quot;coloricono&quot;
+	value=&quot;azul&quot; /&gt; Azul &lt;br /&gt;
+	</p>
+</blockquote>
+<p>
+Dos detalles fundamentales para que este conjunto funcione:
+</p>
+<ul>
+	<li>El valor indicado en <b>name </b>tiene que ser el mismo en todas las
+	opciones; así es como el navegador sabrá qué elemento del
+	conjunto está seleccionado.
+	</li>
+	<li>Se incorpora un parámetro nuevo, <b>value</b>. Cuando el formulario
+	se envíe para ser procesado, el campo <i>coloricono </i>de nuestro ejemplo
+	tomará el valor indicado en <b>value</b>. Este valor no tiene por qué
+	coincidir con el texto que mostramos a continuación.
+	</li>
+</ul>
+<p>
+El conjunto se ve así, tras seleccionar la tercera opción:
+</p>
+<p>
+<img src="fig1403.jpg" height="462" width="600" />
+</p>
+<h2>Casillas de verificación</h2>
+<p>
+En este tipo (denominado <b>checkbox</b>) el usuario sí puede
+seleccionar varias opciones. Todas ellas se remitirán para ser
+procesadas, asociadas bajo el mismo nombre, indicado en el parámetro
+<b>name</b>:
+</p>
+<blockquote>
+	<p>
+	&lt;hr /&gt;Selecciona los d&amp;iacute;as con disponibilidad:&lt;br
+	/&gt;<br />
+	&lt;input type=&quot;checkbox&quot; name=&quot;dias&quot;
+	value=&quot;l&quot; /&gt; Lunes&lt;br /&gt;<br />
+	&lt;input type=&quot;checkbox&quot; name=&quot;dias&quot;
+	value=&quot;m&quot; /&gt;Martes&lt;br /&gt;<br />
+	&lt;input type=&quot;checkbox&quot; name=&quot;dias&quot;
+	value=&quot;mm&quot; /&gt;Mi&amp;iacute;rcoles&lt;br /&gt;<br />
+	&lt;input type=&quot;checkbox&quot; name=&quot;dias&quot;
+	value=&quot;j&quot; /&gt;Jueves&lt;br /&gt;<br />
+	&lt;input type=&quot;checkbox&quot; name=&quot;dias&quot;
+	value=&quot;v&quot; /&gt;Viernes&lt;br /&gt;
+	</p>
+</blockquote>
+<p>
+Bajo el valor <i>dias </i>se transmitirá a la página web
+encargada de procesar el resultado del formulario una secuencia con
+todos aquellos cuadros que hayan sido activados. Se transmitirá el
+valor que aparece dentro de cada <b>value</b>, únicamente. Por ejemplo, si
+enviamos el formulario de la figura, se mandará la secuencia<i> l</i>, <i>m </i>y
+<i>j</i>.
+</p>
+<p>
+<img src="fig1404.jpg" height="461" width="600" />
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id164">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta164_21_2" class="block" style="display:block;position:relative">
+<p>
+En el ejemplo hemos reemplazado los caracteres con tilde por
+entidades html. Por ejemplo, la secuencia <b>&amp;iacute;</b> se reemplazará
+por una &quot;<b>í</b>&quot;. Es apropiado hacer estos cambios para
+asegurarnos de que nuestra página se muestra siempre correctamente.
+Los editores web suelen hacerlo por nosotros. No obstante, si tenemos
+que hacerlo, podemos encontrar una lista de entidad html en varios
+sitios, por ejemplo en <a href="http://www.w3schools.com/tags/ref_entities.asp" target="_blank">http://www.w3schools.com/tags/ref_entities.asp</a>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id165">
+<div class="iDevice emphasis0">
+<div id="ta165_1" class="block" style="display:block;position:relative">
+<h2>Botón de envío</h2>
+<p>
+Un campo de tipo <b>submit </b>generará un botón que, al ser pulsado,
+hará que se aplique la acción indicada en el formulario:
+</p>
+<blockquote>
+	<p>
+	&lt;input type=&quot;submit&quot; value=&quot;Haz clic para enviar
+	la informac&amp;iacute;on&quot; /&gt;
+	</p>
+</blockquote>
+<h2> Botón de limpieza</h2>
+<p>
+Un campo de tipo <b>reset </b>eliminará todo el contenido introducido en
+un formulario, dejándolo limpio de nuevo. La figura muestra el botón
+anterior y uno de tipo <b>reset</b>.
+</p>
+<blockquote>
+	<p>
+	&lt;input type=&quot;reset&quot; value=&quot;Comenzar a rellenar
+	de nuevo&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig1405.jpg" height="462" width="600" />
+</p>
+<h2>Botón estándar</h2>
+<p>
+También podemos crear un botón que no sea del tipo <b>submit </b>o
+<b>reset</b>, sino genérico, mediante el tipo <b>button</b>.
+</p>
+<blockquote>
+	<p>
+	&lt;input type=&quot;button&quot; value=&quot;Haz clic sobre mi&quot;
+	/&gt;
+	</p>
+</blockquote>
+<p>
+Ese botón tal y como está no hace absolutamente nada. Podemos
+pasarnos el día entero pulsándolo sin conseguir ningún resultado.
+Para que esos botones interactuen tenemos que definir en ellos el
+evento <b>onclick</b>. Así podremos asociarle una función <i>JavaScript</i>,
+cargar una página en el lado del servidor o simplemente remitir una
+información por correo electrónico.
+</p>
+<blockquote>
+	<p>
+	&lt;input type=&quot;button&quot; value=&quot;Haz clic sobre mi&quot;
+	onclick=&quot;JavaScript:window.location='http://www.google.es'&quot;
+	/&gt;
+	</p>
+</blockquote>
+<p>
+Este botón sí realiza ya una operación. Al hacer clic sobre él,
+se ejecuta una pequeña acción de <i>JavaScript</i>
+(<b>window.location='http://www.google.es'&quot;</b>),
+que hace que el navegador salte a la página indicada.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id166">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta166_23_2" class="block" style="display:block;position:relative">
+<p>
+Más tarde analizaremos los eventos y su funcionamiento.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id167">
+<div class="iDevice emphasis0">
+<div id="ta167_1" class="block" style="display:block;position:relative">
+<h2>Archivo</h2>
+<p>
+Un elemento <b>input </b>de tipo <b>file </b>nos sirve para enviar
+un archivo al servidor. Se emplea con frecuencia para enviar alguna
+imagen, documentos de texto, etc. Podemos remitir cualquier tipo de
+archivo. 
+</p>
+<blockquote>
+	<p>
+	Adjunta tu curriculum vitae &lt;input type=&quot;file&quot;
+	name=&quot;curriculum&quot; /&gt;
+	</p>
+</blockquote>
+<p>
+El resultado es éste:
+</p>
+<p>
+<img src="fig1406.jpg" height="462" width="600" />
+</p>
+<h2>Valores ocultos</h2>
+<p>
+El tipo <b>hidden </b>se emplea para remitir información al servidor
+dentro de los formularios, pero sin que esta información se muestre
+en la pantalla. Su sentido es el de proporcionar datos
+complementarios, como podría ser la fecha, desde dónde se ha
+rellenado el formulario o cualquier otro aspecto que no necesitamos
+que rellene el usuario, sino que podemos definir por otros medios.
+Todo lo que podamos evitar que sea rellenado aligerará el formulario
+y favorecerá la interactuación del usuario con nuestra página.
+</p>
+<blockquote>
+	<p>
+	&lt;input type=&quot;hidden&quot; name=&quot;campaña&quot;
+	value=&quot;primavera&quot; /&gt;
+	</p>
+</blockquote>
+<h2>Más tipos</h2>
+<p>
+La aparición de HTML5 nos trae varios tipos de campo<b> &lt;input&gt;
+</b>añadidos. En concreto las nuevas opciones son las siguientes: <b>color</b>,
+<b>date</b>, <b>datetime</b>,<b> datetime-local</b>, <b>month</b>, <b>week</b>, <b>time</b>, <b>email</b>, <b>number</b>,
+<b>range</b>, <b>search</b>, <b>tel </b>y <b>url</b>. 
+</p>
+<p>
+En la actualidad casi todos ellos se muestran como cuadros de
+texto normales pero, a medida que se implante el estándar, iremos
+viendo cómo se producen cambios. Por ejemplo, si definimos un campo
+indicando que será de tipo <b>tel </b>(teléfono) y accedemos mediante un
+dispositivo móvil, el teclado se cambiará automáticamente al
+numérico; o si definimos un campo de tipo <b>email </b>(correo), el
+navegador será capaz de realizar una validación previa para
+comprobar si es una dirección correcta. 
+</p>
+<p>
+En conclusión, puede ser interesante ir conociéndolos e
+incorporándolos a nuestra rutina, al diseñar formularios.
+</p>
+<h2>
+Otros campos diferentes a input
+</h2>
+<p>
+En los formularios emplearemos otros recursos diferentes a los que
+nos facilita la etiqueta <b>input</b>.
+</p>
+<h2>Área de texto</h2>
+<p>
+Un área de texto es similar a los cuadros creados con <b>&lt;input
+type=&quot;text&quot;&gt; </b>pero más amplios, pensados para albergar 
+secuencias de texto tan largas como sea preciso. Se crean mediante la
+etiqueta <b>&lt;textarea&gt;</b> y en ellas podemos indicar el tamaño
+visual del campo mediante los parámetros <b>cols </b>(columnas) y <b>rows </b>(filas).
+</p>
+<blockquote>
+	<p>
+	&lt;textarea name=&quot;mensaje&quot; cols=&quot;60&quot; rows=&quot;6&quot;
+	/&gt; &lt;/textarea&gt;
+	</p>
+</blockquote>
+<p>
+La figura muestra la etiqueta anterior:
+</p>
+<p>
+<img src="fig1407.jpg" height="462" width="600" />
+</p>
+<p>
+Como se puede observar, esta etiqueta lleva su cierre
+correspondiente. Si colocamos cualquier texto entre ambas etiquetas,
+se mostrará dentro del cuadro al cargarse la página.
+</p>
+<h2>Listas desplegables</h2>
+<p>
+La etiqueta <b>&lt;select&gt;</b> y <b>&lt;/select&gt; </b>se utiliza para crear
+una lista desplegable de opciones, donde el usuario puede seleccionar
+una de ellas. Su sentido es similar al de los botones radiales, pero
+en un espacio más reducido, sobre todo si tenemos muchas opciones.
+Tiene también la ventaja de que con el teclado podemos desplazarnos
+rápidamente hasta la opción que comience con la letra que pulsamos,
+algo muy útil en las listas muy largas.
+</p>
+<p>
+Cada opción de una lista desplegable se engloba en la etiqueta
+<b>&lt;option&gt;</b>, por lo que el conjunto quedaría así:
+</p>
+<blockquote>
+	<p>
+	Selecciona el d&amp;iacute;a preferente:&lt;br /&gt;<br />
+	&lt;select&gt;
+	</p>
+	<blockquote>
+		&lt;option value=&quot;l&quot;&gt; Lunes&lt;/option&gt;<br />
+		&lt;option value=&quot;m&quot;&gt;Martes&lt;/option&gt;<br />
+		&lt;option value=&quot;mm&quot;&gt;Mi&amp;eacute;rcoles&lt;/option&gt;<br />
+		&lt;option value=&quot;j&quot;&gt;Jueves&lt;/option&gt;<br />
+		&lt;option value=&quot;v&quot;&gt;Viernes&lt;/option&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/select&gt;
+	</p>
+</blockquote>
+<p>
+Al probarlo, obtendremos una lista como la de la figura:
+</p>
+<p>
+<img src="fig1408.jpg" border="1" height="154" width="247" />
+</p>
+<p>
+Si queremos que de forma predeterminada el valor seleccionado sea
+diferente del primero, podemos añadir el parámetro <b>selected </b>al
+elemento. Así:
+</p>
+<p>
+&lt;option value=&quot;j&quot; selected&gt;Jueves&lt;/option&gt;
+</p>
+<blockquote>
+	<p>
+	También es habitual añadir un elemento en blanco al principio o
+	con un texto animando a realizar la selección:
+	</p>
+</blockquote>
+<blockquote>
+	<p>
+	&lt;option value=&quot;&quot;&gt; Seleccione un
+	d&amp;iacute;a&lt;/option&gt;
+	</p>
+</blockquote>
+<p>
+El cambio se vería de esta manera:
+</p>
+<p>
+<img src="fig1409.jpg" border="1" height="76" width="205" />
+</p>
+<p>
+Al no tener valor asociado, podríamos saber, al tratar el
+formulario, que el usuario no ha escogido ningún día.
+</p>
+<h2>Grupos de opciones</h2>
+<p>
+La etiqueta <b>optgroup </b>nos proporciona una variante de los campos de
+tipo <b>option</b>. Su diferencia es que podemos agrupar las opciones con
+subtítulos. Observemos este ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;hr /&gt;<br />
+	Escoja una materia:<br />
+	&lt;select&gt;
+	</p>
+	<blockquote>
+		&lt;optgroup label=&quot;Obligatorias&quot;&gt;<br />
+		&lt;option value=&quot;mat&quot;&gt;Matem&amp;aacute;ticas&lt;/option&gt;<br />
+		&lt;option value=&quot;len&quot;&gt;Lenguaje&lt;/option&gt;<br />
+		&lt;/optgroup&gt;<br />
+		<br />
+		&lt;optgroup label=&quot;Optativas&quot;&gt;<br />
+		&lt;option value=&quot;cor&quot;&gt;Corte y
+		confecci&amp;oacute;n&lt;/option&gt;<br />
+		&lt;option value=&quot;ast&quot;&gt;Astronom&amp;iacute;a&lt;/option&gt;<br />
+		&lt;/optgroup&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/select&gt;
+	</p>
+</blockquote>
+<p>
+Se mostraría así:
+</p>
+<p>
+<img src="fig1410.jpg" border="1" height="173" width="309" />
+</p>
+<h2>Elementos complementarios</h2>
+<p>
+En formularios largos conviene agrupar los grandes bloques de
+elementos mediante la etiqueta <b>&lt;fieldset&gt;</b>. Es una división
+visual marcada por una simple línea. Si empleamos la etiqueta
+<b>&lt;legend&gt; </b>podremos además añadir un nombre a ese subconjunto.
+Observemos este ejemplo y cómo se mostraría en el navegador:
+</p>
+<blockquote>
+	<p>
+	&lt;fieldset&gt;
+	</p>
+	<blockquote>
+		&lt;legend&gt;Datos personales&lt;/legend&gt;<br />
+		Introduce tu nombre: &lt;input name=&quot;nombre&quot;
+		type=&quot;text&quot; /&gt; &lt;br /&gt;<br />
+		Mensaje: &lt;textarea name=&quot;mensaje&quot; cols=&quot;60&quot;
+		rows=&quot;6&quot;&gt;&lt;/textarea&gt; &lt;br /&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/fieldset&gt;
+	</p>
+</blockquote>
+<p>
+<img src="fig1411.jpg" height="462" width="600" />
+</p>
+<p>
+Esta división es meramente visual y no afecta de ninguna manera
+al comportamiento del formulario, aunque sí le aporta un sentido
+semántico.
+</p>
+<p>
+Además, podemos utilizar la etiqueta <b>&lt;label&gt; </b>para
+establecer un nombre para un campo. Esta etiqueta no se muestra, por
+lo que aplicarla vuelve a ser una medida apropiada para favorecer la
+accesibilidad del formulario e incluso para aplicar estilos, pero no
+tendrá efecto en el formulario.
+</p>
+<p>
+Se utiliza junto al parámetro <b>for</b>, así:
+</p>
+<blockquote>
+	<p>
+	&lt;label for=&quot;nombre&quot;&gt;Nombre&lt;/label&gt;<br />
+	Introduce tu nombre: &lt;input id=&quot;nombre&quot; name=&quot;nombre&quot;
+	type=&quot;text&quot;&gt; &lt;br&gt;
+	</p>
+</blockquote>
+<p>
+Su valor debe ser el mismo que el valor <b>id </b>del campo, por lo que
+nos obligamos a añadir un valor <b>id </b>a cada elemento. 
+</p>
+<h2>Parámetros comunes</h2>
+<p>
+La mayoría de los elementos de un formulario cuentan con algunos
+parámetros comunes muy útiles:
+</p>
+<ul>
+	<li><b>size</b>: en los cuadros de texto se emplea para definir
+	el tamaño del campo. Por ejemplo<b> size=&quot;20&quot;</b>.
+	</li>
+	<li><b>maxlenght</b>: también en los cuadros de texto nos
+	servirá para limitar el tamaño. Por ejemplo: <b>&lt;input type=&quot;text&quot;
+	name=&quot;telefono&quot; maxlenght=&quot;9&quot; size=&quot;9&quot;
+	/&gt;
+	</b>
+	</li>
+	<li><b>readonly</b>: en los cuadros de texto hace que el valor
+	sea de sólo lectura, que no se pueda cambiar. Por ejemplo: <b>&lt;input
+	type=&quot;text&quot; name=&quot;pais&quot; readonly=&quot;readonly&quot;
+	/&gt;España
+	</b>
+	</li>
+	<li><b>disabled</b>: hace que el elemento se encuentre
+	desactivado y no se pueda modificar. Sirve con varios elementos
+	diferentes. Se añade así: <b>disabled=&quot;disabled&quot;
+	</b>
+	</li>
+	<li><b>placeholder</b>: permite añadir un texto dentro del
+	cuadro, que desaparece automáticamente al hacer clic sobre él. Son
+	muy útiles para incorporar pequeñas indicaciones sobre el valor
+	que se espera. Se añade así: <b>placeholder=&quot;Introduce tu
+	nombre&quot;
+	</b>
+	</li>
+	<li><b>tabindex</b>: es habitual desplazarse por un formulario
+	presionando la tecla <b>Tab </b>para avanzar al campo siguiente o <b>Mayús-Tab</b>
+	para ir al anterior. Mediante <b>tabindex </b>podemos modificar el orden de
+	esos saltos entre los campos de nuestro formulario. Iremos numerando
+	cada campo mediante un número, así : <b>&lt;input type=&quot;password&quot;
+	name=&quot;clave&quot; tabindex=&quot;1&quot; /&gt;
+	</b>
+	</li>
+</ul>
+<p>
+Con todo esto tenemos todos los recursos necesarios para diseñar
+los formularios más completos. Sólo nos faltará aplicar los
+estilos adecuados para que el formulario se integre correctamente con
+nuestro sitio. 
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id184">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta184_16" class="block" style="display:block;position:relative">Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</div><div class="question">
+<br/><br/><div id="taquestion0b184" class="block" style="display:block;position:relative">Para que los botones radiales funcionen hay que tener en cuenta que el valor introducido en <i>name</i> tiene que ser el mismo en todas las opciones, además hay que escribir el parámetro <i>input</i>.
+</div><br/>Verdadero <input type="radio" name="option0b184" id="true0b184" onclick="getFeedback(0,2,'0b184','truefalse')"/> 
+Falso <input type="radio" name="option0b184" id="false0b184" onclick="getFeedback(1,2,'0b184','truefalse')"/>
+<div id="s0b0b184" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="s1b0b184" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="sfbk0b184" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b184" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b184" class="block" style="display:block;position:relative">El parámetro <i>checkbox</i> sirve para el usuario pueda seleccionar varias opciones de una lista dada.
+</div><br/>Verdadero <input type="radio" name="option1b184" id="true1b184" onclick="getFeedback(0,2,'1b184','truefalse')"/> 
+Falso <input type="radio" name="option1b184" id="false1b184" onclick="getFeedback(1,2,'1b184','truefalse')"/>
+<div id="s0b1b184" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="s1b1b184" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="sfbk1b184" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b184" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion2b184" class="block" style="display:block;position:relative">El parámetro <i>reset</i> eliminará sólo el contenido de los botones radiales, dejándolo limpio de nuevo.
+</div><br/>Verdadero <input type="radio" name="option2b184" id="true2b184" onclick="getFeedback(0,2,'2b184','truefalse')"/> 
+Falso <input type="radio" name="option2b184" id="false2b184" onclick="getFeedback(1,2,'2b184','truefalse')"/>
+<div id="s0b2b184" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="s1b2b184" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="sfbk2b184" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback2b184" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion3b184" class="block" style="display:block;position:relative">La etiqueta &lt;<i>select</i>&gt; y &lt;<i>/select</i>&gt; se utiliza para crear una lista desplegable de opciones, donde el usuario puede seleccionar una de ellas.
+</div><br/>Verdadero <input type="radio" name="option3b184" id="true3b184" onclick="getFeedback(0,2,'3b184','truefalse')"/> 
+Falso <input type="radio" name="option3b184" id="false3b184" onclick="getFeedback(1,2,'3b184','truefalse')"/>
+<div id="s0b3b184" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="s1b3b184" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="sfbk3b184" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback3b184" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id168">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta168_25_2" class="block" style="display:block;position:relative">
+<p>
+Con los estilos podemos modificar cualquier valor de los campos.
+Podemos cambiar los colores de los botones, el fondo de los campos,
+etc.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id169">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta169_26_2" class="block" style="display:block;position:relative">
+<p>
+Incorporaremos a nuestro formulario diferentes tipos de campos.
+Intentaremos que sean lo más variados posibles.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="formularios.html">&laquo; Anterior</a> | <a href="insertar_un_formulario_con_un_editor_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

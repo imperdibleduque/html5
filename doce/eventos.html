@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Eventos | Formularios y JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Eventos</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Formularios y JavaScript</a><ul>
+<li><a href="recurso_tic_formularios_y_javascript.html" class="daddy">Recurso TIC: Formularios y JavaScript</a><ul>
+<li><a href="formularios.html" class="no-ch">Formularios</a></li>
+<li><a href="campos_de_un_formulario.html" class="no-ch">Campos de un formulario</a></li>
+<li><a href="insertar_un_formulario_con_un_editor_web.html" class="no-ch">Insertar un formulario con un editor web</a></li>
+<li id="active"><a href="eventos.html" class="active no-ch">Eventos</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id130">
+<div class="iDevice emphasis0">
+<div id="ta130_1" class="block" style="display:block;position:relative">
+<p>
+Con independencia del tratamiento que realicemos con un
+formulario, que como venimos diciendo requiere en ocasiones que se
+complemente con otras tecnologías diferentes a las que estamos
+aprendiendo, podemos profundizar en la interactividad de las páginas
+web gracias a los eventos.
+</p>
+<p>
+Un <b>evento</b> es algo que sucede en el navegador, de tal manera que,
+cuando ocurren, podemos definir algún comportamiento concreto, una
+respuesta por parte de la página web, mediante nuestro medio o
+utilizando esas otras tecnologías del lado del servidor.
+</p>
+<p>
+Veamos un ejemplo sencillo que nos ayudará a entender este
+concepto:
+</p>
+<h2>Carga y descarga de la página</h2>
+<p>
+Cada vez que el navegador termina de cargar una página, le remite
+al documento una indicación de que se ha producido un evento que se
+llama <b>onload</b>. De este modo, desde la página web podemos saber en qué
+preciso momento se ha terminado de cargar la página completamente y
+podemos realizar alguna acción. Para realizar estas acciones
+podemos, por ejemplo, utilizar el lenguaje <i>JavaScript</i>, con el que ya
+hemos realizado un par de prácticas.
+</p>
+<p>
+Observa la línea siguiente:
+</p>
+<blockquote>
+	<p>
+	&lt;body onload=&quot;JavaScript:alert('Perfecto. La página ya se
+	ha cargado.');&quot;&gt;
+	</p>
+</blockquote>
+<p>
+<b>alert </b>es una función del lenguaje <i>JavaScript </i>que se
+utiliza para mostrar un mensaje en la ventana del navegador, como una
+ventana emergente. Se suele acompañar de un pequeño texto, que será
+el que se muestre. Ésta es una función muy utilizada, porque permite
+averiguar los mensajes que se están generando dentro de la página
+web.
+</p>
+<p>
+Como se puede observar, indicamos que es una instrucción de
+<i>JavaScript </i>poniendo primero ese término seguido de un signo de dos
+puntos.
+</p>
+<p>
+Al probar la página web y terminar de cargarse, obtendremos el
+siguiente resultado:
+</p>
+<p>
+<img src="fig1414.jpg" height="462" width="600" />
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id146">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta146_34_2" class="block" style="display:block;position:relative">
+<p>
+Todas las funciones de <i>JavaScript </i>(y de otros muchos lenguajes de
+programación) siguen una estructura parecida: primero se indica el
+nombre de la función y a continuación, entre paréntesis, los
+diferentes parámetros que la función necesita para funcionar.
+Además las líneas en <i>JavaScript </i>finalizan con un signo de punto y
+coma, lo que le indica a la parte encargada de interpretar las
+órdenes que ahí ha finalizado la instrucción que le estamos dando.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id147">
+<div class="iDevice emphasis0">
+<div id="ta147_1" class="block" style="display:block;position:relative">
+<p>
+Además de <b>onload </b>tenemos otros controles que se lanzan antes de
+que se cargue la página (<b>onbeforeload</b>), cuando se abandona la página
+(<b>onunload</b>).
+</p>
+<h3>Más eventos de body</h3>
+<p>
+No se acaban ahí las opciones; tenemos eventos para controlar
+aspectos como el momento en que se cambia el tamaño de una ventana
+(<b>onresize</b>), el momento en que se imprime una página web (<b>onprint</b>) o
+el momento antes de comenzar la impresión (<b>onbeforeprint</b>) y otros
+muchos más. 
+</p>
+<p>
+La conclusión es que empleando <i>JavaScript</i>, <i>Ajax </i>o tecnologías
+del lado del servidor podemos responder perfectamente ante cualquier
+operación que se realice con la página web en general.
+</p>
+<h2>Enfoque y desenfoque</h2>
+<p>
+En el ámbito informático, en sistemas como una página web donde
+varios elementos se presentan ante el usuario, se emplea el concepto
+de <b>foco</b> para determinar qué elemento, de los disponibles en la
+pantalla, es el que tiene la atención en cada momento. Así, si por
+ejemplo pulsamos una tecla en el teclado, afectará al elemento que
+tenga el foco. Cuando pasamos a un segundo elemento, haciendo clic con
+el ratón, el primero deja de tener el foco y lo obtiene a su vez el
+segundo.
+</p>
+<p>
+Contamos con dos eventos para realizar operaciones cuando un
+elemento obtiene el foco (<b>onfocus</b>) y para cuando lo pierde (<b>onblur</b>).
+Suelen resultar bastante útiles al trabajar con formularios.
+</p>
+<p>
+Observemos el ejemplo de la figura. El estado inicial de los
+campos es similar en todo caso, pero cuando el usuario hace clic en
+el campo <i>Nombre</i>, éste se vuelve de color rojo. Cuando el usuario
+pasa a otro campo (cuando nombre pierde el foco), vuelve a su color
+habitual:
+</p>
+<p>
+<img src="fig1415.jpg" height="462" width="600" />
+</p>
+<p>
+Para conseguirlo de nuevo, debemos recurrir a técnicas basadas en
+<i>JavaScript</i>. En esta ocasión hemos optado por incorporar el código
+necesario en la cabecera de la página, entre <b>&lt;head&gt;</b> y <b>&lt;/head&gt;</b>.
+</p>
+<blockquote>
+	<p>
+	&lt;head&gt;
+	</p>
+	<p>
+	[...]
+	</p>
+	<p>
+	&lt;script language=&quot;JavaScript&quot;&gt;
+	</p>
+	<blockquote>
+		function enfocado(id_objeto) {<br />
+		document.getElementById(id_objeto).style.border=&quot;2px
+		solid red&quot;;<br />
+		}<br />
+		<br />
+		function desenfocado(id_objeto) {<br />
+		document.getElementById(id_objeto).style.border=&quot;inherit&quot;;<br />
+		}<br />
+	</blockquote>
+	<p>
+	&lt;/script&gt;
+	</p>
+	<p>
+	&lt;/head&gt;
+	</p>
+</blockquote>
+<p>
+Es un código muy sencillo que ya hemos empleado además en otra
+ocasión. Definimos dos funciones que recibirán el <b>id </b>de un elemento
+HTML y modificarán el borde en cada caso. En el primero pondrá un
+borde rojo de 2 píxeles y en el segundo regresará a su valor
+original. 
+</p>
+<p>
+Las estructuras de las funciones en <i>JavaScript </i>son siempre muy
+similares a éstas. Se indica el nombre de la función, los
+parámetros que va a utilizar y posteriormente, entre llaves, se
+indican las acciones a realizar. En nuestro ejemplo cada función
+tiene una única opción, pero normalmente tendrán muchas más.
+</p>
+<p>
+Para que funcione, modificaremos el elemento HTML dejándolo así:
+</p>
+<blockquote>
+	<p>
+	&lt;fieldset&gt;
+	</p>
+	<blockquote>
+		&lt;legend&gt;Datos personales&lt;/legend&gt;<br />
+		Introduce tu nombre: &lt;input name=&quot;nombre&quot;
+		id=&quot;nombre&quot; type=&quot;text&quot;
+		onfocus=&quot;JavaScript:enfocado(this.id);&quot;
+		onblur=&quot;JavaScript:desenfocado (this.id);&quot;&gt; &lt;br /&gt;<br />
+		Mensaje: &lt;textarea name=&quot;mensaje&quot; cols=&quot;60&quot;
+		rows=&quot;6&quot;&gt;&lt;/textarea&gt; &lt;br /&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/fieldset&gt;
+	</p>
+</blockquote>
+<p>
+Como se puede observar, sólo hemos cambiado la línea del nombre
+respecto a los ejemplos anteriores. Hemos añadido tres cosas:
+</p>
+<ul>
+	<li>Un <b>id </b>denominado <b>nombre</b>.
+	</li>
+	<li>Un evento <b>onfocus </b>que ejecutará la función <b>enfocado</b> que
+	hemos definido en la cabecera.<b> this.id</b> es el valor que le enviamos a
+	la función y equivaldría a &quot;<i>nombre</i>&quot; en este ejemplo.
+	</li>
+	<li>Un evento <b>onblur </b>que ejecutará la otra función.
+	</li>
+</ul>
+<p>
+Cuando probemos la página todo funcionará correctamente. De
+hecho, añadiendo estas tres últimas modificaciones a cualquier
+campo del formulario, conseguiremos que tengan ese cambio de color.
+Las funciones se pueden reutilizar tantas veces como sea necesario.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id174">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta174_31_2" class="block" style="display:block;position:relative">
+<p>
+Hay formas más sencillas y directas para conseguir este mismo
+resultado, pero resultan menos intuitivas para nuestro aprendizaje.
+Cuanto más profundicemos en el uso de <i>JavaScript, </i>más sencillo se
+irá volviendo su aplicación.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id175">
+<div class="iDevice emphasis0">
+<div id="ta175_1" class="block" style="display:block;position:relative">
+<p>
+Los formularios cuentan con otros muchos eventos, como cuando
+alguien pulsa el botón de envío del formulario (<b>onsubmit</b>), cuando
+alguien hace clic en el botón de reiniciarlo (<b>onreset</b>), cuando se
+introduce información en un cuadro (<b>oninput</b>) o cuando un valor
+cambia (<b>onchange</b>).
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id176">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 4</h2>
+<div class="iDevice_inner">
+<div id="ta176_33_2" class="block" style="display:block;position:relative">
+<p>
+Probaremos a realizar una pequeña gestión de eventos, de tal modo
+que, cuando un usuario haga clic en el botón de limpieza del
+formulario, se le muestre un aviso con cualquier texto, como se recoge
+en la figura. Ya hemos visto todo lo necesario para conseguirlo. Como
+pista, la única parte que debemos deducir es dónde ubicaremos la
+gestión del evento, si en el botón de <b>reset </b>o en la etiqueta del
+formulario. Al ser un evento que afecta a todo el formulario, debe ser
+en la etiqueta de formulario, pero podemos probar en ambos sitios
+para asegurarnos.
+</p>
+<p>
+<img src="fig1416.jpg" border="1" height="134" width="300" />
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id177">
+<div class="iDevice emphasis0">
+<div id="ta177_1" class="block" style="display:block;position:relative">
+<h2>El teclado</h2>
+<p>
+Contamos con tres posibles eventos cuando trabajamos con el
+teclado. 
+</p>
+<ul>
+	<li><b>onkeydown</b>: sucede cuando una tecla está presionada.
+	</li>
+	<li><b>onkeyup</b>: cuando se libera una tecla.
+	</li>
+	<li><b>onkeypress</b>: cuando se pulsa una tecla.
+	</li>
+</ul>
+<p>
+Con estos eventos podemos desplazarnos a zonas de la página,
+desplegar un menú determinado e incluso realizar pequeños juegos
+que respondan a la pulsación de las teclas.
+</p>
+<p>
+El siguiente código realiza un sencillo uso de <b>onkeypress</b>,
+mostrando en una parte de la página la tecla que se pulsa:
+</p>
+<blockquote>
+	<p>
+	&lt;!DOCTYPE html&gt;<br />
+	&lt;html&gt;<br />
+	&lt;head&gt;<br />
+	&lt;meta content=&quot;text/html; charset=UTF-8&quot;
+	http-equiv=&quot;Content-Type&quot;&gt;<br />
+	&lt;title&gt;Formulario&lt;/title&gt;<br />
+	&lt;script language=&quot;JavaScript&quot;&gt;
+	</p>
+	<blockquote>
+		function mostrar_tecla(e) {<br />
+		if (e.keyCode) keycode=e.keyCode;<br />
+		else keycode=e.which;<br />
+		document.getElementById('zonadeteclas').innerHTML =
+		document.getElementById('zonadeteclas').innerHTML +
+		String.fromCharCode(keycode);<br />
+		}<br />
+	</blockquote>
+	<p>
+	&lt;/script&gt;<br />
+	&lt;/head&gt; 
+	</p>
+	<p>
+	&lt;body onkeypress=&quot;mostrar_tecla(event);&quot;&gt;
+	</p>
+	<blockquote>
+		Prueba de teclas: &lt;span id=&quot;zonadeteclas&quot;&gt;&lt;/span&gt;<br />
+	</blockquote>
+	<p>
+	&lt;/body&gt;
+	</p>
+	<p>
+	&lt;/html&gt;
+	</p>
+</blockquote>
+<p>
+Cada vez que se pulse una tecla, se mostrará en la zona en la que
+hemos ubicado la etiqueta <b>&lt;span&gt;</b>. El código <i>JavaScript </i>utiliza
+una sencilla fórmula para averiguar qué tecla se ha pulsado. Estas
+tres líneas nos mostrarían la tecla en una ventana emergente.
+</p>
+<blockquote>
+	<p>
+	if (e.keyCode) keycode=e.keyCode;<br />
+	else keycode=e.which;<br />
+	alert(String.fromCharCode(keycode));
+	</p>
+</blockquote>
+<p>
+En su lugar la mostramos en la pantalla mediante la propiedad
+<b>innerHTML</b>, que nos permite incorporar en tiempo real un texto,
+etiqueta o cualquier otro elemento a una página web. 
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id178">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta178_35_2" class="block" style="display:block;position:relative">
+<p>
+Esto se está volviendo complicado, lo sabemos. Podemos tomarlo
+como pequeñas fórmulas que se pueden aplicar en diferentes
+condiciones o simplemente no darle mucha importancia. <i>JavaScript </i>es
+un buen complemento, pero no es el centro de la creación de páginas
+web.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id179">
+<div class="iDevice emphasis0">
+<div id="ta179_1" class="block" style="display:block;position:relative">
+<h2>Controlando el ratón</h2>
+<p>
+El ratón es el elemento lanzador de eventos por antonomasia. Cada
+vez que lo desplazamos o que pasamos por encima de algún lugar,
+estamos generando eventos que pueden ser manipulados mediante nuestra
+página web.
+</p>
+<p>
+Aquí van algunos de esos eventos:
+</p>
+<ul>
+	<li><b>onclick</b>, <b>ondblclick</b>, <b>onmousewheel</b>: generan un evento cuando
+	se hace clic, doble clic o se usa la rueda del ratón.
+	</li>
+	<li><b>ondrag</b>, <b>ondragend</b>, <b>ondragenter</b>, <b>ondragleave</b>, <b>ondragover</b>,
+	<b>	ondragstart</b>, <b>ondrop</b>: controlan todas las posibilidades que se
+	generan al arrastrar y soltar un elemento en la página web.
+	</li>
+	<li><b>onmousedown</b>, <b>onmousemove</b>, <b>onmouseout</b>, <b>onmouseover</b>, <b>onmouseup</b>:
+	controlan el movimiento del ratón cuando no está presionado el
+	botón, al pasar sobre un elemento, al salir de él, etc.
+	</li>
+	<li><b>onscroll</b>: cuando hay un desplazamiento vertical.
+	</li>
+</ul>
+<p>
+Más adelante probaremos alguno de estos eventos y otros ya los
+hemos probado. Aquí es importante fijarse en dónde ponemos el
+evento. Por ejemplo, un evento <b>onmousemove </b>dentro de una imagen nos
+asegurará que se ejecute la acción prevista cada vez que el ratón
+se desplace, pero sólo dentro de esa imagen. Si por el contrario lo
+indicamos en la etiqueta <b>&lt;body&gt;, </b>el evento se generará cada vez
+que el ratón se desplace por cualquier lugar de la página.
+</p>
+</div></div>
+</div>
+<div class="activityIdevice" id="id180">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 5</h2>
+<div class="iDevice_inner">
+<div id="ta180_37_2" class="block" style="display:block;position:relative">
+<p>
+Probaremos a realizar un evento que muestre un aviso cada vez que
+se hace doble clic sobre una imagen. Observaremos la diferencia al
+colocar ese mismo evento en la etiqueta <b>&lt;body&gt;</b> o en algún<b>
+&lt;div&gt;</b> que ocupe parte de la pantalla.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id181">
+<div class="iDevice emphasis0">
+<div id="ta181_1" class="block" style="display:block;position:relative">
+<h2>Eventos multimedia</h2>
+<p>
+Con la llegada de las etiquetas <b>&lt;video&gt; </b>y<b> &lt;audio&gt;
+</b>encontramos también una serie de eventos destinados a gestionar lo
+que sucede al reproducir elementos multimedia. Encontraremos eventos
+que se lanzan al reproducir un recurso, al pausarlo, al finalizar, si
+no se puede reproducir, al cargar datos, al modificarse su volumen y
+otros muchos más, cuyo análisis es largo y su implementación aún
+es irregular. De momento nos bastará saber que están ahí.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id185">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta185_16" class="block" style="display:block;position:relative">
+<p>
+Las siguientes afirmaciones, ¿son verdaderas o falsas?
+</p>
+</div><div class="question">
+<br/><br/><div id="taquestion0b185" class="block" style="display:block;position:relative"><i>alert</i> es una función del lenguaje <i>JavaScript</i> que se utiliza para mostrar un mensaje en la ventana del navegador, como una ventana emergente. 
+</div><br/>Verdadero <input type="radio" name="option0b185" id="true0b185" onclick="getFeedback(0,2,'0b185','truefalse')"/> 
+Falso <input type="radio" name="option0b185" id="false0b185" onclick="getFeedback(1,2,'0b185','truefalse')"/>
+<div id="s0b0b185" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="s1b0b185" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="sfbk0b185" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b185" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion1b185" class="block" style="display:block;position:relative">En <i>JavaScript</i> hay eventos para todo excepto para controlar aspectos como el momento en que se cambia el tamaño de una ventana, el momento en que se imprime una página web o el momento antes de comenzar la impresión.
+</div><br/>Verdadero <input type="radio" name="option1b185" id="true1b185" onclick="getFeedback(0,2,'1b185','truefalse')"/> 
+Falso <input type="radio" name="option1b185" id="false1b185" onclick="getFeedback(1,2,'1b185','truefalse')"/>
+<div id="s0b1b185" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="s1b1b185" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="sfbk1b185" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback1b185" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion2b185" class="block" style="display:block;position:relative">En <i>JavaScript</i> las estructuras utilizadas son siempre muy similares, se  suele indicar el nombre de la función, los parámetros que va a utilizar y posteriormente, entre llaves, se indican las acciones a realizar.
+</div><br/>Verdadero <input type="radio" name="option2b185" id="true2b185" onclick="getFeedback(0,2,'2b185','truefalse')"/> 
+Falso <input type="radio" name="option2b185" id="false2b185" onclick="getFeedback(1,2,'2b185','truefalse')"/>
+<div id="s0b2b185" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="s1b2b185" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="sfbk2b185" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback2b185" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+<div class="question">
+<br/><br/><div id="taquestion3b185" class="block" style="display:block;position:relative">Existen cuatro posibles eventos cuando trabajamos con el teclado: <i>onkeydown</i>, <i>onkeyup</i>, <i>onkeyfront </i>y <i>onkeypress</i>.<br />
+<br />
+</div><br/>Verdadero <input type="radio" name="option3b185" id="true3b185" onclick="getFeedback(0,2,'3b185','truefalse')"/> 
+Falso <input type="radio" name="option3b185" id="false3b185" onclick="getFeedback(1,2,'3b185','truefalse')"/>
+<div id="s0b3b185" style="color: rgb(0, 51, 204);display: none;" even_steven="191">¡Incorrecto! </div>
+<div id="s1b3b185" style="color: rgb(0, 51, 204);display: none;" even_steven="190">¡Correcto! </div>
+<div id="sfbk3b185" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback3b185" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="insertar_un_formulario_con_un_editor_web.html">&laquo; Anterior</a> | <a href="resumen.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

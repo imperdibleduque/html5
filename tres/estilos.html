@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Estilos | Formato del texto </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Estilos</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Formato del texto</a><ul>
+<li><a href="recurso_tic_formato_del_texto.html" class="daddy">Recurso TIC: Formato del texto</a><ul>
+<li><a href="etiquetas_de_formato_de_texto.html" class="no-ch">Etiquetas de formato de texto</a></li>
+<li id="active"><a href="estilos.html" class="active no-ch">Estilos</a></li>
+<li><a href="aplicar_estilos_con_un_editor_web.html" class="no-ch">Aplicar estilos con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_1" class="block" style="display:block;position:relative">En las ediciones actuales de HTML se hace hincapié en la
+separación entre el contenido y su apariencia. Por ello, todo lo que
+tiene que ver con la parte estética de la web se deja a CSS. 
+<p>
+CSS es el acrónimo de <i>Cascade Style Sheet</i> (hojas de estilo en
+cascada), un estándar que apareció al mismo tiempo que HTML4 y que
+nos proporciona todos los elementos que necesitemos para modificar la
+apariencia de nuestra página web.
+</p>
+<p>
+En un primer acercamiento podemos decir que con CSS definiremos
+cómo debe mostrarse un elemento HTML concreto, estableciendo los
+aspectos habituales como tamaño, color, tipografía o bordes. Es
+una definición muy versátil, que nos permitirá modificar la
+apariencia de todas las páginas del sitio web, de sólo una de ellas
+o incluso de un simple elemento dentro de la página.
+</p>
+<p>
+Así, con los estilos separamos las cuestiones de diseño de las
+del contenido, obteniendo algunas ventajas imprescindibles. Las dos
+principales son éstas:
+</p>
+<ul>
+	<li>Automáticamente se vuelve muy sencillo modificar cuestiones
+	de diseño a través de un sitio web complejo. Podemos cambiar el
+	tipo de letra de todo un portal web con tan sólo modificar una
+	línea de un archivo.</li>
+	<li>Las páginas son más limpias, cargándose más rápido,
+	contando con menos errores y sobre todo más accesibles en todos los
+	sentidos.
+	</li>
+</ul>
+<h2>Aplicar estilos</h2>
+<p>
+Los estilos se pueden aplicar de tres formas diferentes:
+</p>
+<ul>
+	<li><b>Estilos en un archivo externo</b>: definimos una serie de reglas
+	CSS en un archivo, que enlazaremos desde nuestra página web, en la
+	cabecera de la misma. Este es el método más aconsejado de trabajo
+	y el que emplearemos en el futuro.</li>
+	<li><b>Estilos en la cabecera de la página web</b>: de nuevo en la
+	cabecera podemos indicar las reglas CSS que necesitemos, afectando
+	de este modo sólo a la página web en cuestión.</li>
+	<li><b>Estilos en la página web</b>: podemos aplicar estilos dentro de
+	un elemento concreto de la página web, mediante el parámetro <b>style</b>
+	que se puede establecer para cualquier etiqueta.
+	</li>
+</ul>
+<p>
+Por ahora nos centraremos en la tercera vía. Observemos este
+ejemplo:
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Qué entendemos por un párrafo&lt;/h1&gt;
+	</p>
+	<p>
+	&lt;p&gt;Un párrafo de texto se compone de un bloque de texto
+	independiente con una apariencia concreta, delimitado por un espacio
+	superior y otro inferior.&lt;/p&gt;
+	</p>
+</blockquote>
+<p>
+Vamos a modificar el aspecto de esos dos elementos HTML, con tan
+sólo incorporar el parámetro <strong>style</strong> en cada uno de ellos seguido de
+algunos valores. </p>
+<blockquote>
+	<p>
+	&lt;h1 style=&quot;color: rgb(200, 20, 20); font-family:
+	Helvetica,Arial,sans-serif;&quot;&gt;Qué entendemos por un
+	párrafo&lt;/h1&gt;
+	</p>
+	<p>
+	&lt;p style=&quot;font-style: italic; color: rgb(20, 20, 200);&quot;&gt;Un
+	párrafo de texto se compone de un bloque de texto independiente con
+	una apariencia concreta, delimitado por un espacio superior y otro
+	inferior.&lt;/p&gt;
+	</p>
+</blockquote>
+<p>
+Detengámonos un momento en cada caso:
+</p>
+<ul>
+	<li>En el primero hemos establecido dos elementos CSS, <b>color </b>para
+	definir un tono rojo (volveremos más adelante sobre el color) y el
+	tipo de letra mediante <b>font-family</b>.</li>
+	<li>En el segundo, hemos indicado que todo el párrafo se
+	mostrará en cursiva (<b>font-style: italic</b>) y en un tono azul,
+	mediante el valor <b>color</b>.
+	</li>
+</ul>
+<p>
+Como se puede observar, cada par de elementos CSS especifican su
+valor correspondiente tras un signo de dos puntos y se separan del siguiente mediante un punto y
+coma; así podemos añadir tantas variaciones como necesitemos.
+</p>
+<h2>La etiqueta span</h2>
+<p>
+En el ejemplo anterior éramos capaces de modificar un bloque de
+texto completo o un título completo, pero, ¿cómo podríamos
+modificar sólo una frase dentro de un párrafo o una simple palabra?
+La respuesta la encontramos en el elemento HTML denominado <b>&lt;span&gt;</b>.
+</p>
+<p>
+Con <b>&lt;span&gt;</b> y su correspondiente cierre seremos capaces de
+realizar una agrupación dentro de un bloque de texto. Visualmente no
+hay ningún cambio, pero el hecho de poder crear esa agrupación nos
+permitirá aplicarle estilos CSS a ese bloque. Continuando con el
+ejemplo anterior, se puede observar cómo mediante el uso de <b>span</b>
+hemos modificado una sola palabra del título y una parte del
+párrafo.
+</p>
+<blockquote>
+	<p>
+	&lt;h1&gt;Qué entendemos por un &lt;span style=&quot;color:
+	rgb(0, 153, 0);&quot;&gt;párrafo&lt;/span&gt;&lt;/h1&gt;
+	</p>
+	<p>
+	&lt;p color:=&quot;rgb(20, 20, 200);&quot;&gt;Un párrafo de texto
+	se compone de un&lt;span style=&quot;font-weight: bold; color:
+	rgb(255, 0, 0);&quot;&gt;bloque de texto independiente&lt;/span&gt;
+	con una apariencia concreta, delimitado por un espacio superior y
+	otro inferior.&lt;/p&gt;
+	</p>
+</blockquote>
+<p>
+Se empieza a complicar un poco el ejemplo. En el caso del título
+hemos hecho que un término aparezca en verde, mientras que el resto
+mantiene su apariencia predeterminada. En el párrafo, por el
+contrario, hemos mantenido el color azul para todo el texto, pero una
+parte de él se mostrará de color rojo y en negrita
+(<b>font-weight:bold</b>). La figura muestra la apariencia del conjunto.
+</p>
+<p>
+<img src="fig0301.jpg" height="82" width="600" />
+</p>
+<p>
+La utilidad de <b>&lt;span&gt;</b> va más allá de la
+aplicación de estilos, aunque es una de sus facetas más destacadas.
+</p>
+</div></div>
+</div>
+<div class="TrueFalseIdevice" id="id59">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta59_16" class="block" style="display:block;position:relative">La siguiente afirmación ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b59" class="block" style="display:block;position:relative">CSS se aplica de tres formas diferentes: mediante la etiqueta &lt;span/&gt;, mediante el parámetro&lt;style&gt; o enlazando nuestra web con un archivo externo.
+</div><br/>Verdadero <input type="radio" name="option0b59" id="true0b59" onclick="getFeedback(0,2,'0b59','truefalse')"/> 
+Falso <input type="radio" name="option0b59" id="false0b59" onclick="getFeedback(1,2,'0b59','truefalse')"/>
+<div id="s0b0b59" style="color: rgb(0, 51, 204);display: none;" even_steven="65">¡Incorrecto! </div>
+<div id="s1b0b59" style="color: rgb(0, 51, 204);display: none;" even_steven="64">¡Correcto! </div>
+<div id="sfbk0b59" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b59" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="activityIdevice" id="id48">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 1</h2>
+<div class="iDevice_inner">
+<div id="ta48_23_2" class="block" style="display:block;position:relative">Realiza un ejemplo donde apliques en un par de frases algunos de los estilos vistos hasta ahora. Puedes repetir exactamente los mismos con tan sólo copiarlos y pegarlos.
+</div><br/>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="etiquetas_de_formato_de_texto.html">&laquo; Anterior</a> | <a href="aplicar_estilos_con_un_editor_web.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>

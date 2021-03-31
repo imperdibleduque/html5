@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Created using eXe: http://exelearning.org -->
+<head>
+<style type="text/css">
+@import url(../css/base.css);
+@import url(../css/content.css);
+@import url(../css/nav.css);</style>
+<title> Aplicar estilos con un editor web | Formato del texto </title>
+<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+<div id="content">
+<div id="header"><h1>HTML 5 en la educación</h1>
+        <div class="volver"><a href="../indice.htm">Volver al índice</a></div>
+<div id="nodeDecoration"><h1 id="nodeTitle">Aplicar estilos con un editor web</h1></div>
+      </div>
+<div id="siteNav">
+<ul>
+<li><a href="index.html" class="daddy main-node">Formato del texto</a><ul>
+<li><a href="recurso_tic_formato_del_texto.html" class="daddy">Recurso TIC: Formato del texto</a><ul>
+<li><a href="etiquetas_de_formato_de_texto.html" class="no-ch">Etiquetas de formato de texto</a></li>
+<li><a href="estilos.html" class="no-ch">Estilos</a></li>
+<li id="active"><a href="aplicar_estilos_con_un_editor_web.html" class="active no-ch">Aplicar estilos con un editor web</a></li>
+<li><a href="resumen.html" class="no-ch">Resumen</a></li>
+<li><a href="actividades_y_ejemplos.html" class="no-ch">Actividades y ejemplos</a></li>
+</ul>
+</li>
+<li><a href="aplicacin_al_aula.html" class="daddy">Aplicación al aula</a><ul class="other-section">
+<li><a href="planificacin.html" class="no-ch">Planificación</a></li>
+<li><a href="sugerencias_metodolgicas.html" class="no-ch">Sugerencias metodológicas</a></li>
+<li><a href="atencin_a_la_diversidad.html" class="no-ch">Atención a la diversidad</a></li>
+</ul></li></ul></li></ul>
+</div>
+<div id="main">
+<div class="FreeTextIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_1" class="block" style="display:block;position:relative">
+  <p>La lista de elementos CSS que podemos modificar es muy larga; la
+    iremos analizando con calma. Por suerte también podemos emplear
+    algún editor para realizar estas modificaciones. Veamos cómo se
+    realiza con <i>BlueGriffon</i>.
+  </p>
+  <h2>Barras de herramientas</h2>
+<p>
+Debajo de la barra de botones de la aplicación encontramos dos
+barras dedicadas a la aplicación de estilos al contenido de la
+página web. Revisemos las opciones principales.
+</p>
+<p>
+<img src="fig0302.jpg" height="536" width="600" />
+</p>
+<ul>
+	<li>Los botones representados por un signo de admiración simple, doble
+	y una <b>C</b>, corresponden respectivamente a <b>Énfasis</b>, <b>Énfasis mayor</b> y
+	<b>    Code </b>y aplicarán al texto las etiquetas <b>&lt;em&gt;</b>, <b>&lt;strong&gt; </b>
+	y <b>&lt;code&gt;</b>, que destacan el texto visualmente, pero también
+	semánticamente.</li>
+	<li>Los botones <b>B</b>, <b>I</b> y <b>U</b> se corresponden respectivamente con
+	<i>	negrita</i>, <i>cursiva </i>y <i>subrayado</i>. En estos casos el programa se
+	encargará de aplicar el estilo necesario al elemento html o
+	mediante una etiqueta span, en el caso de que no esté seleccionado
+	un bloque completo. En la figura se muestra la aplicación de alguna
+	de estas opciones.
+	</li>
+</ul>
+<p>
+<img src="fig0303.jpg" height="168" width="600" />
+</p>
+<ul>
+	<li>La alineación de los párrafos se controla mediante los
+	cuatro botones que aparecen en esa barra, que se corresponden con<b>
+	Alineación izquierda</b>, <b>Centrado</b>, <b>Alineación derecha</b> y <b>Justificada</b>.
+	Estas opciones son aplicables a bloques de texto y provocarán un
+	cambio en la posición en la que se ajusten las líneas. Por su
+	parte, en el código fuente observaremos cómo se añade el estilo<b>
+	text-align</b>, encargado de la alineación. En este ejemplo hemos
+	centrado el título de un bloque de texto:
+	</li>
+</ul>
+<blockquote>
+	<blockquote>
+		<p>
+		&lt;h1 style=&quot;text-align: center;&quot;&gt; Texto con
+		formato&lt;/h1&gt;
+		</p>
+	</blockquote>
+</blockquote>
+<ul>
+	<li>En la barra siguiente encontramos una lista desplegable que
+	nos permite modificar la tipografía del texto, añadiendo el estilo
+	<b>	font-family</b>. Hay mucho que decir sobre el uso de tipografías, pero
+	por el momento nos centraremos en intentar emplear sólo fuentes
+	estándar, ya que si usamos una tipografía específica instalada en
+	nuestro ordenador lo más probable es que nuestros usuario no
+	cuenten con ella y no vean la página como la pensamos en un
+	principio. Un buen comienzo es limitarnos a las primeras opciones de
+	la lista de fuentes, que no especifican tipos exactos, sino más
+	bien familias de fuentes:
+	</li>
+</ul>
+<p>
+<img src="fig0304.jpg" height="141" width="167" />
+</p>
+<p>
+Aún quedan algunos elementos en esas barras que revisaremos más
+adelante, pues no son opciones relacionadas con el formato inicial de
+la página. 
+</p>
+<p>
+Con las opciones vistas hasta ahora podemos aplicar un formato
+bastante apropiado a la página, aunque se echen cosas en falta.
+Veamos cómo seguir complementando el estilo.
+</p>
+<h2>Menú de formato</h2>
+<p>
+En el menú formato encontramos algunas opciones más relacionadas
+con la aplicación de estilos específicos al texto, tanto los más
+visuales, situados en la parte superior, como los que le aportan un
+sentido al contenido, en la mitad del menú. 
+</p>
+<p>
+<img src="fig0305.jpg" height="418" width="224" />
+</p>
+<p>
+El menú se completa con dos opciones orientadas a eliminar
+estilos en la página y a convertir enlaces en texto normal. La
+primera opción nos será útil si estamos copiando texto desde otro
+lugar y este mantiene estilos que queremos limpiar para aplicar los
+nuestros propios.
+</p>
+<h2>Propiedades de estilo</h2>
+<p>
+La aplicación de estilos con <i>BlueGriffon </i>se convierte en
+un proceso muy simple gracias al editor de estilos. Este panel se
+despliega haciendo clic en el botón <b>Establecer estilos CSS</b> o
+en el menú <b>Paneles&gt;Propiedades de estilo</b>.
+</p>
+<p>
+<img src="fig0306.jpg" height="550" width="251" />
+</p>
+<p>
+Desde este espacio podemos aplicar todos los estilos del estándar
+CSS sobre el contenido que tengamos seleccionado.
+</p>
+<p>
+Antes de continuar debemos decidir a qué elemento HTML queremos
+aplicar el estilo. Para ello en la parte superior tenemos una lista
+denominada <b>Aplicar estilos a</b>. Nos proporciona dos vías diferentes
+</p>
+<ul>
+	<li><b>Aplicar el estilo mediante una clase, un identificador (ID) o
+	a todos los elementos de un mismo tipo</b>, que se emplea para aplicar
+	un mismo estilo a una agrupación de elementos. Por el momento no
+	utilizaremos este sistema.
+	</li>
+	<li><b>Aplicar el estilo a un elemento</b>, mediante los estilos
+	internos. Esta es la opción con la que estamos trabajando y es la
+	que debemos aplicar.
+	</li>
+</ul>
+</div></div>
+</div>
+<div class="MultichoiceIdevice" id="id60">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="Icono de IDevice de pregunta"      class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta de Elección Múltiple</h2>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion60_2" class="block" style="display:block;position:relative">Los botones representados por un signo de admiración simple, doble y una C:
+</div> &nbsp;&nbsp;
+<table>
+<tbody>
+<tr><td><input type="radio" name="option60_2" id="i60_5" onclick="getFeedback(0,3,'60_2','multi')"/></td><td>
+<div id="taans60_5" class="block" style="display:block;position:relative">Aplicarán al texto las etiquetas &lt;em&gt;, &lt;strong&gt;  y &lt;code&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option60_2" id="i60_408" onclick="getFeedback(1,3,'60_2','multi')"/></td><td>
+<div id="taans60_408" class="block" style="display:block;position:relative">Aplicarán al texto la etiqueta &lt;text-align&gt;.
+</div></td></tr>
+<tr><td><input type="radio" name="option60_2" id="i60_411" onclick="getFeedback(2,3,'60_2','multi')"/></td><td>
+<div id="taans60_411" class="block" style="display:block;position:relative">aplicarán al texto la etiqueta &lt;p&gt;.
+</div></td></tr>
+</tbody>
+</table>
+<div id="sa0b60_2" style="color: rgb(0, 51, 204);display: none;" even_steven="6">Correcto</div>
+<div id="sa1b60_2" style="color: rgb(0, 51, 204);display: none;" even_steven="7">Incorrecto</div>
+<div id="sa2b60_2" style="color: rgb(0, 51, 204);display: none;" even_steven="9">Incorrecto</div>
+</div>
+<br/></div>
+</div>
+</div>
+<div class="activityIdevice" id="id46">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_activity.gif"/>
+<h2 class="iDeviceTitle">Actividad 2</h2>
+<div class="iDevice_inner">
+<div id="ta46_21_2" class="block" style="display:block;position:relative">
+<p>
+Realiza una modificación de toda la página web utilizando esta
+técnica de selección de la página. Prueba a cambiar el tipo de
+letra y el color de fondo de la página.
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="preknowledgeIdevice" id="id53">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Nota</h2>
+<div class="iDevice_inner">
+<div id="ta53_38_2" class="block" style="display:block;position:relative">Por ahora nos centraremos en aplicar estilos a
+elementos concretos, con el parámetro <b>style </b>en cada elemento.
+Dejaremos para más adelante la aplicación general de estilos
+mediante archivos externos y cabeceras. 
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id51">
+<div class="iDevice emphasis0">
+<div id="ta51_1" class="block" style="display:block;position:relative">
+  <p>Veamos a continuación algunos de los valores que podemos
+    modificar con este panel. Es imprescindible que tras modificar algunos valores
+    accedamos al código fuente para ver qué etiquetas se han
+    incorporado e ir conociendo así los diferentes operadores de
+    estilos.
+ </p>
+<h3>Bloque General</h3>
+<p>
+Este es quizás el bloque más importante al modificar la
+apariencia del texto. Las opciones recogidas en él son las habituales
+de cualquier editor de texto, por lo que no requieren demasiada
+explicación, podemos cambiar el tipo de letra, tamaño, destacar un
+texto, modificar la decoración, la alineación del párrafo, el
+interlineado, etc.
+</p>
+<p>
+<img src="fig0306.jpg" height="658" width="300" />
+</p>
+<h3>Bloque Colores</h3>
+<p>
+El bloque de colores se emplea para indicar el color del texto o
+del elemento en cuestión y su color de fondo. También se puede
+indicar una imagen o un degradado de color para que rellene el
+elemento seleccionado.
+</p>
+<p>
+<img src="fig0307.jpg" height="501" width="300" />
+</p>
+<p>
+El siguiente ejemplo muestra un párrafo con su color modificado y
+con un degradado radial como color de fondo.
+</p>
+<p>
+<img src="fig0308.jpg" height="284" width="600" />
+</p>
+<p>
+El uso de los degradados consiste en ir añadiendo colores
+mediante el signo<b> +</b>. 
+</p>
+<p>
+El vídeo siguiente aplica algunos estilos de los bloques <b>General
+</b>y <b>Colores</b>.
+</p>
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id55">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Vídeo</h2>
+<div class="iDevice_inner">
+<div id="ta55_22_2" class="block" style="display:block;position:relative">
+<p>
+<a href="estilos01.swf" target="_blank">Aplicación de estilos.</a>
+</p>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="FreeTextIdevice" id="id56">
+<div class="iDevice emphasis0">
+<div id="ta56_1" class="block" style="display:block;position:relative"><h3>Otros bloques</h3>
+<p>
+El resto de los bloques también afectan a la visualización de
+los contenidos básicos, por lo que podemos inspeccionarlos para ver
+lo que contienen. No obstante los trataremos con más detalle al
+hablar sobre la maquetación de páginas web y al analizar detenidamente
+los estilos, por lo que no profundizaremos más sobre ellos ahora.
+</p>
+<p>
+Con todas estas propiedades podremos lograr cualquier apariencia
+estética que se nos pase por la cabeza.
+</p>
+<h2>Selección de elementos HTML</h2>
+<p>
+Para aplicar un estilo con este método necesitaremos realizar
+previamente una selección del elemento HTML o de la parte de la
+página sobre la que queremos actuar. Si no hemos seleccionado los
+cambios se aplican al bloque en el que se encuentre el cursor,
+normalmente un párrafo o un título completo.
+</p>
+<p>
+En este aspecto tenemos dos pequeños consejos que nos ayudarán
+en el trabajo con aplicaciones como <i>BlueGriffon</i>.
+</p>
+<h3>Cómo forzar una selección parcial</h3>
+<p>
+Al aplicar un estilo a una parte de un título o de un párrafo
+sólo debe cambiar la parte que tenemos seleccionada. Si esto no
+funciona o aún no queremos aplicar el estilo y sólo queremos
+definir una parte diferenciada mediante una etiqueta span, podemos
+hacerlo seleccionando la opción <b>Formato&gt;Span</b>.
+</p>
+<p>
+Si observamos la figura veremos cómo se ha incorporado la
+etiqueta, a pesar de que aún no tiene ningún formato específico.
+</p>
+<p>
+<img src="fig0309.jpg" height="97" width="600" />
+</p>
+<h3>Selector de elementos HTML</h3>
+<p>
+En la parte inferior del editor se encuentra una zona que nos
+muestra la etiqueta en la que se encuentra el cursor en cada momento.
+Como las etiquetas se anidan unas dentro de otras, normalmente
+veremos siempre una referencia al cuerpo de la página (<b>&lt;body&gt;</b>),
+luego al párrafo actual (<b>&lt;p&gt;</b>), etc.
+</p>
+<p>
+La figura muestra el ejemplo anterior; como se puede ver, estamos
+dentro de la página, en un párrafo concreto y a su vez dentro de un
+span determinado.
+</p>
+<p>
+<img src="fig0310.jpg" height="102" width="600" />
+</p>
+<p>
+Además de ubicarnos perfectamente en todo momento, esta línea
+nos sirve para seleccionar un elemento html concreto. Así, si
+quisiéramos, por ejemplo, modificar el estilo de toda la página
+sólo tendríamos que hacer clic en la etiqueta <b>&lt;body&gt;</b> y a continuación
+aplicar los estilos adecuados.
+</p>
+<p>
+El siguiente vídeo arroja luz sobre este proceso.
+</p>
+
+</div></div>
+</div>
+<div class="preknowledgeIdevice" id="id54">
+<div class="iDevice emphasis1">
+<img alt="Icono IDevice"      class="iDevice_icon" src="icon_preknowledge.gif"/>
+<h2 class="iDeviceTitle">Vídeo</h2>
+<div class="iDevice_inner">
+<div id="ta54_21_2" class="block" style="display:block;position:relative"><a href="estilos02.swf"></a><a href="estilos02.swf" target="_blank">Selector de etiquetas. 
+</a>
+</div><br/>
+</div>
+</div>
+</div>
+<div class="TrueFalseIdevice" id="id61">
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="libot_drag.js"></script>
+<div class="iDevice emphasis1">
+<img alt="" class="iDevice_icon" src="icon_question.gif" />
+<h2 class="iDeviceTitle">Pregunta Verdadero-Falso</h2>
+<div class="iDevice_inner">
+<div id="ta61_16" class="block" style="display:block;position:relative">La siguiente afirmación ¿es verdadera o falsa?
+</div><div class="question">
+<br/><br/><div id="taquestion0b61" class="block" style="display:block;position:relative">Mediante la opción Formato&gt;Span se puede aplicar un estilo a una parte de un título o de un párrafo.
+</div><br/>Verdadero <input type="radio" name="option0b61" id="true0b61" onclick="getFeedback(0,2,'0b61','truefalse')"/> 
+Falso <input type="radio" name="option0b61" id="false0b61" onclick="getFeedback(1,2,'0b61','truefalse')"/>
+<div id="s0b0b61" style="color: rgb(0, 51, 204);display: none;" even_steven="66">¡Correcto! </div>
+<div id="s1b0b61" style="color: rgb(0, 51, 204);display: none;" even_steven="67">¡Incorrecto! </div>
+<div id="sfbk0b61" style="color: rgb(0, 51, 204);display: none;"><div id="tafeedback0b61" class="block" style="display:block;position:relative">
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="noprt" align="right"><a href="estilos.html">&laquo; Anterior</a> | <a href="resumen.html"> Siguiente &raquo;</a></div>
+<div id="siteFooter"><div id="ite-footer">
+  <p align="center">Este contenido est&aacute; licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Creative Commons Reconocimiento-No Comercial-Compartir Igual 3.0</a></p>
+  <p align="center"><a href="http://www.educacion.es/" target="_blank">Ministerio de Educaci&oacute;n, Cultura y Deporte</a> | <a href="http://www.ite.educacion.es/" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></p></div></div></div>
+</div>
+</body></html>
